@@ -1,0 +1,6 @@
+spectrochempy.core.readers.importer.read
+========================================
+
+.. currentmodule:: spectrochempy.core.readers.importer
+
+.. autofunction:: read

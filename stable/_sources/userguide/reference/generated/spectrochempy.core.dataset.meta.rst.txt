@@ -1,0 +1,29 @@
+spectrochempy.core.dataset.meta
+===============================
+
+.. automodule:: spectrochempy.core.dataset.meta
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      Meta
+   
+   
+
+   
+   
+   
+
+
+

@@ -1,0 +1,33 @@
+spectrochempy.core.fitting.models.voigtmodel
+============================================
+
+.. currentmodule:: spectrochempy.core.fitting.models
+
+.. autoclass:: voigtmodel
+
+   
+     
+   
+
+   
+     
+   .. rubric:: Attributes
+
+   .. autosummary::
+       
+       voigtmodel.args
+       voigtmodel.script
+
+
+       
+   .. autoattribute:: args
+   .. autoattribute:: script
+
+     
+   
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.core.fitting.models.voigtmodel.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

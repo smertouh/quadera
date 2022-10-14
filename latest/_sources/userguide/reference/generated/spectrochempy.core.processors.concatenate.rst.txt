@@ -1,0 +1,30 @@
+spectrochempy.core.processors.concatenate
+=========================================
+
+.. automodule:: spectrochempy.core.processors.concatenate
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      concatenate
+      stack
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

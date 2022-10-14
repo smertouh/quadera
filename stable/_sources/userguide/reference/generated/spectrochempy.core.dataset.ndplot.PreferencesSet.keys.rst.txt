@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.core.dataset.ndplot.PreferencesSet.keys
+=====================================================
+
+
+.. currentmodule:: spectrochempy.core.dataset.ndplot
+
+.. automethod:: PreferencesSet.keys
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.core.dataset.ndplot.PreferencesSet.keys.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

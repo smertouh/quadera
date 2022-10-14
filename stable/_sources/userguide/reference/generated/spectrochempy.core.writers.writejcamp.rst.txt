@@ -1,0 +1,30 @@
+spectrochempy.core.writers.writejcamp
+=====================================
+
+.. automodule:: spectrochempy.core.writers.writejcamp
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      write_jcamp
+      write_jdx
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

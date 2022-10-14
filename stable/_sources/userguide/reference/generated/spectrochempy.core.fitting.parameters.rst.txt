@@ -1,0 +1,30 @@
+spectrochempy.core.fitting.parameters
+=====================================
+
+.. automodule:: spectrochempy.core.fitting.parameters
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      FitParameters
+      ParameterScript
+   
+   
+
+   
+   
+   
+
+
+

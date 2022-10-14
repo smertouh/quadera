@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.core.dataset.ndmath.NDMath.coordmax
+=================================================
+
+
+.. currentmodule:: spectrochempy.core.dataset.ndmath
+
+.. automethod:: NDMath.coordmax
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.core.dataset.ndmath.NDMath.coordmax.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

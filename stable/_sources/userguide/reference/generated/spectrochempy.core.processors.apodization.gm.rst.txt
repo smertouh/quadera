@@ -1,0 +1,6 @@
+spectrochempy.core.processors.apodization.gm
+============================================
+
+.. currentmodule:: spectrochempy.core.processors.apodization
+
+.. autofunction:: gm

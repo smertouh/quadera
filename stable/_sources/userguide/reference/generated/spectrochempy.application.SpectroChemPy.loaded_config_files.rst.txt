@@ -1,0 +1,6 @@
+spectrochempy.application.SpectroChemPy.loaded\_config\_files
+=============================================================
+
+.. currentmodule:: spectrochempy.application
+
+.. autoproperty:: SpectroChemPy.loaded_config_files

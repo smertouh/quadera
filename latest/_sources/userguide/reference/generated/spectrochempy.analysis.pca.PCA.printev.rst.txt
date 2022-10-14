@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.analysis.pca.PCA.printev
+======================================
+
+
+.. currentmodule:: spectrochempy.analysis.pca
+
+.. automethod:: PCA.printev
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.analysis.pca.PCA.printev.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

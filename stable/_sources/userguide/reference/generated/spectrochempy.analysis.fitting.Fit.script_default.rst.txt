@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.analysis.fitting.Fit.script\_default
+==================================================
+
+
+.. currentmodule:: spectrochempy.analysis.fitting
+
+.. automethod:: Fit.script_default
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.analysis.fitting.Fit.script_default.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

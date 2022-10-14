@@ -1,0 +1,29 @@
+spectrochempy.core.dataset.coordrange
+=====================================
+
+.. automodule:: spectrochempy.core.dataset.coordrange
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      trim_ranges
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

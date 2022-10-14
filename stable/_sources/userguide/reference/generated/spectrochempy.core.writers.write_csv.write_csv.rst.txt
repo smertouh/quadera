@@ -1,0 +1,6 @@
+spectrochempy.core.writers.write\_csv.write\_csv
+================================================
+
+.. currentmodule:: spectrochempy.core.writers.write_csv
+
+.. autofunction:: write_csv

@@ -1,0 +1,6 @@
+spectrochempy.core.dataset.ndio.NDIO.directory
+==============================================
+
+.. currentmodule:: spectrochempy.core.dataset.ndio
+
+.. autoproperty:: NDIO.directory

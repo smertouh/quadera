@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.application.SpectroChemPyMagics.addscript
+=======================================================
+
+
+.. currentmodule:: spectrochempy.application
+
+.. automethod:: SpectroChemPyMagics.addscript
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.application.SpectroChemPyMagics.addscript.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

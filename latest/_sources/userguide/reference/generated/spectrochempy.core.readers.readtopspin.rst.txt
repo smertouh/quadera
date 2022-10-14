@@ -1,0 +1,29 @@
+spectrochempy.core.readers.readtopspin
+======================================
+
+.. automodule:: spectrochempy.core.readers.readtopspin
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      read_topspin
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

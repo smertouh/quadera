@@ -1,0 +1,29 @@
+spectrochempy.core.readers.readjdx
+==================================
+
+.. automodule:: spectrochempy.core.readers.readjdx
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      read_jcamp
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

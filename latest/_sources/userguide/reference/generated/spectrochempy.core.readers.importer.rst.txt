@@ -1,0 +1,30 @@
+spectrochempy.core.readers.importer
+===================================
+
+.. automodule:: spectrochempy.core.readers.importer
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      read
+      read_dir
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

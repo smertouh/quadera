@@ -1,0 +1,6 @@
+spectrochempy.core.dataset.ndmath.pipe
+======================================
+
+.. currentmodule:: spectrochempy.core.dataset.ndmath
+
+.. autofunction:: pipe

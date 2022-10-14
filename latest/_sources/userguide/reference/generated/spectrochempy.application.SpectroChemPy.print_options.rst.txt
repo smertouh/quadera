@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.application.SpectroChemPy.print\_options
+======================================================
+
+
+.. currentmodule:: spectrochempy.application
+
+.. automethod:: SpectroChemPy.print_options
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.application.SpectroChemPy.print_options.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

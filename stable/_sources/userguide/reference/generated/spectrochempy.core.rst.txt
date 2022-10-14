@@ -1,0 +1,50 @@
+spectrochempy.core
+==================
+
+.. automodule:: spectrochempy.core
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      debug_
+      error_
+      info_
+      open_dialog
+      print_
+      save_dialog
+      warning_
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+
+.. rubric:: Modules
+
+.. autosummary::
+   :toctree:
+   :recursive:
+
+   spectrochempy.core.dataset
+   spectrochempy.core.plotters
+   spectrochempy.core.processors
+   spectrochempy.core.project
+   spectrochempy.core.readers
+   spectrochempy.core.scripts
+   spectrochempy.core.units
+   spectrochempy.core.writers
+

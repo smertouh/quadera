@@ -1,0 +1,6 @@
+spectrochempy.core.dataset.ndmath.mean
+======================================
+
+.. currentmodule:: spectrochempy.core.dataset.ndmath
+
+.. autofunction:: mean

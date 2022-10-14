@@ -1,0 +1,23 @@
+spectrochempy.core.dataset.api
+==============================
+
+.. automodule:: spectrochempy.core.dataset.api
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

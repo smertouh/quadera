@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.core.dataset.ndmath.NDMath.mean
+=============================================
+
+
+.. currentmodule:: spectrochempy.core.dataset.ndmath
+
+.. automethod:: NDMath.mean
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.core.dataset.ndmath.NDMath.mean.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.application.SpectroChemPy.initialize
+==================================================
+
+
+.. currentmodule:: spectrochempy.application
+
+.. automethod:: SpectroChemPy.initialize
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.application.SpectroChemPy.initialize.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

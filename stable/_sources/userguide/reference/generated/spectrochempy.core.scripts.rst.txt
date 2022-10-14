@@ -1,0 +1,32 @@
+spectrochempy.core.scripts
+==========================
+
+.. automodule:: spectrochempy.core.scripts
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+
+.. rubric:: Modules
+
+.. autosummary::
+   :toctree:
+   :recursive:
+
+   spectrochempy.core.scripts.api
+   spectrochempy.core.scripts.script
+

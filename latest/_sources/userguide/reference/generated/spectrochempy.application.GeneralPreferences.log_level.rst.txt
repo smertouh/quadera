@@ -1,0 +1,6 @@
+spectrochempy.application.GeneralPreferences.log\_level
+=======================================================
+
+.. currentmodule:: spectrochempy.application
+
+.. autoproperty:: GeneralPreferences.log_level

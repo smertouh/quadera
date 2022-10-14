@@ -1,0 +1,6 @@
+spectrochempy.core.processors.autosub.autosub
+=============================================
+
+.. currentmodule:: spectrochempy.core.processors.autosub
+
+.. autofunction:: autosub

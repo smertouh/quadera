@@ -1,0 +1,32 @@
+spectrochempy.databases
+=======================
+
+.. automodule:: spectrochempy.databases
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+
+.. rubric:: Modules
+
+.. autosummary::
+   :toctree:
+   :recursive:
+
+   spectrochempy.databases.api
+   spectrochempy.databases.isotopes
+

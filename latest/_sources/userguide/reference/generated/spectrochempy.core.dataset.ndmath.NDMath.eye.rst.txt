@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.core.dataset.ndmath.NDMath.eye
+============================================
+
+
+.. currentmodule:: spectrochempy.core.dataset.ndmath
+
+.. automethod:: NDMath.eye
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.core.dataset.ndmath.NDMath.eye.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

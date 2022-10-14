@@ -1,0 +1,6 @@
+spectrochempy.core.processors.apodization.sinm
+==============================================
+
+.. currentmodule:: spectrochempy.core.processors.apodization
+
+.. autofunction:: sinm

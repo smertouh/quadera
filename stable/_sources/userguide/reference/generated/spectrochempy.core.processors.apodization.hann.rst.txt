@@ -1,0 +1,6 @@
+spectrochempy.core.processors.apodization.hann
+==============================================
+
+.. currentmodule:: spectrochempy.core.processors.apodization
+
+.. autofunction:: hann

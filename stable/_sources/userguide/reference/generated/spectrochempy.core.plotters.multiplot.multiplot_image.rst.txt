@@ -1,0 +1,6 @@
+spectrochempy.core.plotters.multiplot.multiplot\_image
+======================================================
+
+.. currentmodule:: spectrochempy.core.plotters.multiplot
+
+.. autofunction:: multiplot_image

@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.analysis.fitting.FitParameters.setdefault
+=======================================================
+
+
+.. currentmodule:: spectrochempy.analysis.fitting
+
+.. automethod:: FitParameters.setdefault
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.analysis.fitting.FitParameters.setdefault.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

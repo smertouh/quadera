@@ -1,0 +1,29 @@
+spectrochempy.core.analysis.mcrals
+==================================
+
+.. automodule:: spectrochempy.core.analysis.mcrals
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      MCRALS
+   
+   
+
+   
+   
+   
+
+
+

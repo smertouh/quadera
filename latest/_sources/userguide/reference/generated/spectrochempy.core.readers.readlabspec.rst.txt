@@ -1,0 +1,30 @@
+spectrochempy.core.readers.readlabspec
+======================================
+
+.. automodule:: spectrochempy.core.readers.readlabspec
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      read_labspec
+      read_txt
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

@@ -1,0 +1,29 @@
+spectrochempy.core.project.baseproject
+======================================
+
+.. automodule:: spectrochempy.core.project.baseproject
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      AbstractProject
+   
+   
+
+   
+   
+   
+
+
+

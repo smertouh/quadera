@@ -1,0 +1,44 @@
+spectrochempy.utils
+===================
+
+.. automodule:: spectrochempy.utils
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+
+.. rubric:: Modules
+
+.. autosummary::
+   :toctree:
+   :recursive:
+
+   spectrochempy.utils.exceptions
+   spectrochempy.utils.fake
+   spectrochempy.utils.file
+   spectrochempy.utils.jsonutils
+   spectrochempy.utils.misc
+   spectrochempy.utils.packages
+   spectrochempy.utils.plots
+   spectrochempy.utils.print
+   spectrochempy.utils.print_versions
+   spectrochempy.utils.system
+   spectrochempy.utils.testing
+   spectrochempy.utils.traits
+   spectrochempy.utils.version
+   spectrochempy.utils.zip
+

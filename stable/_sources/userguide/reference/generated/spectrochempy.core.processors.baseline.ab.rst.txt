@@ -1,0 +1,6 @@
+spectrochempy.core.processors.baseline.ab
+=========================================
+
+.. currentmodule:: spectrochempy.core.processors.baseline
+
+.. autofunction:: ab

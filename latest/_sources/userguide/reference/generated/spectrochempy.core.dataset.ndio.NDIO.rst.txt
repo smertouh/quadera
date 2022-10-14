@@ -1,0 +1,45 @@
+spectrochempy.core.dataset.ndio.NDIO
+====================================
+
+.. currentmodule:: spectrochempy.core.dataset.ndio
+
+.. autoclass:: NDIO
+
+   
+     
+   .. rubric:: Methods
+
+   .. autosummary::
+       
+       NDIO.dump
+       NDIO.load
+       NDIO.save
+       NDIO.save_as
+
+      
+   
+
+   
+     
+   .. rubric:: Attributes
+
+   .. autosummary::
+       
+       NDIO.directory
+       NDIO.filename
+       NDIO.suffix
+
+
+       
+   .. autoattribute:: directory
+   .. autoattribute:: filename
+   .. autoattribute:: suffix
+
+     
+   
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.core.dataset.ndio.NDIO.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

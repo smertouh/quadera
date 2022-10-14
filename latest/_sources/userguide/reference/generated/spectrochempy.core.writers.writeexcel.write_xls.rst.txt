@@ -1,0 +1,6 @@
+spectrochempy.core.writers.writeexcel.write\_xls
+================================================
+
+.. currentmodule:: spectrochempy.core.writers.writeexcel
+
+.. autofunction:: write_xls

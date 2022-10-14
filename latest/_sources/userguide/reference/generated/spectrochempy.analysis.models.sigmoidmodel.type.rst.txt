@@ -1,0 +1,6 @@
+spectrochempy.analysis.models.sigmoidmodel.type
+===============================================
+
+.. currentmodule:: spectrochempy.analysis.models
+
+.. autoattribute:: sigmoidmodel.type

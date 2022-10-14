@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.analysis.iris.IRIS.reconstruct
+============================================
+
+
+.. currentmodule:: spectrochempy.analysis.iris
+
+.. automethod:: IRIS.reconstruct
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.analysis.iris.IRIS.reconstruct.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

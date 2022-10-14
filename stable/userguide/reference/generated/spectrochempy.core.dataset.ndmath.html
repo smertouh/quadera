@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>spectrochempy.core.dataset.ndmath &mdash; SpectroChemPy v0.3.1 0.3.1 documentation</title><link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/plot_directive.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/theme_override.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/gallery.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/gallery-binder.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/gallery-dataframe.css" type="text/css" /><link rel="shortcut icon" href="../../../_static/scpy.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/clipboard.min.js"></script>
+        <script src="../../../_static/copybutton.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../index.html"><img src="../../../_static/scpy.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                0.3.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+
+    <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+      <span class="rst-current-version" data-toggle="rst-current-version">
+        <span class="fa fa-book"> SpectroChemPy </span>
+        version: stable
+        <span class="fa fa-caret-down"></span>
+      </span>
+        <div class="rst-other-versions">
+            <dl>
+                <dt>Other versions</dt>
+                
+                    
+                        <dd><a href="https://www.spectrochempy.fr/latest/index.html"">LATEST</a></dd>
+                    
+                
+                    
+                
+            </dl>
+            <hr/>
+            <dl>
+                <dt>Downloads</dt>
+                <!-- PDF docs are not built anymore
+                <dd><a href="https://www.spectrochempy.fr/downloads/stable-spectrochempy.pdf">PDF</a></dd> -->
+                <dd><a href="https://www.spectrochempy.fr/downloads/stable-spectrochempy-notebooks.zip"
+                        title="All Jupyter Notebooks used in this documentation" >Notebooks</a></dd>
+                <dd><a href="https://www.spectrochempy.fr/downloads/set_colab.sh"
+                       title="Colaboratory installation script" >set_colab.sh</a></dd>
+                <dd><a href="https://www.spectrochempy.fr/downloads/requirements.txt"
+                       title="pip requirements file" >requirements.txt</a></dd>
+
+            </dl>
+            <hr/>
+            <dl>
+                <dt>Sources on GitHub</dt>
+                <dd><a href="https://github.com/spectrochempy/spectrochempy/releases/latest">Stable</a></dd>
+                <dd><a href="https://github.com/spectrochempy/spectrochempy/tree/master/">Latest</a></dd>
+
+            </dl>
+
+        </div>
+    </div>
+
+    
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../index.html">Home</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../gettingstarted/whyscpy.html">Why <strong>SpectroChemPy</strong>  ?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gettingstarted/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gettingstarted/gallery/auto_examples/index.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gettingstarted/install/index.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gettingstarted/papers.html">Papers citing <strong>SpectroChemPy</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">User's Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../objects.html">Data structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../importexport/importexport.html">Import &amp; Export</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plotting/plotting.html">Plotting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../processing/processing.html">Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../analysis/analysis.html">Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../units/units.html">Units &amp; Quantities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../databases/databases.html">Databases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/api.html">API Configuration</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Reference &amp; Help</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">What’s new</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Public API reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently asked questions (FAQ)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../devguide/issues.html">Bug reports &amp; feature request</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../devguide/examples.html">Sharing examples &amp; tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../devguide/index.html">Developer’s Guide</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Credits</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../credits/credits.html">Acknowledgments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../credits/citing.html">Citing  <strong>SpectroChemPy</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../credits/license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../credits/seealso.html">See also</a></li>
+</ul>
+
+
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">SpectroChemPy v0.3.1</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>spectrochempy.core.dataset.ndmath</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/userguide/reference/generated/spectrochempy.core.dataset.ndmath.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+    
+    
+           <div itemprop="articleBody">
+             
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="module-spectrochempy.core.dataset.ndmath">
+<span id="spectrochempy-core-dataset-ndmath"></span><h1>spectrochempy.core.dataset.ndmath<a class="headerlink" href="#module-spectrochempy.core.dataset.ndmath" title="Permalink to this headline">¶</a></h1>
+<p>This module implements the NDMath class.</p>
+<p class="rubric">Functions</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.all.html#spectrochempy.core.dataset.ndmath.all" title="spectrochempy.core.dataset.ndmath.all"><code class="xref py py-obj docutils literal notranslate"><span class="pre">all</span></code></a>(dataset[, dim, keepdims])</p></td>
+<td><p>Test whether all array elements along a given axis evaluate to True.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.amax.html#spectrochempy.core.dataset.ndmath.amax" title="spectrochempy.core.dataset.ndmath.amax"><code class="xref py py-obj docutils literal notranslate"><span class="pre">amax</span></code></a>(dataset[, dim, keepdims])</p></td>
+<td><p>Return the maximum of the dataset or maxima along given dimensions.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.amin.html#spectrochempy.core.dataset.ndmath.amin" title="spectrochempy.core.dataset.ndmath.amin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">amin</span></code></a>(dataset[, dim, keepdims])</p></td>
+<td><p>Return the maximum of the dataset or maxima along given dimensions.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.any.html#spectrochempy.core.dataset.ndmath.any" title="spectrochempy.core.dataset.ndmath.any"><code class="xref py py-obj docutils literal notranslate"><span class="pre">any</span></code></a>(dataset[, dim, keepdims])</p></td>
+<td><p>Test whether any array element along a given axis evaluates to True.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.arange.html#spectrochempy.core.dataset.ndmath.arange" title="spectrochempy.core.dataset.ndmath.arange"><code class="xref py py-obj docutils literal notranslate"><span class="pre">arange</span></code></a>([start, stop, step, dtype])</p></td>
+<td><p>Return evenly spaced values within a given interval.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.argmax.html#spectrochempy.core.dataset.ndmath.argmax" title="spectrochempy.core.dataset.ndmath.argmax"><code class="xref py py-obj docutils literal notranslate"><span class="pre">argmax</span></code></a>(dataset[, dim])</p></td>
+<td><p>Indexes of maximum of data along axis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.argmin.html#spectrochempy.core.dataset.ndmath.argmin" title="spectrochempy.core.dataset.ndmath.argmin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">argmin</span></code></a>(dataset[, dim])</p></td>
+<td><p>Indexes of minimum of data along axis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.average.html#spectrochempy.core.dataset.ndmath.average" title="spectrochempy.core.dataset.ndmath.average"><code class="xref py py-obj docutils literal notranslate"><span class="pre">average</span></code></a>(dataset[, dim, weights, keepdims])</p></td>
+<td><p>Compute the weighted average along the specified axis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.clip.html#spectrochempy.core.dataset.ndmath.clip" title="spectrochempy.core.dataset.ndmath.clip"><code class="xref py py-obj docutils literal notranslate"><span class="pre">clip</span></code></a>(dataset[, a_min, a_max])</p></td>
+<td><p>Clip (limit) the values in a dataset.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.conj.html#spectrochempy.core.dataset.ndmath.conj" title="spectrochempy.core.dataset.ndmath.conj"><code class="xref py py-obj docutils literal notranslate"><span class="pre">conj</span></code></a>(dataset[, dim])</p></td>
+<td><p>Conjugate of the NDDataset in the specified dimension.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.conjugate.html#spectrochempy.core.dataset.ndmath.conjugate" title="spectrochempy.core.dataset.ndmath.conjugate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">conjugate</span></code></a>(dataset[, dim])</p></td>
+<td><p>Conjugate of the NDDataset in the specified dimension.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.coordmax.html#spectrochempy.core.dataset.ndmath.coordmax" title="spectrochempy.core.dataset.ndmath.coordmax"><code class="xref py py-obj docutils literal notranslate"><span class="pre">coordmax</span></code></a>(dataset[, dim])</p></td>
+<td><p>Find coordinates of the maximum of data along axis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.coordmin.html#spectrochempy.core.dataset.ndmath.coordmin" title="spectrochempy.core.dataset.ndmath.coordmin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">coordmin</span></code></a>(dataset[, dim])</p></td>
+<td><p>Find oordinates of the mainimum of data along axis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.cumsum.html#spectrochempy.core.dataset.ndmath.cumsum" title="spectrochempy.core.dataset.ndmath.cumsum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cumsum</span></code></a>(dataset[, dim, dtype])</p></td>
+<td><p>Return the cumulative sum of the elements along a given axis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.diag.html#spectrochempy.core.dataset.ndmath.diag" title="spectrochempy.core.dataset.ndmath.diag"><code class="xref py py-obj docutils literal notranslate"><span class="pre">diag</span></code></a>(dataset[, offset])</p></td>
+<td><p>Extract a diagonal or construct a diagonal array.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.diagonal.html#spectrochempy.core.dataset.ndmath.diagonal" title="spectrochempy.core.dataset.ndmath.diagonal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">diagonal</span></code></a>(dataset[, offset, dim, dtype])</p></td>
+<td><p>Return the diagonal of a 2D array.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.empty.html#spectrochempy.core.dataset.ndmath.empty" title="spectrochempy.core.dataset.ndmath.empty"><code class="xref py py-obj docutils literal notranslate"><span class="pre">empty</span></code></a>(shape[, dtype])</p></td>
+<td><p>Return a new <a class="reference internal" href="spectrochempy.core.dataset.nddataset.NDDataset.html#spectrochempy.core.dataset.nddataset.NDDataset" title="spectrochempy.core.dataset.nddataset.NDDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">NDDataset</span></code></a> of given shape and type, without initializing entries.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.empty_like.html#spectrochempy.core.dataset.ndmath.empty_like" title="spectrochempy.core.dataset.ndmath.empty_like"><code class="xref py py-obj docutils literal notranslate"><span class="pre">empty_like</span></code></a>(dataset[, dtype])</p></td>
+<td><p>Return a new uninitialized <a class="reference internal" href="spectrochempy.core.dataset.nddataset.NDDataset.html#spectrochempy.core.dataset.nddataset.NDDataset" title="spectrochempy.core.dataset.nddataset.NDDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">NDDataset</span></code></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.eye.html#spectrochempy.core.dataset.ndmath.eye" title="spectrochempy.core.dataset.ndmath.eye"><code class="xref py py-obj docutils literal notranslate"><span class="pre">eye</span></code></a>(N[, M, k, dtype])</p></td>
+<td><p>Return a 2-D array with ones on the diagonal and zeros elsewhere.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.fromfunction.html#spectrochempy.core.dataset.ndmath.fromfunction" title="spectrochempy.core.dataset.ndmath.fromfunction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fromfunction</span></code></a>(cls, function[, shape, dtype, …])</p></td>
+<td><p>Construct a nddataset by executing a function over each coordinate.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.fromiter.html#spectrochempy.core.dataset.ndmath.fromiter" title="spectrochempy.core.dataset.ndmath.fromiter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fromiter</span></code></a>(iterable[, dtype, count])</p></td>
+<td><p>Create a new 1-dimensional array from an iterable object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.full.html#spectrochempy.core.dataset.ndmath.full" title="spectrochempy.core.dataset.ndmath.full"><code class="xref py py-obj docutils literal notranslate"><span class="pre">full</span></code></a>(shape[, fill_value, dtype])</p></td>
+<td><p>Return a new <a class="reference internal" href="spectrochempy.core.dataset.nddataset.NDDataset.html#spectrochempy.core.dataset.nddataset.NDDataset" title="spectrochempy.core.dataset.nddataset.NDDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">NDDataset</span></code></a> of given shape and type, filled with <code class="xref py py-obj docutils literal notranslate"><span class="pre">fill_value</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.full_like.html#spectrochempy.core.dataset.ndmath.full_like" title="spectrochempy.core.dataset.ndmath.full_like"><code class="xref py py-obj docutils literal notranslate"><span class="pre">full_like</span></code></a>(dataset[, fill_value, dtype])</p></td>
+<td><p>Return a <a class="reference internal" href="spectrochempy.core.dataset.nddataset.NDDataset.html#spectrochempy.core.dataset.nddataset.NDDataset" title="spectrochempy.core.dataset.nddataset.NDDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">NDDataset</span></code></a> of fill_value.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.geomspace.html#spectrochempy.core.dataset.ndmath.geomspace" title="spectrochempy.core.dataset.ndmath.geomspace"><code class="xref py py-obj docutils literal notranslate"><span class="pre">geomspace</span></code></a>(start, stop[, num, endpoint, dtype])</p></td>
+<td><p>Return numbers spaced evenly on a log scale (a geometric progression).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.identity.html#spectrochempy.core.dataset.ndmath.identity" title="spectrochempy.core.dataset.ndmath.identity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">identity</span></code></a>(n[, dtype])</p></td>
+<td><p>Return the identity <a class="reference internal" href="spectrochempy.core.dataset.nddataset.NDDataset.html#spectrochempy.core.dataset.nddataset.NDDataset" title="spectrochempy.core.dataset.nddataset.NDDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">NDDataset</span></code></a> of a given shape.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.linspace.html#spectrochempy.core.dataset.ndmath.linspace" title="spectrochempy.core.dataset.ndmath.linspace"><code class="xref py py-obj docutils literal notranslate"><span class="pre">linspace</span></code></a>(cls, start, stop[, num, endpoint, …])</p></td>
+<td><p>Return evenly spaced numbers over a specified interval.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.logspace.html#spectrochempy.core.dataset.ndmath.logspace" title="spectrochempy.core.dataset.ndmath.logspace"><code class="xref py py-obj docutils literal notranslate"><span class="pre">logspace</span></code></a>(cls, start, stop[, num, endpoint, …])</p></td>
+<td><p>Return numbers spaced evenly on a log scale.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.max.html#spectrochempy.core.dataset.ndmath.max" title="spectrochempy.core.dataset.ndmath.max"><code class="xref py py-obj docutils literal notranslate"><span class="pre">max</span></code></a>(dataset[, dim, keepdims])</p></td>
+<td><p>Return the maximum of the dataset or maxima along given dimensions.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.mean.html#spectrochempy.core.dataset.ndmath.mean" title="spectrochempy.core.dataset.ndmath.mean"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mean</span></code></a>(dataset[, dim, dtype, keepdims])</p></td>
+<td><p>Compute the arithmetic mean along the specified axis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.min.html#spectrochempy.core.dataset.ndmath.min" title="spectrochempy.core.dataset.ndmath.min"><code class="xref py py-obj docutils literal notranslate"><span class="pre">min</span></code></a>(dataset[, dim, keepdims])</p></td>
+<td><p>Return the maximum of the dataset or maxima along given dimensions.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.ones.html#spectrochempy.core.dataset.ndmath.ones" title="spectrochempy.core.dataset.ndmath.ones"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ones</span></code></a>(shape[, dtype])</p></td>
+<td><p>Return a new <a class="reference internal" href="spectrochempy.core.dataset.nddataset.NDDataset.html#spectrochempy.core.dataset.nddataset.NDDataset" title="spectrochempy.core.dataset.nddataset.NDDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">NDDataset</span></code></a> of given shape and type, filled with ones.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.ones_like.html#spectrochempy.core.dataset.ndmath.ones_like" title="spectrochempy.core.dataset.ndmath.ones_like"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ones_like</span></code></a>(dataset[, dtype])</p></td>
+<td><p>Return <a class="reference internal" href="spectrochempy.core.dataset.nddataset.NDDataset.html#spectrochempy.core.dataset.nddataset.NDDataset" title="spectrochempy.core.dataset.nddataset.NDDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">NDDataset</span></code></a> of ones.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.pipe.html#spectrochempy.core.dataset.ndmath.pipe" title="spectrochempy.core.dataset.ndmath.pipe"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pipe</span></code></a>(func, *args, **kwargs)</p></td>
+<td><p>Apply func(self, <a href="#id1"><span class="problematic" id="id2">*</span></a>args, <a href="#id3"><span class="problematic" id="id4">**</span></a>kwargs).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.ptp.html#spectrochempy.core.dataset.ndmath.ptp" title="spectrochempy.core.dataset.ndmath.ptp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ptp</span></code></a>(dataset[, dim, keepdims])</p></td>
+<td><p>Range of values (maximum - minimum) along a dimension.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.random.html#spectrochempy.core.dataset.ndmath.random" title="spectrochempy.core.dataset.ndmath.random"><code class="xref py py-obj docutils literal notranslate"><span class="pre">random</span></code></a>([size, dtype])</p></td>
+<td><p>Return random floats in the half-open interval [0.0, 1.0).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.std.html#spectrochempy.core.dataset.ndmath.std" title="spectrochempy.core.dataset.ndmath.std"><code class="xref py py-obj docutils literal notranslate"><span class="pre">std</span></code></a>(dataset[, dim, dtype, ddof, keepdims])</p></td>
+<td><p>Compute the standard deviation along the specified axis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.sum.html#spectrochempy.core.dataset.ndmath.sum" title="spectrochempy.core.dataset.ndmath.sum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sum</span></code></a>(dataset[, dim, dtype, keepdims])</p></td>
+<td><p>Sum of array elements over a given axis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.var.html#spectrochempy.core.dataset.ndmath.var" title="spectrochempy.core.dataset.ndmath.var"><code class="xref py py-obj docutils literal notranslate"><span class="pre">var</span></code></a>(dataset[, dim, dtype, ddof, keepdims])</p></td>
+<td><p>Compute the variance along the specified axis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.zeros.html#spectrochempy.core.dataset.ndmath.zeros" title="spectrochempy.core.dataset.ndmath.zeros"><code class="xref py py-obj docutils literal notranslate"><span class="pre">zeros</span></code></a>(shape[, dtype])</p></td>
+<td><p>Return a new <a class="reference internal" href="spectrochempy.core.dataset.nddataset.NDDataset.html#spectrochempy.core.dataset.nddataset.NDDataset" title="spectrochempy.core.dataset.nddataset.NDDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">NDDataset</span></code></a> of given shape and type, filled with zeros.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.zeros_like.html#spectrochempy.core.dataset.ndmath.zeros_like" title="spectrochempy.core.dataset.ndmath.zeros_like"><code class="xref py py-obj docutils literal notranslate"><span class="pre">zeros_like</span></code></a>(dataset[, dtype])</p></td>
+<td><p>Return a <a class="reference internal" href="spectrochempy.core.dataset.nddataset.NDDataset.html#spectrochempy.core.dataset.nddataset.NDDataset" title="spectrochempy.core.dataset.nddataset.NDDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">NDDataset</span></code></a> of zeros.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Classes</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="spectrochempy.core.dataset.ndmath.NDMath.html#spectrochempy.core.dataset.ndmath.NDMath" title="spectrochempy.core.dataset.ndmath.NDMath"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDMath</span></code></a>()</p></td>
+<td><p>This class provides the math and some other array manipulation functionalities to <a class="reference internal" href="spectrochempy.core.dataset.ndarray.NDArray.html#spectrochempy.core.dataset.ndarray.NDArray" title="spectrochempy.core.dataset.ndarray.NDArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">NDArray</span></code></a> or <code class="xref py py-class docutils literal notranslate"><span class="pre">Coord</span></code> .</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+           </div>
+          </div>
+
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2014-2022 - A.Travert &amp; C.Fernandez @ LCS.
+      <span class="lastupdated">Last updated on Jan 21, 2022.
+      </span></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

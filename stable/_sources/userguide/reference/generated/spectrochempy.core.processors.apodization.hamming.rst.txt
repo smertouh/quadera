@@ -1,0 +1,6 @@
+spectrochempy.core.processors.apodization.hamming
+=================================================
+
+.. currentmodule:: spectrochempy.core.processors.apodization
+
+.. autofunction:: hamming

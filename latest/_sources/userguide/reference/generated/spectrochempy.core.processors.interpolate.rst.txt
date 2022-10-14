@@ -1,0 +1,23 @@
+spectrochempy.core.processors.interpolate
+=========================================
+
+.. automodule:: spectrochempy.core.processors.interpolate
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

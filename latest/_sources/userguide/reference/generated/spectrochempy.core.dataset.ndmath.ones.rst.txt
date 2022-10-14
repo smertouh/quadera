@@ -1,0 +1,6 @@
+spectrochempy.core.dataset.ndmath.ones
+======================================
+
+.. currentmodule:: spectrochempy.core.dataset.ndmath
+
+.. autofunction:: ones

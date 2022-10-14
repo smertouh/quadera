@@ -1,0 +1,33 @@
+spectrochempy.core.fitting.models.gaussianmodel
+===============================================
+
+.. currentmodule:: spectrochempy.core.fitting.models
+
+.. autoclass:: gaussianmodel
+
+   
+     
+   
+
+   
+     
+   .. rubric:: Attributes
+
+   .. autosummary::
+       
+       gaussianmodel.args
+       gaussianmodel.script
+
+
+       
+   .. autoattribute:: args
+   .. autoattribute:: script
+
+     
+   
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.core.fitting.models.gaussianmodel.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

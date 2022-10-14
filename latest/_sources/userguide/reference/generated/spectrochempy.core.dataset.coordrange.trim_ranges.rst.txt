@@ -1,0 +1,6 @@
+spectrochempy.core.dataset.coordrange.trim\_ranges
+==================================================
+
+.. currentmodule:: spectrochempy.core.dataset.coordrange
+
+.. autofunction:: trim_ranges

@@ -1,0 +1,36 @@
+spectrochempy.core.writers
+==========================
+
+.. automodule:: spectrochempy.core.writers
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+
+.. rubric:: Modules
+
+.. autosummary::
+   :toctree:
+   :recursive:
+
+   spectrochempy.core.writers.api
+   spectrochempy.core.writers.exporter
+   spectrochempy.core.writers.write_csv
+   spectrochempy.core.writers.write_excel
+   spectrochempy.core.writers.write_jcamp
+   spectrochempy.core.writers.write_matlab
+

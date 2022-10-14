@@ -1,0 +1,6 @@
+spectrochempy.core.writers.exporter.write
+=========================================
+
+.. currentmodule:: spectrochempy.core.writers.exporter
+
+.. autofunction:: write

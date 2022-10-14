@@ -1,0 +1,6 @@
+spectrochempy.analysis.efa.EFA.f\_ev
+====================================
+
+.. currentmodule:: spectrochempy.analysis.efa
+
+.. autoproperty:: EFA.f_ev

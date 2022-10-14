@@ -1,0 +1,36 @@
+spectrochempy.core.dataset.ndplot
+=================================
+
+.. automodule:: spectrochempy.core.dataset.ndplot
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      plot
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      NDPlot
+      PreferencesSet
+   
+   
+
+   
+   
+   
+
+
+

@@ -1,0 +1,29 @@
+spectrochempy.core.readers.read\_carroucell
+===========================================
+
+.. automodule:: spectrochempy.core.readers.read_carroucell
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      read_carroucell
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

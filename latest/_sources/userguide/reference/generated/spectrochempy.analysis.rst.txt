@@ -1,0 +1,43 @@
+spectrochempy.analysis
+======================
+
+.. automodule:: spectrochempy.analysis
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+
+.. rubric:: Modules
+
+.. autosummary::
+   :toctree:
+   :recursive:
+
+   spectrochempy.analysis.api
+   spectrochempy.analysis.cantera_utilities
+   spectrochempy.analysis.efa
+   spectrochempy.analysis.fitting
+   spectrochempy.analysis.iris
+   spectrochempy.analysis.lstsq
+   spectrochempy.analysis.mcrals
+   spectrochempy.analysis.models
+   spectrochempy.analysis.nnmf
+   spectrochempy.analysis.pca
+   spectrochempy.analysis.peakfinding
+   spectrochempy.analysis.simplisma
+   spectrochempy.analysis.svd
+

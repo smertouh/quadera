@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.analysis.nnmf.NNMF.nlssubprob
+===========================================
+
+
+.. currentmodule:: spectrochempy.analysis.nnmf
+
+.. automethod:: NNMF.nlssubprob
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.analysis.nnmf.NNMF.nlssubprob.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

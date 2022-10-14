@@ -1,0 +1,6 @@
+spectrochempy.core.processors.shift.roll
+========================================
+
+.. currentmodule:: spectrochempy.core.processors.shift
+
+.. autofunction:: roll

@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.application.SpectroChemPy.reset\_preferences
+==========================================================
+
+
+.. currentmodule:: spectrochempy.application
+
+.. automethod:: SpectroChemPy.reset_preferences
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.application.SpectroChemPy.reset_preferences.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

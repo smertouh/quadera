@@ -1,0 +1,32 @@
+spectrochempy.application
+=========================
+
+.. automodule:: spectrochempy.application
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      DataDir
+      GeneralPreferences
+      SpectroChemPy
+      SpectroChemPyMagics
+   
+   
+
+   
+   
+   
+
+
+

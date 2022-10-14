@@ -1,0 +1,6 @@
+spectrochempy.core.analysis.cantera\_utilities.concentrations\_vs\_time
+=======================================================================
+
+.. currentmodule:: spectrochempy.core.analysis.cantera_utilities
+
+.. autofunction:: concentrations_vs_time

@@ -1,0 +1,6 @@
+spectrochempy.analysis.models.lorentzianmodel.type
+==================================================
+
+.. currentmodule:: spectrochempy.analysis.models
+
+.. autoattribute:: lorentzianmodel.type

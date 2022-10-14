@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.core.dataset.ndmath.NDMath.ones\_like
+===================================================
+
+
+.. currentmodule:: spectrochempy.core.dataset.ndmath
+
+.. automethod:: NDMath.ones_like
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.core.dataset.ndmath.NDMath.ones_like.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

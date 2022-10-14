@@ -1,0 +1,29 @@
+spectrochempy.core.readers.read\_spc
+====================================
+
+.. automodule:: spectrochempy.core.readers.read_spc
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      read_spc
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

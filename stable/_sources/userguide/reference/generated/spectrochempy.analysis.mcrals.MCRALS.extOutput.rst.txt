@@ -1,0 +1,6 @@
+spectrochempy.analysis.mcrals.MCRALS.extOutput
+==============================================
+
+.. currentmodule:: spectrochempy.analysis.mcrals
+
+.. autoproperty:: MCRALS.extOutput

@@ -1,0 +1,6 @@
+spectrochempy.core.processors.align.can\_merge\_or\_align
+=========================================================
+
+.. currentmodule:: spectrochempy.core.processors.align
+
+.. autofunction:: can_merge_or_align

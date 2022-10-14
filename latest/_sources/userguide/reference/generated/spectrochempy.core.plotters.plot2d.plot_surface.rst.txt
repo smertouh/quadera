@@ -1,0 +1,6 @@
+spectrochempy.core.plotters.plot2d.plot\_surface
+================================================
+
+.. currentmodule:: spectrochempy.core.plotters.plot2d
+
+.. autofunction:: plot_surface

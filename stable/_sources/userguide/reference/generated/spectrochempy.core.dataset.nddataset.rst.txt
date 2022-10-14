@@ -1,0 +1,41 @@
+spectrochempy.core.dataset.nddataset
+====================================
+
+.. automodule:: spectrochempy.core.dataset.nddataset
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      sort
+      squeeze
+      swapdims
+      take
+      to_array
+      to_xarray
+      transpose
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      NDDataset
+   
+   
+
+   
+   
+   
+
+
+

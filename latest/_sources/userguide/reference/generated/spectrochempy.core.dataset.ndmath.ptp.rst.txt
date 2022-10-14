@@ -1,0 +1,6 @@
+spectrochempy.core.dataset.ndmath.ptp
+=====================================
+
+.. currentmodule:: spectrochempy.core.dataset.ndmath
+
+.. autofunction:: ptp

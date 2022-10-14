@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.analysis.simplisma.SIMPLISMA.reconstruct
+======================================================
+
+
+.. currentmodule:: spectrochempy.analysis.simplisma
+
+.. automethod:: SIMPLISMA.reconstruct
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.analysis.simplisma.SIMPLISMA.reconstruct.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

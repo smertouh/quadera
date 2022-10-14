@@ -1,0 +1,33 @@
+spectrochempy.core.fitting.models.assymvoigtmodel
+=================================================
+
+.. currentmodule:: spectrochempy.core.fitting.models
+
+.. autoclass:: assymvoigtmodel
+
+   
+     
+   
+
+   
+     
+   .. rubric:: Attributes
+
+   .. autosummary::
+       
+       assymvoigtmodel.args
+       assymvoigtmodel.script
+
+
+       
+   .. autoattribute:: args
+   .. autoattribute:: script
+
+     
+   
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.core.fitting.models.assymvoigtmodel.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

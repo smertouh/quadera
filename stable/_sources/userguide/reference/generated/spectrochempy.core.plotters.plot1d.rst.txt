@@ -1,0 +1,30 @@
+spectrochempy.core.plotters.plot1d
+==================================
+
+.. automodule:: spectrochempy.core.plotters.plot1d
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      plot_1D
+      plot_multiple
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

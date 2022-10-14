@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.application.SpectroChemPyMagics.arg\_err
+======================================================
+
+
+.. currentmodule:: spectrochempy.application
+
+.. automethod:: SpectroChemPyMagics.arg_err
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.application.SpectroChemPyMagics.arg_err.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

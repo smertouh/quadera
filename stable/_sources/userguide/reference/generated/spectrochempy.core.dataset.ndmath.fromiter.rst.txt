@@ -1,0 +1,6 @@
+spectrochempy.core.dataset.ndmath.fromiter
+==========================================
+
+.. currentmodule:: spectrochempy.core.dataset.ndmath
+
+.. autofunction:: fromiter

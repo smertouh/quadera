@@ -1,0 +1,6 @@
+spectrochempy.core.processors.filter.savgol\_filter
+===================================================
+
+.. currentmodule:: spectrochempy.core.processors.filter
+
+.. autofunction:: savgol_filter

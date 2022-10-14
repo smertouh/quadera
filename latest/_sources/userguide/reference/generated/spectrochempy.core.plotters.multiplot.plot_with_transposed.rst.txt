@@ -1,0 +1,6 @@
+spectrochempy.core.plotters.multiplot.plot\_with\_transposed
+============================================================
+
+.. currentmodule:: spectrochempy.core.plotters.multiplot
+
+.. autofunction:: plot_with_transposed

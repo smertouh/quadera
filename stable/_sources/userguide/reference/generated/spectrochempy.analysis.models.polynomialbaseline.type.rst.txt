@@ -1,0 +1,6 @@
+spectrochempy.analysis.models.polynomialbaseline.type
+=====================================================
+
+.. currentmodule:: spectrochempy.analysis.models
+
+.. autoattribute:: polynomialbaseline.type

@@ -1,0 +1,35 @@
+spectrochempy.analysis.models.sigmoidmodel
+==========================================
+
+.. currentmodule:: spectrochempy.analysis.models
+
+.. autoclass:: sigmoidmodel
+
+   
+     
+   
+
+   
+     
+   .. rubric:: Attributes
+
+   .. autosummary::
+       
+       sigmoidmodel.args
+       sigmoidmodel.script
+       sigmoidmodel.type
+
+
+       
+   .. autoattribute:: args
+   .. autoattribute:: script
+   .. autoattribute:: type
+
+     
+   
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.analysis.models.sigmoidmodel.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

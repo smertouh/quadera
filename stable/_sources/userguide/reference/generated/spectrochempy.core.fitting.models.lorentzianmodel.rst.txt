@@ -1,0 +1,33 @@
+spectrochempy.core.fitting.models.lorentzianmodel
+=================================================
+
+.. currentmodule:: spectrochempy.core.fitting.models
+
+.. autoclass:: lorentzianmodel
+
+   
+     
+   
+
+   
+     
+   .. rubric:: Attributes
+
+   .. autosummary::
+       
+       lorentzianmodel.args
+       lorentzianmodel.script
+
+
+       
+   .. autoattribute:: args
+   .. autoattribute:: script
+
+     
+   
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.core.fitting.models.lorentzianmodel.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

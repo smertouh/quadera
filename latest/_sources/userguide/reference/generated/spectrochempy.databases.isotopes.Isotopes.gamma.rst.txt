@@ -1,0 +1,6 @@
+spectrochempy.databases.isotopes.Isotopes.gamma
+===============================================
+
+.. currentmodule:: spectrochempy.databases.isotopes
+
+.. autoproperty:: Isotopes.gamma

@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.databases.isotopes.Isotopes.to\_dict
+==================================================
+
+
+.. currentmodule:: spectrochempy.databases.isotopes
+
+.. automethod:: Isotopes.to_dict
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.databases.isotopes.Isotopes.to_dict.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

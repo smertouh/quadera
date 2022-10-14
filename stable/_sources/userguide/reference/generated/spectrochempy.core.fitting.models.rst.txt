@@ -1,0 +1,39 @@
+spectrochempy.core.fitting.models
+=================================
+
+.. automodule:: spectrochempy.core.fitting.models
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      getmodel
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      assymvoigtmodel
+      gaussianmodel
+      lorentzianmodel
+      polynomialbaseline
+      voigtmodel
+   
+   
+
+   
+   
+   
+
+
+

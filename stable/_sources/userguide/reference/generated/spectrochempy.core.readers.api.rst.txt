@@ -1,0 +1,23 @@
+spectrochempy.core.readers.api
+==============================
+
+.. automodule:: spectrochempy.core.readers.api
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

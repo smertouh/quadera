@@ -1,0 +1,6 @@
+spectrochempy.core.readers.read\_spc.read\_spc
+==============================================
+
+.. currentmodule:: spectrochempy.core.readers.read_spc
+
+.. autofunction:: read_spc

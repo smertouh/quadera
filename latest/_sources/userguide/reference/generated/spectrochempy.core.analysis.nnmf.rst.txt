@@ -1,0 +1,29 @@
+spectrochempy.core.analysis.nnmf
+================================
+
+.. automodule:: spectrochempy.core.analysis.nnmf
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      NNMF
+   
+   
+
+   
+   
+   
+
+
+

@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.application.GeneralPreferences.to\_dict
+=====================================================
+
+
+.. currentmodule:: spectrochempy.application
+
+.. automethod:: GeneralPreferences.to_dict
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.application.GeneralPreferences.to_dict.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

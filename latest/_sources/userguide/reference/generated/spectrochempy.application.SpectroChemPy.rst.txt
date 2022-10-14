@@ -1,0 +1,55 @@
+spectrochempy.application.SpectroChemPy
+=======================================
+
+.. currentmodule:: spectrochempy.application
+
+.. autoclass:: SpectroChemPy
+
+   
+     
+   .. rubric:: Methods
+
+   .. autosummary::
+       
+       SpectroChemPy.emit_alias_help
+       SpectroChemPy.emit_description
+       SpectroChemPy.emit_examples
+       SpectroChemPy.emit_flag_help
+       SpectroChemPy.emit_help
+       SpectroChemPy.emit_help_epilogue
+       SpectroChemPy.emit_options_help
+       SpectroChemPy.emit_subcommands_help
+       SpectroChemPy.get_config_dir
+       SpectroChemPy.initialize
+       SpectroChemPy.print_options
+       SpectroChemPy.reset_preferences
+       SpectroChemPy.start
+       SpectroChemPy.start_show_config
+
+      
+   
+
+   
+     
+   .. rubric:: Attributes
+
+   .. autosummary::
+       
+       SpectroChemPy.aliases
+       SpectroChemPy.flags
+       SpectroChemPy.loaded_config_files
+
+
+       
+   .. autoattribute:: aliases
+   .. autoattribute:: flags
+   .. autoattribute:: loaded_config_files
+
+     
+   
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.application.SpectroChemPy.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.core.dataset.ndmath.NDMath.random
+===============================================
+
+
+.. currentmodule:: spectrochempy.core.dataset.ndmath
+
+.. automethod:: NDMath.random
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.core.dataset.ndmath.NDMath.random.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

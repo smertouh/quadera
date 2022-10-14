@@ -1,0 +1,30 @@
+spectrochempy.core.processors.filter
+====================================
+
+.. automodule:: spectrochempy.core.processors.filter
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      detrend
+      savgol_filter
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

@@ -1,0 +1,6 @@
+spectrochempy.analysis.models.lorentzianmodel.args
+==================================================
+
+.. currentmodule:: spectrochempy.analysis.models
+
+.. autoattribute:: lorentzianmodel.args

@@ -1,0 +1,49 @@
+spectrochempy.core.dataset.ndplot.PreferencesSet
+================================================
+
+.. currentmodule:: spectrochempy.core.dataset.ndplot
+
+.. autoclass:: PreferencesSet
+
+   
+     
+   .. rubric:: Methods
+
+   .. autosummary::
+       
+       PreferencesSet.all
+       PreferencesSet.copy
+       PreferencesSet.get
+       PreferencesSet.help
+       PreferencesSet.items
+       PreferencesSet.keys
+       PreferencesSet.makestyle
+       PreferencesSet.permute
+       PreferencesSet.reset
+       PreferencesSet.swap
+       PreferencesSet.to_dict
+       PreferencesSet.update
+
+      
+   
+
+   
+     
+   .. rubric:: Attributes
+
+   .. autosummary::
+       
+       PreferencesSet.readonly
+
+
+       
+   .. autoattribute:: readonly
+
+     
+   
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.core.dataset.ndplot.PreferencesSet.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

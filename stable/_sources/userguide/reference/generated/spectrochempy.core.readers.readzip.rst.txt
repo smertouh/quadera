@@ -1,0 +1,29 @@
+spectrochempy.core.readers.readzip
+==================================
+
+.. automodule:: spectrochempy.core.readers.readzip
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      read_zip
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

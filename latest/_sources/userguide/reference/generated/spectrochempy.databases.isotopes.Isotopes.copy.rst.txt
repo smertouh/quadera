@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.databases.isotopes.Isotopes.copy
+==============================================
+
+
+.. currentmodule:: spectrochempy.databases.isotopes
+
+.. automethod:: Isotopes.copy
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.databases.isotopes.Isotopes.copy.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

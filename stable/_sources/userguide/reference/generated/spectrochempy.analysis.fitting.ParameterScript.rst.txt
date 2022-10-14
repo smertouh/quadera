@@ -1,0 +1,20 @@
+spectrochempy.analysis.fitting.ParameterScript
+==============================================
+
+.. currentmodule:: spectrochempy.analysis.fitting
+
+.. autoclass:: ParameterScript
+
+   
+     
+   
+
+   
+     
+   
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.analysis.fitting.ParameterScript.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

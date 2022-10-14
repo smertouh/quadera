@@ -1,0 +1,29 @@
+spectrochempy.core.plotters.plot3d
+==================================
+
+.. automodule:: spectrochempy.core.plotters.plot3d
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      plot_3D
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

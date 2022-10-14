@@ -1,0 +1,31 @@
+spectrochempy.analysis.lstsq
+============================
+
+.. automodule:: spectrochempy.analysis.lstsq
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      CurveFit
+      LSTSQ
+      NNLS
+   
+   
+
+   
+   
+   
+
+
+

@@ -1,0 +1,6 @@
+spectrochempy.core.processors.fft.ht
+====================================
+
+.. currentmodule:: spectrochempy.core.processors.fft
+
+.. autofunction:: ht

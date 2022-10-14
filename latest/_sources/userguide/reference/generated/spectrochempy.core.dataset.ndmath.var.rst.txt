@@ -1,0 +1,6 @@
+spectrochempy.core.dataset.ndmath.var
+=====================================
+
+.. currentmodule:: spectrochempy.core.dataset.ndmath
+
+.. autofunction:: var

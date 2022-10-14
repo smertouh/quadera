@@ -1,0 +1,6 @@
+spectrochempy.core.processors.apodization.qsin
+==============================================
+
+.. currentmodule:: spectrochempy.core.processors.apodization
+
+.. autofunction:: qsin

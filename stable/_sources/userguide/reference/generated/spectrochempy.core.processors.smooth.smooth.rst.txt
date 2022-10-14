@@ -1,0 +1,6 @@
+spectrochempy.core.processors.smooth.smooth
+===========================================
+
+.. currentmodule:: spectrochempy.core.processors.smooth
+
+.. autofunction:: smooth

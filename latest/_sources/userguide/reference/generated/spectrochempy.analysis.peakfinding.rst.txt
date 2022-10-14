@@ -1,0 +1,29 @@
+spectrochempy.analysis.peakfinding
+==================================
+
+.. automodule:: spectrochempy.analysis.peakfinding
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      find_peaks
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

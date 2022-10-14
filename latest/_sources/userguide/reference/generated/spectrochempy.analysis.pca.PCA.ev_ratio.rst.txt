@@ -1,0 +1,6 @@
+spectrochempy.analysis.pca.PCA.ev\_ratio
+========================================
+
+.. currentmodule:: spectrochempy.analysis.pca
+
+.. autoproperty:: PCA.ev_ratio

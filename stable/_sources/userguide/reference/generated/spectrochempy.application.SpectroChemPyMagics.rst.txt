@@ -1,0 +1,44 @@
+spectrochempy.application.SpectroChemPyMagics
+=============================================
+
+.. currentmodule:: spectrochempy.application
+
+.. autoclass:: SpectroChemPyMagics
+
+   
+     
+   .. rubric:: Methods
+
+   .. autosummary::
+       
+       SpectroChemPyMagics.addscript
+       SpectroChemPyMagics.arg_err
+       SpectroChemPyMagics.default_option
+       SpectroChemPyMagics.format_latex
+       SpectroChemPyMagics.parse_options
+
+      
+   
+
+   
+     
+   .. rubric:: Attributes
+
+   .. autosummary::
+       
+       SpectroChemPyMagics.magics
+       SpectroChemPyMagics.registered
+
+
+       
+   .. autoattribute:: magics
+   .. autoattribute:: registered
+
+     
+   
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.application.SpectroChemPyMagics.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

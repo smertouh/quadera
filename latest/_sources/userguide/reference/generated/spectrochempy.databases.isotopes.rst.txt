@@ -1,0 +1,29 @@
+spectrochempy.databases.isotopes
+================================
+
+.. automodule:: spectrochempy.databases.isotopes
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      Isotopes
+   
+   
+
+   
+   
+   
+
+
+

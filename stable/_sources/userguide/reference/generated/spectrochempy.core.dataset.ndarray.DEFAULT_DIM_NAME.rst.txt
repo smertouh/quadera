@@ -1,0 +1,6 @@
+spectrochempy.core.dataset.ndarray.DEFAULT\_DIM\_NAME
+=====================================================
+
+.. currentmodule:: spectrochempy.core.dataset.ndarray
+
+.. autodata:: DEFAULT_DIM_NAME

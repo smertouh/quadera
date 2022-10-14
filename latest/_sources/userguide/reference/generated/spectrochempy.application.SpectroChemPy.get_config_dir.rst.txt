@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.application.SpectroChemPy.get\_config\_dir
+========================================================
+
+
+.. currentmodule:: spectrochempy.application
+
+.. automethod:: SpectroChemPy.get_config_dir
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.application.SpectroChemPy.get_config_dir.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

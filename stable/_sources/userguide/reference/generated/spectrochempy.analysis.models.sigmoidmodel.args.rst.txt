@@ -1,0 +1,6 @@
+spectrochempy.analysis.models.sigmoidmodel.args
+===============================================
+
+.. currentmodule:: spectrochempy.analysis.models
+
+.. autoattribute:: sigmoidmodel.args

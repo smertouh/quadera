@@ -1,0 +1,30 @@
+spectrochempy.core.processors.align
+===================================
+
+.. automodule:: spectrochempy.core.processors.align
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      align
+      can_merge_or_align
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

@@ -1,0 +1,28 @@
+spectrochempy.core.processors.baseline.BaselineCorrection
+=========================================================
+
+.. currentmodule:: spectrochempy.core.processors.baseline
+
+.. autoclass:: BaselineCorrection
+
+   
+     
+   .. rubric:: Methods
+
+   .. autosummary::
+       
+       BaselineCorrection.compute
+       BaselineCorrection.run
+
+      
+   
+
+   
+     
+   
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.core.processors.baseline.BaselineCorrection.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

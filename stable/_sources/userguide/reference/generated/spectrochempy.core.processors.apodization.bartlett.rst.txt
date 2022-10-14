@@ -1,0 +1,6 @@
+spectrochempy.core.processors.apodization.bartlett
+==================================================
+
+.. currentmodule:: spectrochempy.core.processors.apodization
+
+.. autofunction:: bartlett

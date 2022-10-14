@@ -1,0 +1,28 @@
+spectrochempy.analysis.fitting.Fit
+==================================
+
+.. currentmodule:: spectrochempy.analysis.fitting
+
+.. autoclass:: Fit
+
+   
+     
+   .. rubric:: Methods
+
+   .. autosummary::
+       
+       Fit.run
+       Fit.script_default
+
+      
+   
+
+   
+     
+   
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.analysis.fitting.Fit.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

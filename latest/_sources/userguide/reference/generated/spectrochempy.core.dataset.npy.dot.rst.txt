@@ -1,0 +1,6 @@
+spectrochempy.core.dataset.npy.dot
+==================================
+
+.. currentmodule:: spectrochempy.core.dataset.npy
+
+.. autofunction:: dot

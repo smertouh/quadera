@@ -1,0 +1,6 @@
+spectrochempy.application.SpectroChemPyMagics.magics
+====================================================
+
+.. currentmodule:: spectrochempy.application
+
+.. autoattribute:: SpectroChemPyMagics.magics

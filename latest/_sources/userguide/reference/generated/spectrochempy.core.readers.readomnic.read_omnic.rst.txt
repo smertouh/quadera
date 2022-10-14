@@ -1,0 +1,6 @@
+spectrochempy.core.readers.readomnic.read\_omnic
+================================================
+
+.. currentmodule:: spectrochempy.core.readers.readomnic
+
+.. autofunction:: read_omnic

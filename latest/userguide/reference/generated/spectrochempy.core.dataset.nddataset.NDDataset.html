@@ -1,0 +1,1609 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>spectrochempy.core.dataset.nddataset.NDDataset &mdash; SpectroChemPy v0.3.1 0.3.1 documentation</title><link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/plot_directive.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/theme_override.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/gallery.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/gallery-binder.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/gallery-dataframe.css" type="text/css" /><link rel="shortcut icon" href="../../../_static/scpy.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/clipboard.min.js"></script>
+        <script src="../../../_static/copybutton.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../index.html"><img src="../../../_static/scpy.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                0.3.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+
+    <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+      <span class="rst-current-version" data-toggle="rst-current-version">
+        <span class="fa fa-book"> SpectroChemPy </span>
+        version: stable
+        <span class="fa fa-caret-down"></span>
+      </span>
+        <div class="rst-other-versions">
+            <dl>
+                <dt>Other versions</dt>
+                
+                    
+                        <dd><a href="https://www.spectrochempy.fr/latest/index.html"">LATEST</a></dd>
+                    
+                
+                    
+                
+            </dl>
+            <hr/>
+            <dl>
+                <dt>Downloads</dt>
+                <!-- PDF docs are not built anymore
+                <dd><a href="https://www.spectrochempy.fr/downloads/stable-spectrochempy.pdf">PDF</a></dd> -->
+                <dd><a href="https://www.spectrochempy.fr/downloads/stable-spectrochempy-notebooks.zip"
+                        title="All Jupyter Notebooks used in this documentation" >Notebooks</a></dd>
+                <dd><a href="https://www.spectrochempy.fr/downloads/set_colab.sh"
+                       title="Colaboratory installation script" >set_colab.sh</a></dd>
+                <dd><a href="https://www.spectrochempy.fr/downloads/requirements.txt"
+                       title="pip requirements file" >requirements.txt</a></dd>
+
+            </dl>
+            <hr/>
+            <dl>
+                <dt>Sources on GitHub</dt>
+                <dd><a href="https://github.com/spectrochempy/spectrochempy/releases/latest">Stable</a></dd>
+                <dd><a href="https://github.com/spectrochempy/spectrochempy/tree/master/">Latest</a></dd>
+
+            </dl>
+
+        </div>
+    </div>
+
+    
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../index.html">Home</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../gettingstarted/whyscpy.html">Why <strong>SpectroChemPy</strong>  ?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gettingstarted/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gettingstarted/gallery/auto_examples/index.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gettingstarted/install/index.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../gettingstarted/papers.html">Papers citing <strong>SpectroChemPy</strong></a></li>
+</ul>
+<p class="caption"><span class="caption-text">User's Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../objects.html">Data structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../importexport/importexport.html">Import &amp; Export</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../plotting/plotting.html">Plotting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../processing/processing.html">Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../analysis/analysis.html">Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../units/units.html">Units &amp; Quantities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../databases/databases.html">Databases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/api.html">API Configuration</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Reference &amp; Help</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">What’s new</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Public API reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently asked questions (FAQ)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../devguide/issues.html">Bug reports &amp; feature request</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../devguide/examples.html">Sharing examples &amp; tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../devguide/index.html">Developer’s Guide</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Credits</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../credits/credits.html">Acknowledgments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../credits/citing.html">Citing  <strong>SpectroChemPy</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../credits/license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../credits/seealso.html">See also</a></li>
+</ul>
+
+
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">SpectroChemPy v0.3.1</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>spectrochempy.core.dataset.nddataset.NDDataset</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/userguide/reference/generated/spectrochempy.core.dataset.nddataset.NDDataset.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+    
+    
+           <div itemprop="articleBody">
+             
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="spectrochempy-core-dataset-nddataset-nddataset">
+<h1>spectrochempy.core.dataset.nddataset.NDDataset<a class="headerlink" href="#spectrochempy-core-dataset-nddataset-nddataset" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">NDDataset</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/spectrochempy/spectrochempy/blob/master/spectrochempy/core/dataset/nddataset.py#L43-L1326"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset" title="Permalink to this definition">¶</a></dt>
+<dd><p>The main N-dimensional dataset class used by <strong>SpectroChemPy</strong>.</p>
+<p>The NDDataset is the main object use by SpectroChemPy. Like numpy
+ndarrays, NDDataset have the capability to be
+sliced, sorted and subject to mathematical operations. But, in addition,
+NDDataset may have units,
+can be masked
+and each dimensions can have coordinates also with units. This make
+NDDataset aware of unit compatibility,
+e.g.,
+for binary operation such as additions or subtraction or during the
+application of mathematical operations.
+In addition or in replacement of numerical data for coordinates,
+NDDataset can also have labeled coordinates
+where labels can be different kind of objects (strings, datetime,
+numpy nd.ndarray or other NDDatasets, etc…).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>array of floats</em>) – Data array contained in the object. The data can be a list, a tuple,
+a <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.22)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a>, a ndarray-like,
+a <a class="reference internal" href="spectrochempy.core.dataset.ndarray.NDArray.html#spectrochempy.core.dataset.ndarray.NDArray" title="spectrochempy.core.dataset.ndarray.NDArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">NDArray</span></code></a> or any subclass of <a class="reference internal" href="spectrochempy.core.dataset.ndarray.NDArray.html#spectrochempy.core.dataset.ndarray.NDArray" title="spectrochempy.core.dataset.ndarray.NDArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">NDArray</span></code></a>. Any size or shape of data
+is accepted. If not given, an empty
+<a class="reference internal" href="spectrochempy.core.dataset.ndarray.NDArray.html#spectrochempy.core.dataset.ndarray.NDArray" title="spectrochempy.core.dataset.ndarray.NDArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">NDArray</span></code></a> will be inited.
+At the initialisation the provided data will be eventually casted to
+a numpy-ndarray.
+If a subclass of <a class="reference internal" href="spectrochempy.core.dataset.ndarray.NDArray.html#spectrochempy.core.dataset.ndarray.NDArray" title="spectrochempy.core.dataset.ndarray.NDArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">NDArray</span></code></a> is passed which already contains some
+mask, labels, or units, these elements
+will
+be used to accordingly set those of the created object. If possible,
+the provided data will not be copied
+for <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> input, but will be passed by reference, so you should
+make a copy of the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> before passing
+them if that’s the desired behavior or set the <a class="reference external" href="https://docs.python.org/3/library/copy.html#module-copy" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">copy</span></code></a> argument to True.</p></li>
+<li><p><strong>coordset</strong> (<em>An instance of |CoordSet|, optional</em>) – <code class="xref py py-obj docutils literal notranslate"><span class="pre">coords</span></code> contains the coordinates for the different dimensions of
+the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a>. if <code class="xref py py-obj docutils literal notranslate"><span class="pre">coords</span></code> is provided,
+it must specified the <code class="xref py py-obj docutils literal notranslate"><span class="pre">coord</span></code> and <code class="xref py py-obj docutils literal notranslate"><span class="pre">labels</span></code> for all dimensions of the
+<a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a>.
+Multiple <code class="xref py py-obj docutils literal notranslate"><span class="pre">coord</span></code>’s can be specified in an <code class="xref py py-class docutils literal notranslate"><span class="pre">CoordSet</span></code> instance for
+each dimension.</p></li>
+<li><p><strong>coordunits</strong> (<em>list, optional</em>) – A list of units corresponding to the dimensions in the order of the
+coordset.</p></li>
+<li><p><strong>coordtitles</strong> (<em>list, optional</em>) – A list of titles corresponding of the dimensions in the order of the
+coordset.</p></li>
+<li><p><strong>**kwargs</strong> – Optional keyword parameters (see Other Parameters).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Other Parameters</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>dtype</strong> (<em>str or dtype, optional, default=np.float64</em>) – If specified, the data will be casted to this dtype, else the data
+will be casted to float64 or complex128.</p></li>
+<li><p><strong>dims</strong> (<em>list of chars, optional</em>) – If specified the list must have a length equal to the number od data
+dimensions (ndim) and the chars
+must be
+taken among among x,y,z,u,v,w or t. If not specified, the dimension
+names are automatically attributed in
+this order.</p></li>
+<li><p><strong>name</strong> (<em>str, optional</em>) – A user friendly name for this object. If not given, the automatic
+<a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.id" title="spectrochempy.core.dataset.nddataset.NDDataset.id"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id</span></code></a> given at the object creation will be
+used as a name.</p></li>
+<li><p><strong>labels</strong> (<em>array of objects, optional</em>) – Labels for the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a>. labels can be used only for 1D-datasets.
+The labels array may have an additional dimension, meaning several
+series of labels for the same data.
+The given array can be a list, a tuple, a <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.22)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a>, a ndarray-like,
+a <a class="reference internal" href="spectrochempy.core.dataset.ndarray.NDArray.html#spectrochempy.core.dataset.ndarray.NDArray" title="spectrochempy.core.dataset.ndarray.NDArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">NDArray</span></code></a> or any subclass of
+<a class="reference internal" href="spectrochempy.core.dataset.ndarray.NDArray.html#spectrochempy.core.dataset.ndarray.NDArray" title="spectrochempy.core.dataset.ndarray.NDArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">NDArray</span></code></a>.</p></li>
+<li><p><strong>mask</strong> (array of bool or <code class="xref py py-obj docutils literal notranslate"><span class="pre">NOMASK</span></code>, optional) – Mask for the data. The mask array must have the same shape as the
+data. The given array can be a list,
+a tuple, or a <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.22)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a>. Each values in the array must be <a class="reference external" href="https://docs.python.org/3/library/constants.html#False" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a>
+where the data are <em>valid</em> and True when
+they are not (like in numpy masked arrays). If <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> is already a
+<a class="reference external" href="https://numpy.org/doc/stable/reference/maskedarray.baseclass.html#numpy.ma.MaskedArray" title="(in NumPy v1.22)"><code class="xref py py-class docutils literal notranslate"><span class="pre">MaskedArray</span></code></a>, or any
+array object (such as a <a class="reference internal" href="spectrochempy.core.dataset.ndarray.NDArray.html#spectrochempy.core.dataset.ndarray.NDArray" title="spectrochempy.core.dataset.ndarray.NDArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">NDArray</span></code></a> or subclass of it), providing a
+<a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.mask" title="spectrochempy.core.dataset.nddataset.NDDataset.mask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mask</span></code></a> here will causes the mask from the
+masked array to be ignored.</p></li>
+<li><p><strong>units</strong> (<em>|Unit| instance or str, optional</em>) – Units of the data. If data is a <code class="xref py py-class docutils literal notranslate"><span class="pre">Quantity</span></code> then <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.units" title="spectrochempy.core.dataset.nddataset.NDDataset.units"><code class="xref py py-obj docutils literal notranslate"><span class="pre">units</span></code></a> is set to
+the unit of the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a>; if a unit is also
+explicitly provided an error is raised. Handling of units use the
+<a class="reference external" href="https://pint.readthedocs.org/">pint</a>
+package.</p></li>
+<li><p><strong>title</strong> (<em>str, optional</em>) – The title of the dimension. It will later be used for instance for
+labelling plots of the data.
+It is optional but recommended to give a title to each ndarray.</p></li>
+<li><p><strong>dlabel</strong> (<em>str, optional</em>) – Alias of <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.title" title="spectrochempy.core.dataset.nddataset.NDDataset.title"><code class="xref py py-obj docutils literal notranslate"><span class="pre">title</span></code></a>.</p></li>
+<li><p><strong>meta</strong> (<em>dict-like object, optional</em>) – Additional metadata for this object. Must be dict-like but no
+further restriction is placed on meta.</p></li>
+<li><p><strong>author</strong> (<em>str, optional</em>) – Name(s) of the author(s) of this dataset. BNy default, name of the
+computer note where this dataset is
+created.</p></li>
+<li><p><strong>description</strong> (<em>str, optional</em>) – A optional description of the nd-dataset. A shorter alias is <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.desc" title="spectrochempy.core.dataset.nddataset.NDDataset.desc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">desc</span></code></a>.</p></li>
+<li><p><strong>history</strong> (<em>str, optional</em>) – A string to add to the object history.</p></li>
+<li><p><strong>copy</strong> (<em>bool, optional</em>) – Perform a copy of the passed object. Default is False.</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">Coord</span></code></dt><dd><p>Explicit coordinates object.</p>
+</dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">LinearCoord</span></code></dt><dd><p>Implicit coordinates object.</p>
+</dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">CoordSet</span></code></dt><dd><p>Set of coordinates.</p>
+</dd>
+</dl>
+</div>
+<p class="rubric">Notes</p>
+<p>The underlying array in a <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset" title="spectrochempy.core.dataset.nddataset.NDDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">NDDataset</span></code></a> object can be accessed through the
+<a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> attribute, which will return
+a conventional <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.22)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a>.</p>
+<p class="rubric">Examples</p>
+<p>Usage by an end-user</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">spectrochempy</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">NDDataset</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>  
+<span class="go">[       1        2        3]</span>
+</pre></div>
+</div>
+<p class="rubric">Methods</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.ab</span></code>(dataset[, dim])</p></td>
+<td><p>Alias of <a class="reference external" href="https://docs.python.org/3/library/abc.html#module-abc" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">abc</span></code></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.abc</span></code>(dataset[, dim])</p></td>
+<td><p>Automatic baseline correction.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.abs</span></code>(dataset[, dtype])</p></td>
+<td><p>Calculate the absolute value of the given NDDataset element-wise.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.absolute</span></code>(dataset[, dtype])</p></td>
+<td><p>Calculate the absolute value of the given NDDataset element-wise.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.add_coordset</span></code>(*coords[, dims])</p></td>
+<td><p>Add one or a set of coordinates from a dataset.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.align</span></code>(dataset, *others, **kwargs)</p></td>
+<td><p>Align individual <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset" title="spectrochempy.core.dataset.nddataset.NDDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">NDDataset</span></code></a> along given dimensions using various methods.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.all</span></code>(dataset[, dim, keepdims])</p></td>
+<td><p>Test whether all array elements along a given axis evaluate to True.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.amax</span></code>(dataset[, dim, keepdims])</p></td>
+<td><p>Return the maximum of the dataset or maxima along given dimensions.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.amin</span></code>(dataset[, dim, keepdims])</p></td>
+<td><p>Return the maximum of the dataset or maxima along given dimensions.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.any</span></code>(dataset[, dim, keepdims])</p></td>
+<td><p>Test whether any array element along a given axis evaluates to True.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.arange</span></code>([start, stop, step, dtype])</p></td>
+<td><p>Return evenly spaced values within a given interval.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.argmax</span></code>(dataset[, dim])</p></td>
+<td><p>Indexes of maximum of data along axis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.argmin</span></code>(dataset[, dim])</p></td>
+<td><p>Indexes of minimum of data along axis.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.around</span></code>(dataset[, decimals])</p></td>
+<td><p>Evenly round to the given number of decimals.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.asfortranarray</span></code>()</p></td>
+<td><p>Make data and mask (ndim &gt;= 1) laid out in Fortran order in memory.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.astype</span></code>([dtype])</p></td>
+<td><p>Cast the data to a specified type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.autosub</span></code>(dataset, ref, *ranges[, …])</p></td>
+<td><p>Automatic subtraction of a reference to the dataset.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.average</span></code>(dataset[, dim, weights, …])</p></td>
+<td><p>Compute the weighted average along the specified axis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.bartlett</span></code>()def bartlett(dataset, …)</p></td>
+<td><p>Calculate Bartlett apodization (triangular window with end points at zero).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.basc</span></code>(dataset, *ranges, **kwargs)</p></td>
+<td><p>Compute a baseline correction using the BaselineCorrection processor.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.blackmanharris</span></code>(…)</p></td>
+<td><p>Calculate a minimum 4-term Blackman-Harris apodization.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.clip</span></code>(dataset[, a_min, a_max])</p></td>
+<td><p>Clip (limit) the values in a dataset.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.close_figure</span></code>()</p></td>
+<td><p>Close a Matplotlib figure associated to this dataset.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.component</span></code>([select])</p></td>
+<td><p>Take selected components of an hypercomplex array (RRR, RIR, …).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.concatenate</span></code>(*datasets, **kwargs)</p></td>
+<td><p>Concatenation of <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset" title="spectrochempy.core.dataset.nddataset.NDDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">NDDataset</span></code></a> objects along a given axis.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.conj</span></code>(dataset[, dim])</p></td>
+<td><p>Conjugate of the NDDataset in the specified dimension.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.conjugate</span></code>(dataset[, dim])</p></td>
+<td><p>Conjugate of the NDDataset in the specified dimension.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.coord</span></code>([dim])</p></td>
+<td><p>Return the coordinates along the given dimension.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.coordmax</span></code>(dataset[, dim])</p></td>
+<td><p>Find coordinates of the maximum of data along axis.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.coordmin</span></code>(dataset[, dim])</p></td>
+<td><p>Find oordinates of the mainimum of data along axis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.copy</span></code>([deep, keepname])</p></td>
+<td><p>Make a disconnected copy of the current object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.cs</span></code>(dataset[, pts, neg])</p></td>
+<td><p>Circular shift.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.cumsum</span></code>(dataset[, dim, dtype])</p></td>
+<td><p>Return the cumulative sum of the elements along a given axis.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.dc</span></code>(dataset, **kwargs)</p></td>
+<td><p>Time domain baseline correction.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.delete_coordset</span></code>()</p></td>
+<td><p>Delete all coordinate settings.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.detrend</span></code>(dataset[, type, bp])</p></td>
+<td><p>Remove linear trend along dim from dataset.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.diag</span></code>(dataset[, offset])</p></td>
+<td><p>Extract a diagonal or construct a diagonal array.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.diagonal</span></code>(dataset[, offset, dim, dtype])</p></td>
+<td><p>Return the diagonal of a 2D array.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.download_iris</span></code>()</p></td>
+<td><p>Upload the classical <code class="xref py py-obj docutils literal notranslate"><span class="pre">IRIS</span></code> dataset.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.dump</span></code>(filename, **kwargs)</p></td>
+<td><p>Save the current object into compressed native spectrochempy format.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.em</span></code>([lb, shifted, lb, shifted])</p></td>
+<td><p>Calculate exponential apodization.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.empty</span></code>(shape[, dtype])</p></td>
+<td><p>Return a new <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset" title="spectrochempy.core.dataset.nddataset.NDDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">NDDataset</span></code></a> of given shape and type, without initializing entries.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.empty_like</span></code>(dataset[, dtype])</p></td>
+<td><p>Return a new uninitialized <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset" title="spectrochempy.core.dataset.nddataset.NDDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">NDDataset</span></code></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.expand_dims</span></code>([dim])</p></td>
+<td><p>Expand the shape of an array.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.eye</span></code>(N[, M, k, dtype])</p></td>
+<td><p>Return a 2-D array with ones on the diagonal and zeros elsewhere.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.fft</span></code>(dataset[, size, sizeff, inv, ppm])</p></td>
+<td><p>Apply a complex fast fourier transform.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.find_peaks</span></code>(dataset[, height, …])</p></td>
+<td><p>Wrapper and extension of scpy.signal.find_peaks().</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.fromfunction</span></code>(cls, function[, …])</p></td>
+<td><p>Construct a nddataset by executing a function over each coordinate.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.fromiter</span></code>(iterable[, dtype, count])</p></td>
+<td><p>Create a new 1-dimensional array from an iterable object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.fsh</span></code>(dataset, pts, **kwargs)</p></td>
+<td><p>Frequency shift by Fourier transform.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.fsh2</span></code>(dataset, pts, **kwargs)</p></td>
+<td><p>Frequency Shift by Fourier transform.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.full</span></code>(shape[, fill_value, dtype])</p></td>
+<td><p>Return a new <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset" title="spectrochempy.core.dataset.nddataset.NDDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">NDDataset</span></code></a> of given shape and type, filled with <code class="xref py py-obj docutils literal notranslate"><span class="pre">fill_value</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.full_like</span></code>(dataset[, fill_value, dtype])</p></td>
+<td><p>Return a <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset" title="spectrochempy.core.dataset.nddataset.NDDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">NDDataset</span></code></a> of fill_value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.general_hamming</span></code>([alpha])</p></td>
+<td><p>Calculate generalized Hamming apodization.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.geomspace</span></code>(start, stop[, num, …])</p></td>
+<td><p>Return numbers spaced evenly on a log scale (a geometric progression).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.get_axis</span></code>(*args, **kwargs)</p></td>
+<td><p>Helper function to determine an axis index whatever the syntax used (axis index or dimension names).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.get_labels</span></code>([level])</p></td>
+<td><p>Get the labels at a given level.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.gm</span></code>([gb, lb, shifted, gb, lb, shifted])</p></td>
+<td><p>Calculate lorentz-to-gauss apodization.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.hamming</span></code>(dataset, **kwargs)</p></td>
+<td><p>Calculate generalized Hamming (== Happ-Genzel) apodization.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.hann</span></code>(dataset, **kwargs)</p></td>
+<td><p>Return a Hann window.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.ht</span></code>(dataset[, N])</p></td>
+<td><p>Hilbert transform.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.identity</span></code>(n[, dtype])</p></td>
+<td><p>Return the identity <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset" title="spectrochempy.core.dataset.nddataset.NDDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">NDDataset</span></code></a> of a given shape.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.ifft</span></code>(dataset[, size])</p></td>
+<td><p>Apply a inverse fast fourier transform.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.implements</span></code>([name])</p></td>
+<td><p>Utility to check if the current object implements a given class.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.is_units_compatible</span></code>(other)</p></td>
+<td><p>Check the compatibility of units with another object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.ito</span></code>(other[, force])</p></td>
+<td><p>Inplace scaling of the current object data to different units.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.ito_base_units</span></code>()</p></td>
+<td><p>Inplace rescaling to base units.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.ito_reduced_units</span></code>()</p></td>
+<td><p>Quantity scaled in place to reduced units, inplace.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.linspace</span></code>(cls, start, stop[, num, …])</p></td>
+<td><p>Return evenly spaced numbers over a specified interval.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.load</span></code>(filename, **kwargs)</p></td>
+<td><p>Open data from a ‘<a href="#id1"><span class="problematic" id="id2">*</span></a>.scp’ (NDDataset) or ‘.pscp’ (Project) file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.logspace</span></code>(cls, start, stop[, num, …])</p></td>
+<td><p>Return numbers spaced evenly on a log scale.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.ls</span></code>(dataset[, pts])</p></td>
+<td><p>Left shift and zero fill.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.max</span></code>(dataset[, dim, keepdims])</p></td>
+<td><p>Return the maximum of the dataset or maxima along given dimensions.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.mc</span></code>(dataset)</p></td>
+<td><p>Modulus calculation.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.mean</span></code>(dataset[, dim, dtype, keepdims])</p></td>
+<td><p>Compute the arithmetic mean along the specified axis.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.min</span></code>(dataset[, dim, keepdims])</p></td>
+<td><p>Return the maximum of the dataset or maxima along given dimensions.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.ones</span></code>(shape[, dtype])</p></td>
+<td><p>Return a new <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset" title="spectrochempy.core.dataset.nddataset.NDDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">NDDataset</span></code></a> of given shape and type, filled with ones.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.ones_like</span></code>(dataset[, dtype])</p></td>
+<td><p>Return <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset" title="spectrochempy.core.dataset.nddataset.NDDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">NDDataset</span></code></a> of ones.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.pipe</span></code>(func, *args, **kwargs)</p></td>
+<td><p>Apply func(self, <a href="#id3"><span class="problematic" id="id4">*</span></a>args, <a href="#id5"><span class="problematic" id="id6">**</span></a>kwargs).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.pk</span></code>(dataset[, phc0, phc1, exptc, pivot])</p></td>
+<td><p>Linear phase correction.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.pk_exp</span></code>(dataset[, phc0, pivot, exptc])</p></td>
+<td><p>Exponential Phase Correction.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.plot</span></code>([method])</p></td>
+<td><p>Generic plot function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.plot_1D</span></code>(…[, method])</p></td>
+<td><p>Plot of one-dimensional data.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.plot_2D</span></code>(…[, method])</p></td>
+<td><p>Plot of 2D array.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.plot_bar</span></code>(dataset, *args, **kwargs)</p></td>
+<td><p>Plot a 1D dataset with bars.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.plot_image</span></code>(dataset, *args, **kwargs)</p></td>
+<td><p>Plot a 2D dataset as an image plot.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.plot_map</span></code>(dataset, *args, **kwargs)</p></td>
+<td><p>Plot a 2D dataset as a contoured map.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.plot_pen</span></code>(dataset, *args, **kwargs)</p></td>
+<td><p>Plot a 1D dataset with solid pen by default.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.plot_scatter</span></code>(dataset, *args, **kwargs)</p></td>
+<td><p>Plot a 1D dataset as a scatter plot (points can be added on lines).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.plot_scatter_pen</span></code>(dataset, *args, …)</p></td>
+<td><p>Plot a 1D dataset with solid pen by default.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.plot_stack</span></code>(dataset, *args, **kwargs)</p></td>
+<td><p>Plot a 2D dataset as a stack plot.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.plot_surface</span></code>(dataset, *args, **kwargs)</p></td>
+<td><p>Plot a 2D dataset as a a 3D-surface.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.plot_waterfall</span></code>(dataset, *args, …)</p></td>
+<td><p>Plot a 2D dataset as a a 3D-waterfall plot.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.ps</span></code>(dataset)</p></td>
+<td><p>Power spectrum.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.ptp</span></code>(dataset[, dim, keepdims])</p></td>
+<td><p>Range of values (maximum - minimum) along a dimension.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.qsin</span></code>(dataset[, ssb])</p></td>
+<td><p>Equivalent to <code class="xref py py-meth docutils literal notranslate"><span class="pre">sp</span></code>, with pow = 2 (squared sine bell apodization window).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.random</span></code>([size, dtype])</p></td>
+<td><p>Return random floats in the half-open interval [0.0, 1.0).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.read</span></code>(*paths, **kwargs)</p></td>
+<td><p>Generic read method.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.read_carroucell</span></code>([directory])</p></td>
+<td><p>Open .spa files in a directory after a carroucell experiment.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.read_csv</span></code>(*paths, **kwargs)</p></td>
+<td><p>Open a <a href="#id7"><span class="problematic" id="id8">*</span></a>.csv file or a list of <a href="#id9"><span class="problematic" id="id10">*</span></a>.csv files.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.read_dir</span></code>([directory])</p></td>
+<td><p>Read an entire directory.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.read_jcamp</span></code>(*paths, **kwargs)</p></td>
+<td><p>Open Infrared JCAMP-DX files with extension <code class="docutils literal notranslate"><span class="pre">.jdx</span></code> or <code class="docutils literal notranslate"><span class="pre">.dx</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.read_labspec</span></code>(*paths, **kwargs)</p></td>
+<td><p>Read a single Raman spectrum or a series of Raman spectra.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.read_mat</span></code>(*paths, **kwargs)</p></td>
+<td><p>Read a matlab file with extension <code class="docutils literal notranslate"><span class="pre">.mat</span></code> and return its content as a list.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.read_matlab</span></code>(*paths, **kwargs)</p></td>
+<td><p>Read a matlab file with extension <code class="docutils literal notranslate"><span class="pre">.mat</span></code> and return its content as a list.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.read_omnic</span></code>(*paths, **kwargs)</p></td>
+<td><p>Open a Thermo Nicolet OMNIC file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.read_opus</span></code>(*paths, **kwargs)</p></td>
+<td><p>Open Bruker OPUS file(s).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.read_quadera</span></code>(*paths, **kwargs)</p></td>
+<td><p>Read a Pfeiffer Vacuum’s QUADERA® mass spectrometer software file with extension <code class="docutils literal notranslate"><span class="pre">.asc</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.read_spa</span></code>(*paths, **kwargs)</p></td>
+<td><p>Open a Thermo Nicolet file or a list of files with extension <code class="docutils literal notranslate"><span class="pre">.spa</span></code>.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.read_spc</span></code>(*paths, **kwargs)</p></td>
+<td><p>Open a Thermo Nicolet file or a list of files with extension <code class="docutils literal notranslate"><span class="pre">.spg</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.read_spg</span></code>(*paths, **kwargs)</p></td>
+<td><p>Open a Thermo Nicolet file or a list of files with extension <code class="docutils literal notranslate"><span class="pre">.spg</span></code>.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.read_srs</span></code>(*paths, **kwargs)</p></td>
+<td><p>Open a Thermo Nicolet file or a list of files with extension <code class="docutils literal notranslate"><span class="pre">.srs</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.read_topspin</span></code>(*paths, **kwargs)</p></td>
+<td><p>Open Bruker TOPSPIN (NMR) dataset.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.read_zip</span></code>(*paths, **kwargs)</p></td>
+<td><p>Open a zipped list of data files.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.remove_masks</span></code>()</p></td>
+<td><p>Remove all masks previously set on this array.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.roll</span></code>(dataset[, pts, neg])</p></td>
+<td><p>Roll dimensions.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.round</span></code>(dataset[, decimals])</p></td>
+<td><p>Evenly round to the given number of decimals.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.round_</span></code>(dataset[, decimals])</p></td>
+<td><p>Evenly round to the given number of decimals.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.rs</span></code>(dataset[, pts])</p></td>
+<td><p>Right shift and zero fill.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.save</span></code>(**kwargs)</p></td>
+<td><p>Save the current object in SpectroChemPy format.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.save_as</span></code>([filename])</p></td>
+<td><p>Save the current <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset" title="spectrochempy.core.dataset.nddataset.NDDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">NDDataset</span></code></a> in SpectroChemPy format (<a href="#id11"><span class="problematic" id="id12">*</span></a>.scp).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.savgol_filter</span></code>(dataset[, …])</p></td>
+<td><p>Apply a Savitzky-Golay filter to a NDDataset.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.set_complex</span></code>([inplace])</p></td>
+<td><p>Set the object data as complex.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.set_coordset</span></code>(*args, **kwargs)</p></td>
+<td><p>Set one or more coordinates at once.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.set_coordtitles</span></code>(*args, **kwargs)</p></td>
+<td><p>Set titles of the one or more coordinates.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.set_coordunits</span></code>(*args, **kwargs)</p></td>
+<td><p>Set units of the one or more coordinates.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.set_hypercomplex</span></code>([inplace])</p></td>
+<td><p>Alias of set_quaternion.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.set_quaternion</span></code>([inplace])</p></td>
+<td><p>Alias of set_quaternion.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.simpson</span></code>(dataset, *args, **kwargs)</p></td>
+<td><p>Integrate using the composite Simpson’s rule.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.sine</span></code>(dataset, *args, **kwargs)</p></td>
+<td><p>Strictly equivalent to <code class="xref py py-meth docutils literal notranslate"><span class="pre">sp</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.sinm</span></code>(dataset[, ssb])</p></td>
+<td><p>Equivalent to <code class="xref py py-meth docutils literal notranslate"><span class="pre">sp</span></code>, with pow = 1 (sine bell apodization window).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.smooth</span></code>(dataset[, window_length, …])</p></td>
+<td><p>Smooth the data using a window with requested size.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.sort</span></code>(**kwargs)</p></td>
+<td><p>Return the dataset sorted along a given dimension.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.sp</span></code>([ssb, pow, ssb, pow])</p></td>
+<td><p>Calculate apodization with a Sine window multiplication.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.squeeze</span></code>(*dims[, inplace])</p></td>
+<td><p>Remove single-dimensional entries from the shape of a NDDataset.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.stack</span></code>(*datasets)</p></td>
+<td><p>Stack of <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset" title="spectrochempy.core.dataset.nddataset.NDDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">NDDataset</span></code></a> objects along the first dimension.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.std</span></code>(dataset[, dim, dtype, ddof, …])</p></td>
+<td><p>Compute the standard deviation along the specified axis.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.sum</span></code>(dataset[, dim, dtype, keepdims])</p></td>
+<td><p>Sum of array elements over a given axis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.swapaxes</span></code>(dim1, dim2[, inplace])</p></td>
+<td><p>Alias of <a class="reference internal" href="spectrochempy.core.dataset.nddataset.swapdims.html#spectrochempy.core.dataset.nddataset.swapdims" title="spectrochempy.core.dataset.nddataset.swapdims"><code class="xref py py-obj docutils literal notranslate"><span class="pre">swapdims</span></code></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.swapdims</span></code>(dim1, dim2[, inplace])</p></td>
+<td><p>Interchange two dimensions of a NDDataset.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.take</span></code>(indices, **kwargs)</p></td>
+<td><p>Take elements from an array.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.to</span></code>(other[, inplace, force])</p></td>
+<td><p>Return the object with data rescaled to different units.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.to_array</span></code>()</p></td>
+<td><p>Return a numpy masked array (i.e., other NDDataset attributes are lost.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.to_base_units</span></code>([inplace])</p></td>
+<td><p>Return an array rescaled to base units.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.to_reduced_units</span></code>([inplace])</p></td>
+<td><p>Return an array scaled in place to reduced units.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.to_xarray</span></code>()</p></td>
+<td><p>Convert a NDDataset instance to an <code class="xref py py-obj docutils literal notranslate"><span class="pre">DataArray</span></code> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.transpose</span></code>(*dims[, inplace])</p></td>
+<td><p>Permute the dimensions of a NDDataset.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.trapezoid</span></code>(dataset, **kwargs)</p></td>
+<td><p>Integrate using the composite trapezoidal rule.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.trapz</span></code>(*args, **kwargs)</p></td>
+<td><p>An alias of <code class="xref py py-obj docutils literal notranslate"><span class="pre">trapezoid</span></code> kept for backwards compatibility.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.triang</span></code>()def triang(dataset, **kwargs)</p></td>
+<td><p>Calculate triangular apodization with non-null extremities and maximum value normalized to 1.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.var</span></code>(dataset[, dim, dtype, ddof, …])</p></td>
+<td><p>Compute the variance along the specified axis.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.write</span></code>(dataset[, filename])</p></td>
+<td><p>Write  the current dataset.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.write_csv</span></code>(*args, **kwargs)</p></td>
+<td><p>Write a dataset in CSV format.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.write_excel</span></code>(*args, **kwargs)</p></td>
+<td><p>This method is an alias of <code class="xref py py-obj docutils literal notranslate"><span class="pre">write_excel</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.write_jcamp</span></code>(*args, **kwargs)</p></td>
+<td><p>This method is an alias of <code class="xref py py-obj docutils literal notranslate"><span class="pre">write_jcamp</span></code>.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.write_jdx</span></code>(*args, **kwargs)</p></td>
+<td><p>This method is an alias of <code class="xref py py-obj docutils literal notranslate"><span class="pre">write_jcamp</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.write_mat</span></code>(*args, **kwargs)</p></td>
+<td><p>This method is an alias of <code class="xref py py-obj docutils literal notranslate"><span class="pre">write_matlab</span></code>.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.write_matlab</span></code>(*args, **kwargs)</p></td>
+<td><p>This method is an alias of <code class="xref py py-obj docutils literal notranslate"><span class="pre">write_matlab</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.zeros</span></code>(shape[, dtype])</p></td>
+<td><p>Return a new <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset" title="spectrochempy.core.dataset.nddataset.NDDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">NDDataset</span></code></a> of given shape and type, filled with zeros.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.zeros_like</span></code>(dataset[, dtype])</p></td>
+<td><p>Return a <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset" title="spectrochempy.core.dataset.nddataset.NDDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">NDDataset</span></code></a> of zeros.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.zf</span></code>(dataset[, size, mid])</p></td>
+<td><p>Zero fill to given size.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.zf_auto</span></code>(dataset[, mid])</p></td>
+<td><p>Zero fill to next largest power of two.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.zf_double</span></code>(dataset, n[, mid])</p></td>
+<td><p>Zero fill by doubling original data size once or multiple times.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.zf_size</span></code>(dataset[, size, mid])</p></td>
+<td><p>Zero fill to given size.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Attributes</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.II" title="spectrochempy.core.dataset.nddataset.NDDataset.II"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.II</span></code></a></p></td>
+<td><p>array - The array with imaginary-imaginary component of hypercomplex 2D data (Readonly property).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.IR" title="spectrochempy.core.dataset.nddataset.NDDataset.IR"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.IR</span></code></a></p></td>
+<td><p>array - The array with imaginary-real component of hypercomplex 2D <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> (Readonly property).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.RI" title="spectrochempy.core.dataset.nddataset.NDDataset.RI"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.RI</span></code></a></p></td>
+<td><p>array - The array with real-imaginary component of hypercomplex 2D <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> (Readonly property).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.RR" title="spectrochempy.core.dataset.nddataset.NDDataset.RR"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.RR</span></code></a></p></td>
+<td><p>array - The array with real component in both dimension of hypercomplex 2D <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.T" title="spectrochempy.core.dataset.nddataset.NDDataset.T"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.T</span></code></a></p></td>
+<td><p>Transposed <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset" title="spectrochempy.core.dataset.nddataset.NDDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">NDDataset</span></code></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.author" title="spectrochempy.core.dataset.nddataset.NDDataset.author"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.author</span></code></a></p></td>
+<td><p>Creator of the array (str).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.ax" title="spectrochempy.core.dataset.nddataset.NDDataset.ax"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.ax</span></code></a></p></td>
+<td><p>the main matplotlib axe associated to this dataset.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.axT" title="spectrochempy.core.dataset.nddataset.NDDataset.axT"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.axT</span></code></a></p></td>
+<td><p>the matplotlib axe associated to the transposed dataset.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.axec" title="spectrochempy.core.dataset.nddataset.NDDataset.axec"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.axec</span></code></a></p></td>
+<td><p>Matplotlib colorbar axe associated to this dataset.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.axecT" title="spectrochempy.core.dataset.nddataset.NDDataset.axecT"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.axecT</span></code></a></p></td>
+<td><p>Matplotlib colorbar axe associated to the transposed dataset.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.axex" title="spectrochempy.core.dataset.nddataset.NDDataset.axex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.axex</span></code></a></p></td>
+<td><p>Matplotlib projection x axe associated to this dataset.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.axey" title="spectrochempy.core.dataset.nddataset.NDDataset.axey"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.axey</span></code></a></p></td>
+<td><p>Matplotlib projection y axe associated to this dataset.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.coordnames" title="spectrochempy.core.dataset.nddataset.NDDataset.coordnames"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.coordnames</span></code></a></p></td>
+<td><p>List of the <code class="xref py py-class docutils literal notranslate"><span class="pre">Coord</span></code> names.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.coordset" title="spectrochempy.core.dataset.nddataset.NDDataset.coordset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.coordset</span></code></a></p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">CoordSet</span></code> instance.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.coordtitles" title="spectrochempy.core.dataset.nddataset.NDDataset.coordtitles"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.coordtitles</span></code></a></p></td>
+<td><p>List of the <code class="xref py py-class docutils literal notranslate"><span class="pre">Coord</span></code> titles.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.coordunits" title="spectrochempy.core.dataset.nddataset.NDDataset.coordunits"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.coordunits</span></code></a></p></td>
+<td><p>List of the <code class="xref py py-class docutils literal notranslate"><span class="pre">Coord</span></code> units.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.created" title="spectrochempy.core.dataset.nddataset.NDDataset.created"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.created</span></code></a></p></td>
+<td><p>Creation date object (Datetime).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.data</span></code></a></p></td>
+<td><p>The <code class="docutils literal notranslate"><span class="pre">data</span></code> array.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.date" title="spectrochempy.core.dataset.nddataset.NDDataset.date"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.date</span></code></a></p></td>
+<td><p>Creation date object - equivalent to the attribute <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.created" title="spectrochempy.core.dataset.nddataset.NDDataset.created"><code class="xref py py-obj docutils literal notranslate"><span class="pre">created</span></code></a> (Datetime).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.desc" title="spectrochempy.core.dataset.nddataset.NDDataset.desc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.desc</span></code></a></p></td>
+<td><p>Alias to the description attribute.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.description" title="spectrochempy.core.dataset.nddataset.NDDataset.description"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.description</span></code></a></p></td>
+<td><p>Provides a description of the underlying data (str).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.dimensionless" title="spectrochempy.core.dataset.nddataset.NDDataset.dimensionless"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.dimensionless</span></code></a></p></td>
+<td><p>True if the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> array is dimensionless - Readonly property (bool).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.dims" title="spectrochempy.core.dataset.nddataset.NDDataset.dims"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.dims</span></code></a></p></td>
+<td><p>Names of the dimensions (list).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.directory" title="spectrochempy.core.dataset.nddataset.NDDataset.directory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.directory</span></code></a></p></td>
+<td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Pathlib</span></code> object - current directory for this dataset.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.divider" title="spectrochempy.core.dataset.nddataset.NDDataset.divider"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.divider</span></code></a></p></td>
+<td><p>Matplotlib plot divider.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.dtype" title="spectrochempy.core.dataset.nddataset.NDDataset.dtype"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.dtype</span></code></a></p></td>
+<td><p>Data type (np.dtype).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.fig" title="spectrochempy.core.dataset.nddataset.NDDataset.fig"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.fig</span></code></a></p></td>
+<td><p>Matplotlib figure associated to this dataset.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.fignum" title="spectrochempy.core.dataset.nddataset.NDDataset.fignum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.fignum</span></code></a></p></td>
+<td><p>Matplotlib figure associated to this dataset.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.filename" title="spectrochempy.core.dataset.nddataset.NDDataset.filename"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.filename</span></code></a></p></td>
+<td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Pathlib</span></code> object - current filename for this dataset.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.has_complex_dims" title="spectrochempy.core.dataset.nddataset.NDDataset.has_complex_dims"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.has_complex_dims</span></code></a></p></td>
+<td><p>bool - True if at least one of the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> array dimension is complex (Readonly property).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.has_data" title="spectrochempy.core.dataset.nddataset.NDDataset.has_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.has_data</span></code></a></p></td>
+<td><p>True if the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> array is not empty and size &gt; 0 (Bool).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.has_defined_name" title="spectrochempy.core.dataset.nddataset.NDDataset.has_defined_name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.has_defined_name</span></code></a></p></td>
+<td><p>True is the name has been defined (bool).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.has_units" title="spectrochempy.core.dataset.nddataset.NDDataset.has_units"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.has_units</span></code></a></p></td>
+<td><p>True if the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> array have units - Readonly property (bool).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.history" title="spectrochempy.core.dataset.nddataset.NDDataset.history"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.history</span></code></a></p></td>
+<td><p>Describes the history of actions made on this array (List of strings).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.id" title="spectrochempy.core.dataset.nddataset.NDDataset.id"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.id</span></code></a></p></td>
+<td><p>Object identifier - Readonly property (str).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.imag" title="spectrochempy.core.dataset.nddataset.NDDataset.imag"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.imag</span></code></a></p></td>
+<td><p>array - The array with imaginary component of the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> (Readonly property).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.is_1d" title="spectrochempy.core.dataset.nddataset.NDDataset.is_1d"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.is_1d</span></code></a></p></td>
+<td><p>True if the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> array has only one dimension (bool).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.is_complex" title="spectrochempy.core.dataset.nddataset.NDDataset.is_complex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.is_complex</span></code></a></p></td>
+<td><p>bool - True if the ‘data’ are complex (Readonly property).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.is_empty" title="spectrochempy.core.dataset.nddataset.NDDataset.is_empty"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.is_empty</span></code></a></p></td>
+<td><p>True if the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> array is empty or size=0, and if no label are present - Readonly property (bool).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.is_float" title="spectrochempy.core.dataset.nddataset.NDDataset.is_float"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.is_float</span></code></a></p></td>
+<td><p>True if the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> are real values - Readonly property (bool).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.is_integer" title="spectrochempy.core.dataset.nddataset.NDDataset.is_integer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.is_integer</span></code></a></p></td>
+<td><p>True if the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> are integer values - Readonly property (bool).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.is_interleaved" title="spectrochempy.core.dataset.nddataset.NDDataset.is_interleaved"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.is_interleaved</span></code></a></p></td>
+<td><p>bool - True if the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> array is hypercomplex with interleaved data (Readonly property).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.is_labeled" title="spectrochempy.core.dataset.nddataset.NDDataset.is_labeled"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.is_labeled</span></code></a></p></td>
+<td><p>True if the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> array have labels - Readonly property (bool).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.is_masked" title="spectrochempy.core.dataset.nddataset.NDDataset.is_masked"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.is_masked</span></code></a></p></td>
+<td><p>bool - True if the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> array has masked values (Readonly property).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.is_quaternion" title="spectrochempy.core.dataset.nddataset.NDDataset.is_quaternion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.is_quaternion</span></code></a></p></td>
+<td><p>bool - True if the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> array is hypercomplex (Readonly property).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.itemsize" title="spectrochempy.core.dataset.nddataset.NDDataset.itemsize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.itemsize</span></code></a></p></td>
+<td><p>Data type size (int).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.limits" title="spectrochempy.core.dataset.nddataset.NDDataset.limits"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.limits</span></code></a></p></td>
+<td><p>list - range of the data</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.m" title="spectrochempy.core.dataset.nddataset.NDDataset.m"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.m</span></code></a></p></td>
+<td><p>The <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> array (<a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.22)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a>).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.magnitude" title="spectrochempy.core.dataset.nddataset.NDDataset.magnitude"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.magnitude</span></code></a></p></td>
+<td><p>The <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> array (<a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.22)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a>).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.mask" title="spectrochempy.core.dataset.nddataset.NDDataset.mask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.mask</span></code></a></p></td>
+<td><p>Mask for the data (<a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.22)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a> of bool).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.masked_data" title="spectrochempy.core.dataset.nddataset.NDDataset.masked_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.masked_data</span></code></a></p></td>
+<td><p>The actual masked <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> array - Readonly property (<code class="xref py py-class docutils literal notranslate"><span class="pre">array</span></code>).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.meta" title="spectrochempy.core.dataset.nddataset.NDDataset.meta"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.meta</span></code></a></p></td>
+<td><p>Additional metadata (<code class="xref py py-class docutils literal notranslate"><span class="pre">Meta</span></code>).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.modeldata" title="spectrochempy.core.dataset.nddataset.NDDataset.modeldata"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.modeldata</span></code></a></p></td>
+<td><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.22)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a> - models data.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.modified" title="spectrochempy.core.dataset.nddataset.NDDataset.modified"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.modified</span></code></a></p></td>
+<td><p>Date of modification (readonly property).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.name" title="spectrochempy.core.dataset.nddataset.NDDataset.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.name</span></code></a></p></td>
+<td><p>A user-friendly name (str).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.ndaxes" title="spectrochempy.core.dataset.nddataset.NDDataset.ndaxes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.ndaxes</span></code></a></p></td>
+<td><p>A dictionary containing all the axes of the current figures.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.ndim" title="spectrochempy.core.dataset.nddataset.NDDataset.ndim"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.ndim</span></code></a></p></td>
+<td><p>The number of dimensions of the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> array (Readonly property).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.origin" title="spectrochempy.core.dataset.nddataset.NDDataset.origin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.origin</span></code></a></p></td>
+<td><p>Origin of the data (str).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.parent" title="spectrochempy.core.dataset.nddataset.NDDataset.parent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.parent</span></code></a></p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Project</span></code> instance</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.preferences" title="spectrochempy.core.dataset.nddataset.NDDataset.preferences"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.preferences</span></code></a></p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Meta</span></code> instance object - Additional metadata.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.real" title="spectrochempy.core.dataset.nddataset.NDDataset.real"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.real</span></code></a></p></td>
+<td><p>array - The array with real component of the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> (Readonly property).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.roi" title="spectrochempy.core.dataset.nddataset.NDDataset.roi"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.roi</span></code></a></p></td>
+<td><p>Region of interest (ROI) limits (list).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.shape" title="spectrochempy.core.dataset.nddataset.NDDataset.shape"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.shape</span></code></a></p></td>
+<td><p>A tuple with the size of each dimension - Readonly property.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.size" title="spectrochempy.core.dataset.nddataset.NDDataset.size"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.size</span></code></a></p></td>
+<td><p>Size of the underlying <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> array - Readonly property (int).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.suffix" title="spectrochempy.core.dataset.nddataset.NDDataset.suffix"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.suffix</span></code></a></p></td>
+<td><p>filename suffix.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.title" title="spectrochempy.core.dataset.nddataset.NDDataset.title"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.title</span></code></a></p></td>
+<td><p>An user friendly title (str).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.umasked_data" title="spectrochempy.core.dataset.nddataset.NDDataset.umasked_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.umasked_data</span></code></a></p></td>
+<td><p>The actual array with mask and unit (<code class="xref py py-class docutils literal notranslate"><span class="pre">Quantity</span></code>).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.unitless" title="spectrochempy.core.dataset.nddataset.NDDataset.unitless"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.unitless</span></code></a></p></td>
+<td><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a> - True if the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> does not have <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.units" title="spectrochempy.core.dataset.nddataset.NDDataset.units"><code class="xref py py-obj docutils literal notranslate"><span class="pre">units</span></code></a> (Readonly property).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.units" title="spectrochempy.core.dataset.nddataset.NDDataset.units"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.units</span></code></a></p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Unit</span></code> - The units of the data.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.value" title="spectrochempy.core.dataset.nddataset.NDDataset.value"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.value</span></code></a></p></td>
+<td><p>Alias of <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.values" title="spectrochempy.core.dataset.nddataset.NDDataset.values"><code class="xref py py-obj docutils literal notranslate"><span class="pre">values</span></code></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.values" title="spectrochempy.core.dataset.nddataset.NDDataset.values"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NDDataset.values</span></code></a></p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Quantity</span></code> - The actual values (data, units) contained in this object (Readonly property).</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.II">
+<code class="sig-name descname"><span class="pre">II</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.II" title="Permalink to this definition">¶</a></dt>
+<dd><p>array - The array with imaginary-imaginary component of hypercomplex 2D data (Readonly property).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.IR">
+<code class="sig-name descname"><span class="pre">IR</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.IR" title="Permalink to this definition">¶</a></dt>
+<dd><p>array - The array with imaginary-real component of hypercomplex 2D <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> (Readonly property).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.RI">
+<code class="sig-name descname"><span class="pre">RI</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.RI" title="Permalink to this definition">¶</a></dt>
+<dd><p>array - The array with real-imaginary component of hypercomplex 2D <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> (Readonly property).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.RR">
+<code class="sig-name descname"><span class="pre">RR</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.RR" title="Permalink to this definition">¶</a></dt>
+<dd><p>array - The array with real component in both dimension of
+hypercomplex 2D <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a>.</p>
+<p>This readonly property is equivalent to the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.real" title="spectrochempy.core.dataset.nddataset.NDDataset.real"><code class="xref py py-obj docutils literal notranslate"><span class="pre">real</span></code></a> property.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.T">
+<code class="sig-name descname"><span class="pre">T</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.T" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transposed <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset" title="spectrochempy.core.dataset.nddataset.NDDataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">NDDataset</span></code></a>.</p>
+<p>The same object is returned if <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.ndim" title="spectrochempy.core.dataset.nddataset.NDDataset.ndim"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ndim</span></code></a> is less than 2.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.author">
+<code class="sig-name descname"><span class="pre">author</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.author" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creator of the array (str).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.ax">
+<code class="sig-name descname"><span class="pre">ax</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.ax" title="Permalink to this definition">¶</a></dt>
+<dd><p>the main matplotlib axe associated to this dataset.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.axT">
+<code class="sig-name descname"><span class="pre">axT</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.axT" title="Permalink to this definition">¶</a></dt>
+<dd><p>the matplotlib axe associated to the transposed dataset.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.axec">
+<code class="sig-name descname"><span class="pre">axec</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.axec" title="Permalink to this definition">¶</a></dt>
+<dd><p>Matplotlib colorbar axe associated to this dataset.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.axecT">
+<code class="sig-name descname"><span class="pre">axecT</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.axecT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Matplotlib colorbar axe associated to the transposed dataset.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.axex">
+<code class="sig-name descname"><span class="pre">axex</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.axex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Matplotlib projection x axe associated to this dataset.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.axey">
+<code class="sig-name descname"><span class="pre">axey</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.axey" title="Permalink to this definition">¶</a></dt>
+<dd><p>Matplotlib projection y axe associated to this dataset.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.coordnames">
+<code class="sig-name descname"><span class="pre">coordnames</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.coordnames" title="Permalink to this definition">¶</a></dt>
+<dd><p>List of the <code class="xref py py-class docutils literal notranslate"><span class="pre">Coord</span></code> names.</p>
+<p>Read only property.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.coordset">
+<code class="sig-name descname"><span class="pre">coordset</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.coordset" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-class docutils literal notranslate"><span class="pre">CoordSet</span></code> instance.</p>
+<p>Contains the coordinates of the various dimensions of the dataset.
+It’s a readonly property. Use set_coords to change one or more coordinates at once.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.coordtitles">
+<code class="sig-name descname"><span class="pre">coordtitles</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.coordtitles" title="Permalink to this definition">¶</a></dt>
+<dd><p>List of the <code class="xref py py-class docutils literal notranslate"><span class="pre">Coord</span></code> titles.</p>
+<p>Read only property. Use set_coordtitle to eventually set titles.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.coordunits">
+<code class="sig-name descname"><span class="pre">coordunits</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.coordunits" title="Permalink to this definition">¶</a></dt>
+<dd><p>List of the <code class="xref py py-class docutils literal notranslate"><span class="pre">Coord</span></code> units.</p>
+<p>Read only property. Use set_coordunits to eventually set units.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.created">
+<code class="sig-name descname"><span class="pre">created</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.created" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creation date object (Datetime).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.data">
+<code class="sig-name descname"><span class="pre">data</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="Permalink to this definition">¶</a></dt>
+<dd><p>The <code class="docutils literal notranslate"><span class="pre">data</span></code> array.</p>
+<p>If there is no data but labels, then the labels are returned instead of data.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.date">
+<code class="sig-name descname"><span class="pre">date</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.date" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creation date object - equivalent to the attribute <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.created" title="spectrochempy.core.dataset.nddataset.NDDataset.created"><code class="xref py py-obj docutils literal notranslate"><span class="pre">created</span></code></a> (Datetime).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.desc">
+<code class="sig-name descname"><span class="pre">desc</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.desc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias to the description attribute.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.description">
+<code class="sig-name descname"><span class="pre">description</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Provides a description of the underlying data (str).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.dimensionless">
+<code class="sig-name descname"><span class="pre">dimensionless</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.dimensionless" title="Permalink to this definition">¶</a></dt>
+<dd><p>True if the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> array is dimensionless - Readonly property (bool).</p>
+<p class="rubric">Notes</p>
+<p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dimensionless</span></code> is different of <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.unitless" title="spectrochempy.core.dataset.nddataset.NDDataset.unitless"><code class="xref py py-obj docutils literal notranslate"><span class="pre">unitless</span></code></a> which means no unit.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.unitless" title="spectrochempy.core.dataset.nddataset.NDDataset.unitless"><code class="xref py py-obj docutils literal notranslate"><span class="pre">unitless</span></code></a>, <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.has_units" title="spectrochempy.core.dataset.nddataset.NDDataset.has_units"><code class="xref py py-obj docutils literal notranslate"><span class="pre">has_units</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.dims">
+<code class="sig-name descname"><span class="pre">dims</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.dims" title="Permalink to this definition">¶</a></dt>
+<dd><p>Names of the dimensions (list).</p>
+<p>The name of the dimensions are ‘x’, ‘y’, ‘z’…. depending on the number of dimension.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.directory">
+<code class="sig-name descname"><span class="pre">directory</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.directory" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Pathlib</span></code> object - current directory for this dataset.</p>
+<p>ReadOnly property - automatically set when the filename is updated if
+it contains a parent on its path.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.divider">
+<code class="sig-name descname"><span class="pre">divider</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.divider" title="Permalink to this definition">¶</a></dt>
+<dd><p>Matplotlib plot divider.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.dtype">
+<code class="sig-name descname"><span class="pre">dtype</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.dtype" title="Permalink to this definition">¶</a></dt>
+<dd><p>Data type (np.dtype).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.fig">
+<code class="sig-name descname"><span class="pre">fig</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.fig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Matplotlib figure associated to this dataset.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.fignum">
+<code class="sig-name descname"><span class="pre">fignum</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.fignum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Matplotlib figure associated to this dataset.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.filename">
+<code class="sig-name descname"><span class="pre">filename</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.filename" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Pathlib</span></code> object - current filename for this dataset.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.has_complex_dims">
+<code class="sig-name descname"><span class="pre">has_complex_dims</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.has_complex_dims" title="Permalink to this definition">¶</a></dt>
+<dd><p>bool - True if at least one of the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> array dimension is complex
+(Readonly property).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.has_data">
+<code class="sig-name descname"><span class="pre">has_data</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.has_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>True if the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> array is not empty and size &gt; 0 (Bool).
+(Readonly property).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.has_defined_name">
+<code class="sig-name descname"><span class="pre">has_defined_name</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.has_defined_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>True is the name has been defined (bool).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.has_units">
+<code class="sig-name descname"><span class="pre">has_units</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.has_units" title="Permalink to this definition">¶</a></dt>
+<dd><p>True if the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> array have units - Readonly property (bool).</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.unitless" title="spectrochempy.core.dataset.nddataset.NDDataset.unitless"><code class="xref py py-obj docutils literal notranslate"><span class="pre">unitless</span></code></a>, <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.dimensionless" title="spectrochempy.core.dataset.nddataset.NDDataset.dimensionless"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dimensionless</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.history">
+<code class="sig-name descname"><span class="pre">history</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.history" title="Permalink to this definition">¶</a></dt>
+<dd><p>Describes the history of actions made on this array (List of strings).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.id">
+<code class="sig-name descname"><span class="pre">id</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Object identifier - Readonly property (str).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.imag">
+<code class="sig-name descname"><span class="pre">imag</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.imag" title="Permalink to this definition">¶</a></dt>
+<dd><p>array - The array with imaginary component of the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> (Readonly property).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.is_1d">
+<code class="sig-name descname"><span class="pre">is_1d</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.is_1d" title="Permalink to this definition">¶</a></dt>
+<dd><p>True if the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> array has only one dimension (bool).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.is_complex">
+<code class="sig-name descname"><span class="pre">is_complex</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.is_complex" title="Permalink to this definition">¶</a></dt>
+<dd><p>bool - True if the ‘data’ are complex (Readonly property).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.is_empty">
+<code class="sig-name descname"><span class="pre">is_empty</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.is_empty" title="Permalink to this definition">¶</a></dt>
+<dd><p>True if the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> array is empty or size=0, and if no label are present
+- Readonly property (bool).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.is_float">
+<code class="sig-name descname"><span class="pre">is_float</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.is_float" title="Permalink to this definition">¶</a></dt>
+<dd><p>True if the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> are real values - Readonly property (bool).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.is_integer">
+<code class="sig-name descname"><span class="pre">is_integer</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.is_integer" title="Permalink to this definition">¶</a></dt>
+<dd><p>True if the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> are integer values - Readonly property (bool).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.is_interleaved">
+<code class="sig-name descname"><span class="pre">is_interleaved</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.is_interleaved" title="Permalink to this definition">¶</a></dt>
+<dd><p>bool - True if the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> array is hypercomplex with interleaved data (Readonly property).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.is_labeled">
+<code class="sig-name descname"><span class="pre">is_labeled</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.is_labeled" title="Permalink to this definition">¶</a></dt>
+<dd><p>True if the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> array have labels - Readonly property (bool).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.is_masked">
+<code class="sig-name descname"><span class="pre">is_masked</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.is_masked" title="Permalink to this definition">¶</a></dt>
+<dd><p>bool - True if the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> array has masked values (Readonly property).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.is_quaternion">
+<code class="sig-name descname"><span class="pre">is_quaternion</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.is_quaternion" title="Permalink to this definition">¶</a></dt>
+<dd><p>bool - True if the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> array is hypercomplex (Readonly property).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.itemsize">
+<code class="sig-name descname"><span class="pre">itemsize</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.itemsize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Data type size (int).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.limits">
+<code class="sig-name descname"><span class="pre">limits</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.limits" title="Permalink to this definition">¶</a></dt>
+<dd><p>list - range of the data</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.m">
+<code class="sig-name descname"><span class="pre">m</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.m" title="Permalink to this definition">¶</a></dt>
+<dd><p>The <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> array (<a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.22)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a>).</p>
+<p>If there is no data but labels, then the labels are returned instead of data.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.magnitude">
+<code class="sig-name descname"><span class="pre">magnitude</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.magnitude" title="Permalink to this definition">¶</a></dt>
+<dd><p>The <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> array (<a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.22)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a>).</p>
+<p>If there is no data but labels, then the labels are returned instead of data.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.mask">
+<code class="sig-name descname"><span class="pre">mask</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.mask" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mask for the data (<a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.22)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a> of bool).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.masked_data">
+<code class="sig-name descname"><span class="pre">masked_data</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.masked_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>The actual masked <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> array - Readonly property (<code class="xref py py-class docutils literal notranslate"><span class="pre">array</span></code>).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.meta">
+<code class="sig-name descname"><span class="pre">meta</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.meta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Additional metadata (<code class="xref py py-class docutils literal notranslate"><span class="pre">Meta</span></code>).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.modeldata">
+<code class="sig-name descname"><span class="pre">modeldata</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.modeldata" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.22)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ndarray</span></code></a> - models data.</p>
+<p>Data eventually generated by modelling of the data.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.modified">
+<code class="sig-name descname"><span class="pre">modified</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.modified" title="Permalink to this definition">¶</a></dt>
+<dd><p>Date of modification (readonly property).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.name">
+<code class="sig-name descname"><span class="pre">name</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>A user-friendly name (str).</p>
+<p>When no name is provided, the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.id" title="spectrochempy.core.dataset.nddataset.NDDataset.id"><code class="xref py py-obj docutils literal notranslate"><span class="pre">id</span></code></a> of the object is returned instead.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.ndaxes">
+<code class="sig-name descname"><span class="pre">ndaxes</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.ndaxes" title="Permalink to this definition">¶</a></dt>
+<dd><p>A dictionary containing all the axes of the current figures.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.ndim">
+<code class="sig-name descname"><span class="pre">ndim</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.ndim" title="Permalink to this definition">¶</a></dt>
+<dd><p>The number of dimensions of the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> array (Readonly property).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.origin">
+<code class="sig-name descname"><span class="pre">origin</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.origin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Origin of the data (str).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.parent">
+<code class="sig-name descname"><span class="pre">parent</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.parent" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Project</span></code> instance</p>
+<p>The parent project of the dataset.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.preferences">
+<code class="sig-name descname"><span class="pre">preferences</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.preferences" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Meta</span></code> instance object - Additional metadata.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.real">
+<code class="sig-name descname"><span class="pre">real</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.real" title="Permalink to this definition">¶</a></dt>
+<dd><p>array - The array with real component of the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> (Readonly property).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.roi">
+<code class="sig-name descname"><span class="pre">roi</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.roi" title="Permalink to this definition">¶</a></dt>
+<dd><p>Region of interest (ROI) limits (list).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.shape">
+<code class="sig-name descname"><span class="pre">shape</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.shape" title="Permalink to this definition">¶</a></dt>
+<dd><p>A tuple with the size of each dimension - Readonly property.</p>
+<p>The number of <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> element on each dimension (possibly complex).
+For only labelled array, there is no data, so it is the 1D and the size is the size of the array of labels.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.size">
+<code class="sig-name descname"><span class="pre">size</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Size of the underlying <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> array - Readonly property (int).</p>
+<p>The total number of data elements (possibly complex or hypercomplex
+in the array).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.suffix">
+<code class="sig-name descname"><span class="pre">suffix</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.suffix" title="Permalink to this definition">¶</a></dt>
+<dd><p>filename suffix.</p>
+<p>Read Only property - automatically set when the filename is updated
+if it has a suffix, else give
+the default suffix for the given type of object.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.title">
+<code class="sig-name descname"><span class="pre">title</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.title" title="Permalink to this definition">¶</a></dt>
+<dd><p>An user friendly title (str).</p>
+<p>When the title is provided, it can be used for labeling the object,
+e.g., axe title in a matplotlib plot.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.umasked_data">
+<code class="sig-name descname"><span class="pre">umasked_data</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.umasked_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>The actual array with mask and unit (<code class="xref py py-class docutils literal notranslate"><span class="pre">Quantity</span></code>).</p>
+<p>(Readonly property).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.unitless">
+<code class="sig-name descname"><span class="pre">unitless</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.unitless" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool</span></code></a> - True if the <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.data" title="spectrochempy.core.dataset.nddataset.NDDataset.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a> does not have <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.units" title="spectrochempy.core.dataset.nddataset.NDDataset.units"><code class="xref py py-obj docutils literal notranslate"><span class="pre">units</span></code></a> (Readonly property).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.units">
+<code class="sig-name descname"><span class="pre">units</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.units" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Unit</span></code> - The units of the data.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.value">
+<code class="sig-name descname"><span class="pre">value</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias of <a class="reference internal" href="#spectrochempy.core.dataset.nddataset.NDDataset.values" title="spectrochempy.core.dataset.nddataset.NDDataset.values"><code class="xref py py-obj docutils literal notranslate"><span class="pre">values</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="spectrochempy.core.dataset.nddataset.NDDataset.values">
+<code class="sig-name descname"><span class="pre">values</span></code><a class="headerlink" href="#spectrochempy.core.dataset.nddataset.NDDataset.values" title="Permalink to this definition">¶</a></dt>
+<dd><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Quantity</span></code> - The actual values (data, units) contained in this object (Readonly property).</p>
+</dd></dl>
+
+</dd></dl>
+
+<div class="section" id="examples-using-spectrochempy-core-dataset-nddataset-nddataset">
+<h2>Examples using <code class="docutils literal notranslate"><span class="pre">spectrochempy.core.dataset.nddataset.NDDataset</span></code><a class="headerlink" href="#examples-using-spectrochempy-core-dataset-nddataset-nddataset" title="Permalink to this headline">¶</a></h2>
+<div class="sphx-glr-thumbcontainer" tooltip="In this example, we perform the MCR ALS optimization of a dataset corresponding to a HPLC-DAD r..."><div class="figure align-default" id="id13">
+<img alt="MCR-ALS optimization example (original example from Jaumot)" src="../../../_images/sphx_glr_plot_mcrals_chrom1_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../../gettingstarted/gallery/auto_examples/analysis/plot_mcrals_chrom1.html#sphx-glr-gettingstarted-gallery-auto-examples-analysis-plot-mcrals-chrom1-py"><span class="std std-ref">MCR-ALS optimization example (original example from Jaumot)</span></a></span><a class="headerlink" href="#id13" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="NDDataset PCA analysis example"><div class="figure align-default" id="id14">
+<img alt="NDDataset PCA analysis example" src="../../../_images/sphx_glr_plot_pca_spec_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../../gettingstarted/gallery/auto_examples/analysis/plot_pca_spec.html#sphx-glr-gettingstarted-gallery-auto-examples-analysis-plot-pca-spec-py"><span class="std std-ref">NDDataset PCA analysis example</span></a></span><a class="headerlink" href="#id14" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="PCA analysis example"><div class="figure align-default" id="id15">
+<img alt="PCA analysis example" src="../../../_images/sphx_glr_plot_pca_iris_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../../gettingstarted/gallery/auto_examples/analysis/plot_pca_iris.html#sphx-glr-gettingstarted-gallery-auto-examples-analysis-plot-pca-iris-py"><span class="std std-ref">PCA analysis example</span></a></span><a class="headerlink" href="#id15" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="In this example, we perform the Evolving Factor Analysis"><div class="figure align-default" id="id16">
+<img alt="EFA analysis example" src="../../../_images/sphx_glr_plot_efa_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../../gettingstarted/gallery/auto_examples/analysis/plot_efa.html#sphx-glr-gettingstarted-gallery-auto-examples-analysis-plot-efa-py"><span class="std std-ref">EFA analysis example</span></a></span><a class="headerlink" href="#id16" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="In this example, we perform the Evolving Factor Analysis of a TEST dataset (ref. Keller and Mas..."><div class="figure align-default" id="id17">
+<img alt="EFA analysis (Keller and Massart original example)" src="../../../_images/sphx_glr_plot_efa_keller_massart_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../../gettingstarted/gallery/auto_examples/analysis/plot_efa_keller_massart.html#sphx-glr-gettingstarted-gallery-auto-examples-analysis-plot-efa-keller-massart-py"><span class="std std-ref">EFA analysis (Keller and Massart original example)</span></a></span><a class="headerlink" href="#id17" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="In this example, we perform the 2D IRIS analysis of CO adsorption on a sulfide catalyst."><div class="figure align-default" id="id18">
+<img alt="2D-IRIS analysis example" src="../../../_images/sphx_glr_plot_2D_iris_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../../gettingstarted/gallery/auto_examples/analysis/plot_2D_iris.html#sphx-glr-gettingstarted-gallery-auto-examples-analysis-plot-2d-iris-py"><span class="std std-ref">2D-IRIS analysis example</span></a></span><a class="headerlink" href="#id18" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Solve a linear equation using LSTSQ"><div class="figure align-default" id="id19">
+<img alt="Solve a linear equation using LSTSQ" src="../../../_images/sphx_glr_plot_lstsq_single_equation_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../../gettingstarted/gallery/auto_examples/fitting/plot_lstsq_single_equation.html#sphx-glr-gettingstarted-gallery-auto-examples-fitting-plot-lstsq-single-equation-py"><span class="std std-ref">Solve a linear equation using LSTSQ</span></a></span><a class="headerlink" href="#id19" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Fitting 1D dataset"><div class="figure align-default" id="id20">
+<img alt="Fitting 1D dataset" src="../../../_images/sphx_glr_plot_fit_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../../gettingstarted/gallery/auto_examples/fitting/plot_fit.html#sphx-glr-gettingstarted-gallery-auto-examples-fitting-plot-fit-py"><span class="std std-ref">Fitting 1D dataset</span></a></span><a class="headerlink" href="#id20" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="In this example, we show how units can be used in SpectroChemPy"><div class="figure align-default" id="id21">
+<img alt="Units manipulation examples" src="../../../_images/sphx_glr_plot_units_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../../gettingstarted/gallery/auto_examples/nddataset/plot_units.html#sphx-glr-gettingstarted-gallery-auto-examples-nddataset-plot-units-py"><span class="std std-ref">Units manipulation examples</span></a></span><a class="headerlink" href="#id21" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="In this example, we show how coordinates can be used in SpectroChemPy"><div class="figure align-default" id="id22">
+<img alt="NDDataset coordinates example" src="../../../_images/sphx_glr_plot_coordinates_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../../gettingstarted/gallery/auto_examples/nddataset/plot_coordinates.html#sphx-glr-gettingstarted-gallery-auto-examples-nddataset-plot-coordinates-py"><span class="std std-ref">NDDataset coordinates example</span></a></span><a class="headerlink" href="#id22" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="NDDataset creation and plotting example"><div class="figure align-default" id="id23">
+<img alt="NDDataset creation and plotting example" src="../../../_images/sphx_glr_plot_create_dataset_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../../gettingstarted/gallery/auto_examples/nddataset/plot_create_dataset.html#sphx-glr-gettingstarted-gallery-auto-examples-nddataset-plot-create-dataset-py"><span class="std std-ref">NDDataset creation and plotting example</span></a></span><a class="headerlink" href="#id23" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Introduction to the plotting librairie"><div class="figure align-default" id="id24">
+<img alt="Introduction to the plotting librairie" src="../../../_images/sphx_glr_plot_plotting_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../../gettingstarted/gallery/auto_examples/plotting/plot_plotting.html#sphx-glr-gettingstarted-gallery-auto-examples-plotting-plot-plotting-py"><span class="std std-ref">Introduction to the plotting librairie</span></a></span><a class="headerlink" href="#id24" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="In this example, we perform a baseline correction of a 2D NDDataset interactively, using the mu..."><div class="figure align-default" id="id25">
+<img alt="NDDataset baseline correction" src="../../../_images/sphx_glr_plot_baseline_correction_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../../gettingstarted/gallery/auto_examples/processing/plot_baseline_correction.html#sphx-glr-gettingstarted-gallery-auto-examples-processing-plot-baseline-correction-py"><span class="std std-ref">NDDataset baseline correction</span></a></span><a class="headerlink" href="#id25" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="In this example, we perform exponential window multiplication to apodize a NMR signal in the ti..."><div class="figure align-default" id="id26">
+<img alt="Exponential window multiplication" src="../../../_images/sphx_glr_plot_proc_em_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../../gettingstarted/gallery/auto_examples/processing/plot_proc_em.html#sphx-glr-gettingstarted-gallery-auto-examples-processing-plot-proc-em-py"><span class="std std-ref">Exponential window multiplication</span></a></span><a class="headerlink" href="#id26" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="In this example, we use sine bell or squared sine bell window multiplication to apodize a NMR s..."><div class="figure align-default" id="id27">
+<img alt="Sine bell and squared Sine bell window multiplication" src="../../../_images/sphx_glr_plot_proc_sp_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../../gettingstarted/gallery/auto_examples/processing/plot_proc_sp.html#sphx-glr-gettingstarted-gallery-auto-examples-processing-plot-proc-sp-py"><span class="std std-ref">Sine bell and squared Sine bell window multiplication</span></a></span><a class="headerlink" href="#id27" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="In this example, we create a Project from scratch"><div class="figure align-default" id="id28">
+<img alt="Project creation" src="../../../_images/sphx_glr_plot_project_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../../gettingstarted/gallery/auto_examples/project/plot_project.html#sphx-glr-gettingstarted-gallery-auto-examples-project-plot-project-py"><span class="std std-ref">Project creation</span></a></span><a class="headerlink" href="#id28" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Here we load an experimental Bruker OPUS files and plot it."><div class="figure align-default" id="id29">
+<img alt="Loading Bruker OPUS files" src="../../../_images/sphx_glr_plot_read_IR_from_opus_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../../gettingstarted/gallery/auto_examples/read/plot_read_IR_from_opus.html#sphx-glr-gettingstarted-gallery-auto-examples-read-plot-read-ir-from-opus-py"><span class="std std-ref">Loading Bruker OPUS files</span></a></span><a class="headerlink" href="#id29" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Here we load an experimental SPG file (OMNIC) and plot it."><div class="figure align-default" id="id30">
+<img alt="Loading an IR (omnic SPG) experimental file" src="../../../_images/sphx_glr_plot_read_IR_from_omnic_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../../gettingstarted/gallery/auto_examples/read/plot_read_IR_from_omnic.html#sphx-glr-gettingstarted-gallery-auto-examples-read-plot-read-ir-from-omnic-py"><span class="std std-ref">Loading an IR (omnic SPG) experimental file</span></a></span><a class="headerlink" href="#id30" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="In this example, we load a NMR dataset (in the Bruker format) and plot it."><div class="figure align-default" id="id31">
+<img alt="Loading of experimental 1D NMR data" src="../../../_images/sphx_glr_plot_read_nmr_from_bruker_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../../gettingstarted/gallery/auto_examples/read/plot_read_nmr_from_bruker.html#sphx-glr-gettingstarted-gallery-auto-examples-read-plot-read-nmr-from-bruker-py"><span class="std std-ref">Loading of experimental 1D NMR data</span></a></span><a class="headerlink" href="#id31" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="sphx-glr-thumbcontainer" tooltip="Here we load experimental LABSPEC spectra and plot them."><div class="figure align-default" id="id32">
+<img alt="Loading RAMAN experimental file" src="../../../_images/sphx_glr_plot_read_raman_from_labspec_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../../gettingstarted/gallery/auto_examples/read/plot_read_raman_from_labspec.html#sphx-glr-gettingstarted-gallery-auto-examples-read-plot-read-raman-from-labspec-py"><span class="std std-ref">Loading RAMAN experimental file</span></a></span><a class="headerlink" href="#id32" title="Permalink to this image">¶</a></p>
+</div>
+</div><div style='clear:both'></div></div>
+</div>
+
+
+           </div>
+          </div>
+
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2014-2022 - A.Travert &amp; C.Fernandez @ LCS.
+      <span class="lastupdated">Last updated on Jan 21, 2022.
+      </span></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+spectrochempy.core.dataset.nddataset.transpose
+==============================================
+
+.. currentmodule:: spectrochempy.core.dataset.nddataset
+
+.. autofunction:: transpose

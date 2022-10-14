@@ -1,0 +1,6 @@
+spectrochempy.analysis.svd.SVD.ev
+=================================
+
+.. currentmodule:: spectrochempy.analysis.svd
+
+.. autoproperty:: SVD.ev

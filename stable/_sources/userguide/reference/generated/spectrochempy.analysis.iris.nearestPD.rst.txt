@@ -1,0 +1,6 @@
+spectrochempy.analysis.iris.nearestPD
+=====================================
+
+.. currentmodule:: spectrochempy.analysis.iris
+
+.. autofunction:: nearestPD

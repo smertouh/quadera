@@ -1,0 +1,6 @@
+spectrochempy.utils.file.get\_filename
+======================================
+
+.. currentmodule:: spectrochempy.utils.file
+
+.. autofunction:: get_filename

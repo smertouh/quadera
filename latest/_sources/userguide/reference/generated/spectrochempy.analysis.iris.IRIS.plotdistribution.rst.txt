@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.analysis.iris.IRIS.plotdistribution
+=================================================
+
+
+.. currentmodule:: spectrochempy.analysis.iris
+
+.. automethod:: IRIS.plotdistribution
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.analysis.iris.IRIS.plotdistribution.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

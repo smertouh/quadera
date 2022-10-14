@@ -1,0 +1,29 @@
+spectrochempy.core.readers.readopus
+===================================
+
+.. automodule:: spectrochempy.core.readers.readopus
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      read_opus
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

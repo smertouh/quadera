@@ -1,0 +1,6 @@
+spectrochempy.core.dataset.ndmath.geomspace
+===========================================
+
+.. currentmodule:: spectrochempy.core.dataset.ndmath
+
+.. autofunction:: geomspace

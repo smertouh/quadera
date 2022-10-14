@@ -1,0 +1,30 @@
+spectrochempy.core.readers.readdir
+==================================
+
+.. automodule:: spectrochempy.core.readers.readdir
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      read_carroucell
+      read_dir
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

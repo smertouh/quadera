@@ -1,0 +1,6 @@
+spectrochempy.analysis.svd.SVD.ev\_ratio
+========================================
+
+.. currentmodule:: spectrochempy.analysis.svd
+
+.. autoproperty:: SVD.ev_ratio

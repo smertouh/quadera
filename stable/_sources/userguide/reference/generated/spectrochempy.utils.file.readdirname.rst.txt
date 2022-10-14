@@ -1,0 +1,6 @@
+spectrochempy.utils.file.readdirname
+====================================
+
+.. currentmodule:: spectrochempy.utils.file
+
+.. autofunction:: readdirname

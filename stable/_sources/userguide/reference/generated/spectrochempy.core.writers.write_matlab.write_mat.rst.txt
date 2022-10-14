@@ -1,0 +1,6 @@
+spectrochempy.core.writers.write\_matlab.write\_mat
+===================================================
+
+.. currentmodule:: spectrochempy.core.writers.write_matlab
+
+.. autofunction:: write_mat

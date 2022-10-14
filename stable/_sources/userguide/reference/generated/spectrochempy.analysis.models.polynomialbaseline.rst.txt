@@ -1,0 +1,35 @@
+spectrochempy.analysis.models.polynomialbaseline
+================================================
+
+.. currentmodule:: spectrochempy.analysis.models
+
+.. autoclass:: polynomialbaseline
+
+   
+     
+   
+
+   
+     
+   .. rubric:: Attributes
+
+   .. autosummary::
+       
+       polynomialbaseline.args
+       polynomialbaseline.script
+       polynomialbaseline.type
+
+
+       
+   .. autoattribute:: args
+   .. autoattribute:: script
+   .. autoattribute:: type
+
+     
+   
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.analysis.models.polynomialbaseline.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

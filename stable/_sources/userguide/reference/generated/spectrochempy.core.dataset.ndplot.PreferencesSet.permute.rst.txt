@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.core.dataset.ndplot.PreferencesSet.permute
+========================================================
+
+
+.. currentmodule:: spectrochempy.core.dataset.ndplot
+
+.. automethod:: PreferencesSet.permute
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.core.dataset.ndplot.PreferencesSet.permute.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

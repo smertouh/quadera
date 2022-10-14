@@ -1,0 +1,6 @@
+spectrochempy.core.dataset.ndmath.zeros\_like
+=============================================
+
+.. currentmodule:: spectrochempy.core.dataset.ndmath
+
+.. autofunction:: zeros_like

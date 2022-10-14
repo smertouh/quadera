@@ -1,0 +1,6 @@
+spectrochempy.core.readers.read\_omnic.read\_srs
+================================================
+
+.. currentmodule:: spectrochempy.core.readers.read_omnic
+
+.. autofunction:: read_srs

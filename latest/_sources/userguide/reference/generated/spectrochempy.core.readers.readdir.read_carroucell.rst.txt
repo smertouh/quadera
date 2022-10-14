@@ -1,0 +1,6 @@
+spectrochempy.core.readers.readdir.read\_carroucell
+===================================================
+
+.. currentmodule:: spectrochempy.core.readers.readdir
+
+.. autofunction:: read_carroucell

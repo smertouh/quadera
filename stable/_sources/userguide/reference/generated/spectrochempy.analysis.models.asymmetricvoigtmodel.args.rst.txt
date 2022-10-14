@@ -1,0 +1,6 @@
+spectrochempy.analysis.models.asymmetricvoigtmodel.args
+=======================================================
+
+.. currentmodule:: spectrochempy.analysis.models
+
+.. autoattribute:: asymmetricvoigtmodel.args

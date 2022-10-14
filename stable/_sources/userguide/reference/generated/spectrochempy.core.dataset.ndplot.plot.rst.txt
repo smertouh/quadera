@@ -1,0 +1,6 @@
+spectrochempy.core.dataset.ndplot.plot
+======================================
+
+.. currentmodule:: spectrochempy.core.dataset.ndplot
+
+.. autofunction:: plot

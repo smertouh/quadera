@@ -1,0 +1,27 @@
+spectrochempy.application.DataDir
+=================================
+
+.. currentmodule:: spectrochempy.application
+
+.. autoclass:: DataDir
+
+   
+     
+   .. rubric:: Methods
+
+   .. autosummary::
+       
+       DataDir.listing
+
+      
+   
+
+   
+     
+   
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.application.DataDir.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

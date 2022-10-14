@@ -1,0 +1,30 @@
+spectrochempy.core.readers.readmatlab
+=====================================
+
+.. automodule:: spectrochempy.core.readers.readmatlab
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      read_mat
+      read_matlab
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

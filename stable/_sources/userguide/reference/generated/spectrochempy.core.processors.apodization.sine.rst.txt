@@ -1,0 +1,6 @@
+spectrochempy.core.processors.apodization.sine
+==============================================
+
+.. currentmodule:: spectrochempy.core.processors.apodization
+
+.. autofunction:: sine

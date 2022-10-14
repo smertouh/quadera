@@ -1,0 +1,6 @@
+spectrochempy.analysis.models.polynomialbaseline.script
+=======================================================
+
+.. currentmodule:: spectrochempy.analysis.models
+
+.. autoattribute:: polynomialbaseline.script

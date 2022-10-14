@@ -1,0 +1,30 @@
+spectrochempy.core.fitting.lstsq.LSTSQ
+======================================
+
+.. currentmodule:: spectrochempy.core.fitting.lstsq
+
+.. autoclass:: LSTSQ
+
+   
+     
+   .. rubric:: Methods
+
+   .. autosummary::
+       
+       LSTSQ.inverse_transform
+       LSTSQ.itrans
+       LSTSQ.trans
+       LSTSQ.transform
+
+      
+   
+
+   
+     
+   
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.core.fitting.lstsq.LSTSQ.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

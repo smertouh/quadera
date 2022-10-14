@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.databases.isotopes.Isotopes.permute
+=================================================
+
+
+.. currentmodule:: spectrochempy.databases.isotopes
+
+.. automethod:: Isotopes.permute
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.databases.isotopes.Isotopes.permute.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

@@ -1,0 +1,6 @@
+spectrochempy.analysis.models.asymmetricvoigtmodel.script
+=========================================================
+
+.. currentmodule:: spectrochempy.analysis.models
+
+.. autoattribute:: asymmetricvoigtmodel.script

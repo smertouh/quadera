@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.analysis.mcrals.MCRALS.plotmerit
+==============================================
+
+
+.. currentmodule:: spectrochempy.analysis.mcrals
+
+.. automethod:: MCRALS.plotmerit
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.analysis.mcrals.MCRALS.plotmerit.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

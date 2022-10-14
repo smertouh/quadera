@@ -1,0 +1,29 @@
+spectrochempy.core.dataset.ndio
+===============================
+
+.. automodule:: spectrochempy.core.dataset.ndio
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      NDIO
+   
+   
+
+   
+   
+   
+
+
+

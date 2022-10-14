@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.application.SpectroChemPy.emit\_help\_epilogue
+============================================================
+
+
+.. currentmodule:: spectrochempy.application
+
+.. automethod:: SpectroChemPy.emit_help_epilogue
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.application.SpectroChemPy.emit_help_epilogue.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

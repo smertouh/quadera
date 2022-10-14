@@ -1,0 +1,36 @@
+spectrochempy.core.plotters
+===========================
+
+.. automodule:: spectrochempy.core.plotters
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+
+.. rubric:: Modules
+
+.. autosummary::
+   :toctree:
+   :recursive:
+
+   spectrochempy.core.plotters.api
+   spectrochempy.core.plotters.multiplot
+   spectrochempy.core.plotters.plot1d
+   spectrochempy.core.plotters.plot2d
+   spectrochempy.core.plotters.plot3d
+   spectrochempy.core.plotters.plotly
+

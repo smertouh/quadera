@@ -1,0 +1,6 @@
+spectrochempy.core.dataset.ndplot.NDPlot.divider
+================================================
+
+.. currentmodule:: spectrochempy.core.dataset.ndplot
+
+.. autoproperty:: NDPlot.divider

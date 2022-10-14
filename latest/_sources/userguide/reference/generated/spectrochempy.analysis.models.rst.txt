@@ -1,0 +1,40 @@
+spectrochempy.analysis.models
+=============================
+
+.. automodule:: spectrochempy.analysis.models
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      make_units_compatibility
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      asymmetricvoigtmodel
+      gaussianmodel
+      lorentzianmodel
+      polynomialbaseline
+      sigmoidmodel
+      voigtmodel
+   
+   
+
+   
+   
+   
+
+
+

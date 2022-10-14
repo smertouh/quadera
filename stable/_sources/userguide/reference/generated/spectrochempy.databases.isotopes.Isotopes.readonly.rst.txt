@@ -1,0 +1,6 @@
+spectrochempy.databases.isotopes.Isotopes.readonly
+==================================================
+
+.. currentmodule:: spectrochempy.databases.isotopes
+
+.. autoattribute:: Isotopes.readonly

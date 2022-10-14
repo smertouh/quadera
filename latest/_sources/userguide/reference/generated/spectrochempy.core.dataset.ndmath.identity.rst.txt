@@ -1,0 +1,6 @@
+spectrochempy.core.dataset.ndmath.identity
+==========================================
+
+.. currentmodule:: spectrochempy.core.dataset.ndmath
+
+.. autofunction:: identity

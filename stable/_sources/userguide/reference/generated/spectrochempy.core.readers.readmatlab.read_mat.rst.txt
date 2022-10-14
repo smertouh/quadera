@@ -1,0 +1,6 @@
+spectrochempy.core.readers.readmatlab.read\_mat
+===============================================
+
+.. currentmodule:: spectrochempy.core.readers.readmatlab
+
+.. autofunction:: read_mat

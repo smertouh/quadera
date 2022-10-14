@@ -1,0 +1,36 @@
+spectrochempy.core.scripts.script
+=================================
+
+.. automodule:: spectrochempy.core.scripts.script
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      run_all_scripts
+      run_script
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      Script
+   
+   
+
+   
+   
+   
+
+
+

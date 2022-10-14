@@ -1,0 +1,42 @@
+spectrochempy.core.dataset
+==========================
+
+.. automodule:: spectrochempy.core.dataset
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+
+.. rubric:: Modules
+
+.. autosummary::
+   :toctree:
+   :recursive:
+
+   spectrochempy.core.dataset.api
+   spectrochempy.core.dataset.coord
+   spectrochempy.core.dataset.coordrange
+   spectrochempy.core.dataset.coordset
+   spectrochempy.core.dataset.meta
+   spectrochempy.core.dataset.ndarray
+   spectrochempy.core.dataset.ndcomplex
+   spectrochempy.core.dataset.nddataset
+   spectrochempy.core.dataset.ndio
+   spectrochempy.core.dataset.ndmath
+   spectrochempy.core.dataset.ndplot
+   spectrochempy.core.dataset.npy
+

@@ -1,0 +1,35 @@
+spectrochempy.analysis.models.voigtmodel
+========================================
+
+.. currentmodule:: spectrochempy.analysis.models
+
+.. autoclass:: voigtmodel
+
+   
+     
+   
+
+   
+     
+   .. rubric:: Attributes
+
+   .. autosummary::
+       
+       voigtmodel.args
+       voigtmodel.script
+       voigtmodel.type
+
+
+       
+   .. autoattribute:: args
+   .. autoattribute:: script
+   .. autoattribute:: type
+
+     
+   
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.analysis.models.voigtmodel.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

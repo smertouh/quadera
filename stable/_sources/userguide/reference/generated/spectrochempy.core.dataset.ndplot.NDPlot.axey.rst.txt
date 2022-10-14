@@ -1,0 +1,6 @@
+spectrochempy.core.dataset.ndplot.NDPlot.axey
+=============================================
+
+.. currentmodule:: spectrochempy.core.dataset.ndplot
+
+.. autoproperty:: NDPlot.axey

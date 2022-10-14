@@ -1,0 +1,6 @@
+spectrochempy.core.dataset.ndmath.empty\_like
+=============================================
+
+.. currentmodule:: spectrochempy.core.dataset.ndmath
+
+.. autofunction:: empty_like

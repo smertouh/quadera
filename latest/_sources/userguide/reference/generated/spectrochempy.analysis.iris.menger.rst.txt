@@ -1,0 +1,6 @@
+spectrochempy.analysis.iris.menger
+==================================
+
+.. currentmodule:: spectrochempy.analysis.iris
+
+.. autofunction:: menger

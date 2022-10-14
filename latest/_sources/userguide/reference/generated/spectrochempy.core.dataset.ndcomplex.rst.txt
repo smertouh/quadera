@@ -1,0 +1,23 @@
+spectrochempy.core.dataset.ndcomplex
+====================================
+
+.. automodule:: spectrochempy.core.dataset.ndcomplex
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

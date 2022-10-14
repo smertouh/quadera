@@ -1,0 +1,29 @@
+spectrochempy.core.readers.download
+===================================
+
+.. automodule:: spectrochempy.core.readers.download
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      download_iris
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

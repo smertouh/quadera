@@ -1,0 +1,6 @@
+spectrochempy.core.dataset.ndio.NDIO.suffix
+===========================================
+
+.. currentmodule:: spectrochempy.core.dataset.ndio
+
+.. autoproperty:: NDIO.suffix

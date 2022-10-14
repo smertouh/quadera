@@ -1,0 +1,6 @@
+spectrochempy.core.dataset.ndmath.coordmax
+==========================================
+
+.. currentmodule:: spectrochempy.core.dataset.ndmath
+
+.. autofunction:: coordmax

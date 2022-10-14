@@ -1,0 +1,6 @@
+spectrochempy.core.dataset.nddataset.to\_array
+==============================================
+
+.. currentmodule:: spectrochempy.core.dataset.nddataset
+
+.. autofunction:: to_array

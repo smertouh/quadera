@@ -1,0 +1,23 @@
+spectrochempy.core.plotters.api
+===============================
+
+.. automodule:: spectrochempy.core.plotters.api
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

@@ -1,0 +1,20 @@
+spectrochempy.core.project.baseproject.AbstractProject
+======================================================
+
+.. currentmodule:: spectrochempy.core.project.baseproject
+
+.. autoclass:: AbstractProject
+
+   
+     
+   
+
+   
+     
+   
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.core.project.baseproject.AbstractProject.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.core.dataset.ndio.NDIO.load
+=========================================
+
+
+.. currentmodule:: spectrochempy.core.dataset.ndio
+
+.. automethod:: NDIO.load
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.core.dataset.ndio.NDIO.load.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

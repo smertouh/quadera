@@ -1,0 +1,6 @@
+spectrochempy.core.analysis.cantera\_utilities.modify\_rate
+===========================================================
+
+.. currentmodule:: spectrochempy.core.analysis.cantera_utilities
+
+.. autofunction:: modify_rate

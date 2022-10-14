@@ -1,0 +1,36 @@
+spectrochempy.core.fitting
+==========================
+
+.. automodule:: spectrochempy.core.fitting
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+
+.. rubric:: Modules
+
+.. autosummary::
+   :toctree:
+   :recursive:
+
+   spectrochempy.core.fitting.api
+   spectrochempy.core.fitting.fit
+   spectrochempy.core.fitting.lstsq
+   spectrochempy.core.fitting.models
+   spectrochempy.core.fitting.optimization
+   spectrochempy.core.fitting.parameters
+

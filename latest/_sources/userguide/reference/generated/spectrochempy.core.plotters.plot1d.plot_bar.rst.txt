@@ -1,0 +1,6 @@
+spectrochempy.core.plotters.plot1d.plot\_bar
+============================================
+
+.. currentmodule:: spectrochempy.core.plotters.plot1d
+
+.. autofunction:: plot_bar

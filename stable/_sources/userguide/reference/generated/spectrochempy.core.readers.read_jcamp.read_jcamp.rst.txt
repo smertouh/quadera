@@ -1,0 +1,6 @@
+spectrochempy.core.readers.read\_jcamp.read\_jcamp
+==================================================
+
+.. currentmodule:: spectrochempy.core.readers.read_jcamp
+
+.. autofunction:: read_jcamp

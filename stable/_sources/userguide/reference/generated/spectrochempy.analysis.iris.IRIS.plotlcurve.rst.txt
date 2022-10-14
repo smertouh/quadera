@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.analysis.iris.IRIS.plotlcurve
+===========================================
+
+
+.. currentmodule:: spectrochempy.analysis.iris
+
+.. automethod:: IRIS.plotlcurve
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.analysis.iris.IRIS.plotlcurve.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

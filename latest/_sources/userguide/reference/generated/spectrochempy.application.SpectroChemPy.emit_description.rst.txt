@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.application.SpectroChemPy.emit\_description
+=========================================================
+
+
+.. currentmodule:: spectrochempy.application
+
+.. automethod:: SpectroChemPy.emit_description
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.application.SpectroChemPy.emit_description.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

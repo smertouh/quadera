@@ -1,0 +1,29 @@
+spectrochempy.core.fitting.fit
+==============================
+
+.. automodule:: spectrochempy.core.fitting.fit
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      Fit
+   
+   
+
+   
+   
+   
+
+
+

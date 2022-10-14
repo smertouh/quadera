@@ -1,0 +1,6 @@
+spectrochempy.core.processors.integrate.simpson
+===============================================
+
+.. currentmodule:: spectrochempy.core.processors.integrate
+
+.. autofunction:: simpson

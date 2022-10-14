@@ -1,0 +1,6 @@
+spectrochempy.utils.testing.gisinf
+==================================
+
+.. currentmodule:: spectrochempy.utils.testing
+
+.. autofunction:: gisinf

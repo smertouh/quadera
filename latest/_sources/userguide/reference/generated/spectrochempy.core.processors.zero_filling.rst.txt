@@ -1,0 +1,32 @@
+spectrochempy.core.processors.zero\_filling
+===========================================
+
+.. automodule:: spectrochempy.core.processors.zero_filling
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      zf
+      zf_auto
+      zf_double
+      zf_size
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

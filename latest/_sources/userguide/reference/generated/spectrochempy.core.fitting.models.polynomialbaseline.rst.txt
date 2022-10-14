@@ -1,0 +1,33 @@
+spectrochempy.core.fitting.models.polynomialbaseline
+====================================================
+
+.. currentmodule:: spectrochempy.core.fitting.models
+
+.. autoclass:: polynomialbaseline
+
+   
+     
+   
+
+   
+     
+   .. rubric:: Attributes
+
+   .. autosummary::
+       
+       polynomialbaseline.args
+       polynomialbaseline.script
+
+
+       
+   .. autoattribute:: args
+   .. autoattribute:: script
+
+     
+   
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.core.fitting.models.polynomialbaseline.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

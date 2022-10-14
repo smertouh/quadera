@@ -1,0 +1,6 @@
+spectrochempy.core.error\_
+==========================
+
+.. currentmodule:: spectrochempy.core
+
+.. autofunction:: error_

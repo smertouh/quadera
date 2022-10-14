@@ -1,0 +1,29 @@
+spectrochempy.core.plotters.plot2d
+==================================
+
+.. automodule:: spectrochempy.core.plotters.plot2d
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      plot_2D
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

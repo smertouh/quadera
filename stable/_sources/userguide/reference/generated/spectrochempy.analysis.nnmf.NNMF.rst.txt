@@ -1,0 +1,28 @@
+spectrochempy.analysis.nnmf.NNMF
+================================
+
+.. currentmodule:: spectrochempy.analysis.nnmf
+
+.. autoclass:: NNMF
+
+   
+     
+   .. rubric:: Methods
+
+   .. autosummary::
+       
+       NNMF.nlssubprob
+       NNMF.nmf
+
+      
+   
+
+   
+     
+   
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.analysis.nnmf.NNMF.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

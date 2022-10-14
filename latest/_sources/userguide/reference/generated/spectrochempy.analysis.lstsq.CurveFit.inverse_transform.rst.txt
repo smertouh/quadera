@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.analysis.lstsq.CurveFit.inverse\_transform
+========================================================
+
+
+.. currentmodule:: spectrochempy.analysis.lstsq
+
+.. automethod:: CurveFit.inverse_transform
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.analysis.lstsq.CurveFit.inverse_transform.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

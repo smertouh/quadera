@@ -1,0 +1,20 @@
+spectrochempy.core.fitting.parameters.ParameterScript
+=====================================================
+
+.. currentmodule:: spectrochempy.core.fitting.parameters
+
+.. autoclass:: ParameterScript
+
+   
+     
+   
+
+   
+     
+   
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.core.fitting.parameters.ParameterScript.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

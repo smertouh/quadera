@@ -1,0 +1,36 @@
+spectrochempy.core.fitting.parameters.FitParameters
+===================================================
+
+.. currentmodule:: spectrochempy.core.fitting.parameters
+
+.. autoclass:: FitParameters
+
+   
+     
+   .. rubric:: Methods
+
+   .. autosummary::
+       
+       FitParameters.clear
+       FitParameters.get
+       FitParameters.items
+       FitParameters.keys
+       FitParameters.pop
+       FitParameters.popitem
+       FitParameters.setdefault
+       FitParameters.to_internal
+       FitParameters.update
+       FitParameters.values
+
+      
+   
+
+   
+     
+   
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.core.fitting.parameters.FitParameters.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

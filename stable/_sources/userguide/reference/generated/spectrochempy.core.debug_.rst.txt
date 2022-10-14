@@ -1,0 +1,6 @@
+spectrochempy.core.debug\_
+==========================
+
+.. currentmodule:: spectrochempy.core
+
+.. autofunction:: debug_

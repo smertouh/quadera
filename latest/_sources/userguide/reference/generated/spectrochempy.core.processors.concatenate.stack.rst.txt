@@ -1,0 +1,6 @@
+spectrochempy.core.processors.concatenate.stack
+===============================================
+
+.. currentmodule:: spectrochempy.core.processors.concatenate
+
+.. autofunction:: stack

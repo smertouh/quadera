@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.analysis.nnmf.NNMF.nmf
+====================================
+
+
+.. currentmodule:: spectrochempy.analysis.nnmf
+
+.. automethod:: NNMF.nmf
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.analysis.nnmf.NNMF.nmf.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

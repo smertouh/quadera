@@ -1,0 +1,6 @@
+spectrochempy.core.processors.integrate.trapezoid
+=================================================
+
+.. currentmodule:: spectrochempy.core.processors.integrate
+
+.. autofunction:: trapezoid

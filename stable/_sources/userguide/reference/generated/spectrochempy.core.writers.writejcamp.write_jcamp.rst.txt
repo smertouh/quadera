@@ -1,0 +1,6 @@
+spectrochempy.core.writers.writejcamp.write\_jcamp
+==================================================
+
+.. currentmodule:: spectrochempy.core.writers.writejcamp
+
+.. autofunction:: write_jcamp

@@ -1,0 +1,6 @@
+spectrochempy.core.readers.read\_quadera.read\_quadera
+======================================================
+
+.. currentmodule:: spectrochempy.core.readers.read_quadera
+
+.. autofunction:: read_quadera

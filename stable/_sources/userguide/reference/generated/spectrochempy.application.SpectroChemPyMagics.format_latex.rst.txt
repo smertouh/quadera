@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.application.SpectroChemPyMagics.format\_latex
+===========================================================
+
+
+.. currentmodule:: spectrochempy.application
+
+.. automethod:: SpectroChemPyMagics.format_latex
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.application.SpectroChemPyMagics.format_latex.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

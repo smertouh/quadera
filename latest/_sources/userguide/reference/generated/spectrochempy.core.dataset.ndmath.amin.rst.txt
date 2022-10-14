@@ -1,0 +1,6 @@
+spectrochempy.core.dataset.ndmath.amin
+======================================
+
+.. currentmodule:: spectrochempy.core.dataset.ndmath
+
+.. autofunction:: amin

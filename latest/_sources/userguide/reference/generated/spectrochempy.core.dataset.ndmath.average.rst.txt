@@ -1,0 +1,6 @@
+spectrochempy.core.dataset.ndmath.average
+=========================================
+
+.. currentmodule:: spectrochempy.core.dataset.ndmath
+
+.. autofunction:: average

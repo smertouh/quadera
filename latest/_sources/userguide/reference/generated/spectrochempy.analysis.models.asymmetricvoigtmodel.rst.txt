@@ -1,0 +1,35 @@
+spectrochempy.analysis.models.asymmetricvoigtmodel
+==================================================
+
+.. currentmodule:: spectrochempy.analysis.models
+
+.. autoclass:: asymmetricvoigtmodel
+
+   
+     
+   
+
+   
+     
+   .. rubric:: Attributes
+
+   .. autosummary::
+       
+       asymmetricvoigtmodel.args
+       asymmetricvoigtmodel.script
+       asymmetricvoigtmodel.type
+
+
+       
+   .. autoattribute:: args
+   .. autoattribute:: script
+   .. autoattribute:: type
+
+     
+   
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.analysis.models.asymmetricvoigtmodel.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

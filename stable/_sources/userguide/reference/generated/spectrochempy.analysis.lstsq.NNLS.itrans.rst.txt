@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.analysis.lstsq.NNLS.itrans
+========================================
+
+
+.. currentmodule:: spectrochempy.analysis.lstsq
+
+.. automethod:: NNLS.itrans
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.analysis.lstsq.NNLS.itrans.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

@@ -1,0 +1,29 @@
+spectrochempy.core.processors.smooth
+====================================
+
+.. automodule:: spectrochempy.core.processors.smooth
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      smooth
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

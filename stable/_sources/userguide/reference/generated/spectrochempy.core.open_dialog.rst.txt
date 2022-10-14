@@ -1,0 +1,6 @@
+spectrochempy.core.open\_dialog
+===============================
+
+.. currentmodule:: spectrochempy.core
+
+.. autofunction:: open_dialog

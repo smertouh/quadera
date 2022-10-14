@@ -1,0 +1,27 @@
+spectrochempy.core.scripts.script.Script
+========================================
+
+.. currentmodule:: spectrochempy.core.scripts.script
+
+.. autoclass:: Script
+
+   
+     
+   .. rubric:: Methods
+
+   .. autosummary::
+       
+       Script.implements
+
+      
+   
+
+   
+     
+   
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.core.scripts.script.Script.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

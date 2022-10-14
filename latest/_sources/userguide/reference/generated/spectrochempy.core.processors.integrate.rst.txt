@@ -1,0 +1,30 @@
+spectrochempy.core.processors.integrate
+=======================================
+
+.. automodule:: spectrochempy.core.processors.integrate
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      simpson
+      trapezoid
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

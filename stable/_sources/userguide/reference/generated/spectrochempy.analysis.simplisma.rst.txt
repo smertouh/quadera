@@ -1,0 +1,29 @@
+spectrochempy.analysis.simplisma
+================================
+
+.. automodule:: spectrochempy.analysis.simplisma
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      SIMPLISMA
+   
+   
+
+   
+   
+   
+
+
+

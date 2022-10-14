@@ -1,0 +1,6 @@
+spectrochempy.core.dataset.ndplot.PreferencesSet.readonly
+=========================================================
+
+.. currentmodule:: spectrochempy.core.dataset.ndplot
+
+.. autoattribute:: PreferencesSet.readonly

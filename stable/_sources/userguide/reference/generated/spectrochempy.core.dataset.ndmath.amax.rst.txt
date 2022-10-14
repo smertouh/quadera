@@ -1,0 +1,6 @@
+spectrochempy.core.dataset.ndmath.amax
+======================================
+
+.. currentmodule:: spectrochempy.core.dataset.ndmath
+
+.. autofunction:: amax

@@ -1,0 +1,6 @@
+spectrochempy.core.dataset.ndmath.diagonal
+==========================================
+
+.. currentmodule:: spectrochempy.core.dataset.ndmath
+
+.. autofunction:: diagonal

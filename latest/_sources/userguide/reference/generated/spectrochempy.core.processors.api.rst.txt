@@ -1,0 +1,23 @@
+spectrochempy.core.processors.api
+=================================
+
+.. automodule:: spectrochempy.core.processors.api
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

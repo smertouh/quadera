@@ -1,0 +1,6 @@
+spectrochempy.core.warning\_
+============================
+
+.. currentmodule:: spectrochempy.core
+
+.. autofunction:: warning_

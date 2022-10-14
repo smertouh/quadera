@@ -1,0 +1,33 @@
+spectrochempy.core.project
+==========================
+
+.. automodule:: spectrochempy.core.project
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+
+.. rubric:: Modules
+
+.. autosummary::
+   :toctree:
+   :recursive:
+
+   spectrochempy.core.project.api
+   spectrochempy.core.project.baseproject
+   spectrochempy.core.project.project
+

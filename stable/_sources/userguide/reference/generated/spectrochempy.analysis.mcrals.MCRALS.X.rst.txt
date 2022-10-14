@@ -1,0 +1,6 @@
+spectrochempy.analysis.mcrals.MCRALS.X
+======================================
+
+.. currentmodule:: spectrochempy.analysis.mcrals
+
+.. autoproperty:: MCRALS.X

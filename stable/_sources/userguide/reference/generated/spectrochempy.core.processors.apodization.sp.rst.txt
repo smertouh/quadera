@@ -1,0 +1,6 @@
+spectrochempy.core.processors.apodization.sp
+============================================
+
+.. currentmodule:: spectrochempy.core.processors.apodization
+
+.. autofunction:: sp

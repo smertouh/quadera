@@ -1,0 +1,6 @@
+spectrochempy.plot\_preferences
+===============================
+
+.. currentmodule:: spectrochempy
+
+.. autodata:: plot_preferences

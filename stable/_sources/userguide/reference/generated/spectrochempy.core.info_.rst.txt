@@ -1,0 +1,6 @@
+spectrochempy.core.info\_
+=========================
+
+.. currentmodule:: spectrochempy.core
+
+.. autofunction:: info_

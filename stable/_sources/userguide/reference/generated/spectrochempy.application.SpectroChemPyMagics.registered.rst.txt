@@ -1,0 +1,6 @@
+spectrochempy.application.SpectroChemPyMagics.registered
+========================================================
+
+.. currentmodule:: spectrochempy.application
+
+.. autoattribute:: SpectroChemPyMagics.registered

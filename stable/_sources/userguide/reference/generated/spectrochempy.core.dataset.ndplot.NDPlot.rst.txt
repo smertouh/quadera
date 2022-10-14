@@ -1,0 +1,59 @@
+spectrochempy.core.dataset.ndplot.NDPlot
+========================================
+
+.. currentmodule:: spectrochempy.core.dataset.ndplot
+
+.. autoclass:: NDPlot
+
+   
+     
+   .. rubric:: Methods
+
+   .. autosummary::
+       
+       NDPlot.close_figure
+       NDPlot.plot
+
+      
+   
+
+   
+     
+   .. rubric:: Attributes
+
+   .. autosummary::
+       
+       NDPlot.ax
+       NDPlot.axT
+       NDPlot.axec
+       NDPlot.axecT
+       NDPlot.axex
+       NDPlot.axey
+       NDPlot.divider
+       NDPlot.fig
+       NDPlot.fignum
+       NDPlot.ndaxes
+       NDPlot.preferences
+
+
+       
+   .. autoattribute:: ax
+   .. autoattribute:: axT
+   .. autoattribute:: axec
+   .. autoattribute:: axecT
+   .. autoattribute:: axex
+   .. autoattribute:: axey
+   .. autoattribute:: divider
+   .. autoattribute:: fig
+   .. autoattribute:: fignum
+   .. autoattribute:: ndaxes
+   .. autoattribute:: preferences
+
+     
+   
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.core.dataset.ndplot.NDPlot.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

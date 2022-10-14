@@ -1,0 +1,29 @@
+spectrochempy.core.readers.readcsv
+==================================
+
+.. automodule:: spectrochempy.core.readers.readcsv
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      read_csv
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

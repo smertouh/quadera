@@ -1,0 +1,23 @@
+spectrochempy.core.fitting.api
+==============================
+
+.. automodule:: spectrochempy.core.fitting.api
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

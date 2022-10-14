@@ -1,0 +1,6 @@
+spectrochempy.core.readers.readopus.read\_opus
+==============================================
+
+.. currentmodule:: spectrochempy.core.readers.readopus
+
+.. autofunction:: read_opus

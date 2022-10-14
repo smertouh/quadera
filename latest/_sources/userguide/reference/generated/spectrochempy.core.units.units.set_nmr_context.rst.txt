@@ -1,0 +1,6 @@
+spectrochempy.core.units.units.set\_nmr\_context
+================================================
+
+.. currentmodule:: spectrochempy.core.units.units
+
+.. autofunction:: set_nmr_context

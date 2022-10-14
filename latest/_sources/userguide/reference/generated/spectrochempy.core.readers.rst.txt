@@ -1,0 +1,44 @@
+spectrochempy.core.readers
+==========================
+
+.. automodule:: spectrochempy.core.readers
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+
+.. rubric:: Modules
+
+.. autosummary::
+   :toctree:
+   :recursive:
+
+   spectrochempy.core.readers.api
+   spectrochempy.core.readers.download
+   spectrochempy.core.readers.importer
+   spectrochempy.core.readers.read_carroucell
+   spectrochempy.core.readers.read_csv
+   spectrochempy.core.readers.read_jcamp
+   spectrochempy.core.readers.read_labspec
+   spectrochempy.core.readers.read_matlab
+   spectrochempy.core.readers.read_omnic
+   spectrochempy.core.readers.read_opus
+   spectrochempy.core.readers.read_quadera
+   spectrochempy.core.readers.read_spc
+   spectrochempy.core.readers.read_topspin
+   spectrochempy.core.readers.read_zip
+

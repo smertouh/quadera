@@ -1,0 +1,74 @@
+spectrochempy.core.dataset.ndmath
+=================================
+
+.. automodule:: spectrochempy.core.dataset.ndmath
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      all
+      amax
+      amin
+      any
+      arange
+      argmax
+      argmin
+      average
+      clip
+      conj
+      conjugate
+      coordmax
+      coordmin
+      cumsum
+      diag
+      diagonal
+      empty
+      empty_like
+      eye
+      fromfunction
+      fromiter
+      full
+      full_like
+      geomspace
+      identity
+      linspace
+      logspace
+      max
+      mean
+      min
+      ones
+      ones_like
+      pipe
+      ptp
+      random
+      std
+      sum
+      var
+      zeros
+      zeros_like
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      NDMath
+   
+   
+
+   
+   
+   
+
+
+

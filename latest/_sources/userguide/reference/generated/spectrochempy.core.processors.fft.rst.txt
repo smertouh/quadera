@@ -1,0 +1,35 @@
+spectrochempy.core.processors.fft
+=================================
+
+.. automodule:: spectrochempy.core.processors.fft
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      fft
+      ft
+      ht
+      ifft
+      ift
+      mc
+      ps
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

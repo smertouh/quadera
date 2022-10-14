@@ -1,0 +1,139 @@
+spectrochempy.core.dataset.ndarray.NDArray
+==========================================
+
+.. currentmodule:: spectrochempy.core.dataset.ndarray
+
+.. autoclass:: NDArray
+
+   
+     
+   .. rubric:: Methods
+
+   .. autosummary::
+       
+       NDArray.asfortranarray
+       NDArray.astype
+       NDArray.copy
+       NDArray.get_axis
+       NDArray.get_labels
+       NDArray.implements
+       NDArray.is_units_compatible
+       NDArray.ito
+       NDArray.ito_base_units
+       NDArray.ito_reduced_units
+       NDArray.remove_masks
+       NDArray.squeeze
+       NDArray.swapaxes
+       NDArray.swapdims
+       NDArray.to
+       NDArray.to_base_units
+       NDArray.to_reduced_units
+       NDArray.transpose
+
+      
+   
+
+   
+     
+   .. rubric:: Attributes
+
+   .. autosummary::
+       
+       NDArray.T
+       NDArray.author
+       NDArray.created
+       NDArray.data
+       NDArray.date
+       NDArray.desc
+       NDArray.description
+       NDArray.dimensionless
+       NDArray.dims
+       NDArray.dtype
+       NDArray.filename
+       NDArray.has_data
+       NDArray.has_defined_name
+       NDArray.has_units
+       NDArray.history
+       NDArray.id
+       NDArray.is_1d
+       NDArray.is_empty
+       NDArray.is_float
+       NDArray.is_integer
+       NDArray.is_labeled
+       NDArray.is_masked
+       NDArray.itemsize
+       NDArray.labels
+       NDArray.limits
+       NDArray.m
+       NDArray.magnitude
+       NDArray.mask
+       NDArray.masked_data
+       NDArray.meta
+       NDArray.modified
+       NDArray.name
+       NDArray.ndim
+       NDArray.origin
+       NDArray.roi
+       NDArray.shape
+       NDArray.size
+       NDArray.title
+       NDArray.umasked_data
+       NDArray.unitless
+       NDArray.units
+       NDArray.value
+       NDArray.values
+
+
+       
+   .. autoattribute:: T
+   .. autoattribute:: author
+   .. autoattribute:: created
+   .. autoattribute:: data
+   .. autoattribute:: date
+   .. autoattribute:: desc
+   .. autoattribute:: description
+   .. autoattribute:: dimensionless
+   .. autoattribute:: dims
+   .. autoattribute:: dtype
+   .. autoattribute:: filename
+   .. autoattribute:: has_data
+   .. autoattribute:: has_defined_name
+   .. autoattribute:: has_units
+   .. autoattribute:: history
+   .. autoattribute:: id
+   .. autoattribute:: is_1d
+   .. autoattribute:: is_empty
+   .. autoattribute:: is_float
+   .. autoattribute:: is_integer
+   .. autoattribute:: is_labeled
+   .. autoattribute:: is_masked
+   .. autoattribute:: itemsize
+   .. autoattribute:: labels
+   .. autoattribute:: limits
+   .. autoattribute:: m
+   .. autoattribute:: magnitude
+   .. autoattribute:: mask
+   .. autoattribute:: masked_data
+   .. autoattribute:: meta
+   .. autoattribute:: modified
+   .. autoattribute:: name
+   .. autoattribute:: ndim
+   .. autoattribute:: origin
+   .. autoattribute:: roi
+   .. autoattribute:: shape
+   .. autoattribute:: size
+   .. autoattribute:: title
+   .. autoattribute:: umasked_data
+   .. autoattribute:: unitless
+   .. autoattribute:: units
+   .. autoattribute:: value
+   .. autoattribute:: values
+
+     
+   
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.core.dataset.ndarray.NDArray.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

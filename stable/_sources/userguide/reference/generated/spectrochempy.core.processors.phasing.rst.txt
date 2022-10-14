@@ -1,0 +1,30 @@
+spectrochempy.core.processors.phasing
+=====================================
+
+.. automodule:: spectrochempy.core.processors.phasing
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      pk
+      pk_exp
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

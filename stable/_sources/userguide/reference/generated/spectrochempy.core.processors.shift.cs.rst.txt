@@ -1,0 +1,6 @@
+spectrochempy.core.processors.shift.cs
+======================================
+
+.. currentmodule:: spectrochempy.core.processors.shift
+
+.. autofunction:: cs

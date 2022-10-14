@@ -1,0 +1,38 @@
+spectrochempy.core.processors.baseline
+======================================
+
+.. automodule:: spectrochempy.core.processors.baseline
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      ab
+      abc
+      basc
+      dc
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      BaselineCorrection
+   
+   
+
+   
+   
+   
+
+
+

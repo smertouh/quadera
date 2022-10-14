@@ -1,0 +1,6 @@
+spectrochempy.core.processors.baseline.dc
+=========================================
+
+.. currentmodule:: spectrochempy.core.processors.baseline
+
+.. autofunction:: dc

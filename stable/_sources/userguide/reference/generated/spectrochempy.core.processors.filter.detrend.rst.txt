@@ -1,0 +1,6 @@
+spectrochempy.core.processors.filter.detrend
+============================================
+
+.. currentmodule:: spectrochempy.core.processors.filter
+
+.. autofunction:: detrend

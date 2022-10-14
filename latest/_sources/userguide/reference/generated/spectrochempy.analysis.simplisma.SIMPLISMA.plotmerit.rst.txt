@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.analysis.simplisma.SIMPLISMA.plotmerit
+====================================================
+
+
+.. currentmodule:: spectrochempy.analysis.simplisma
+
+.. automethod:: SIMPLISMA.plotmerit
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.analysis.simplisma.SIMPLISMA.plotmerit.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

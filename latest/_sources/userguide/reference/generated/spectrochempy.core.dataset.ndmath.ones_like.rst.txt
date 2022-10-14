@@ -1,0 +1,6 @@
+spectrochempy.core.dataset.ndmath.ones\_like
+============================================
+
+.. currentmodule:: spectrochempy.core.dataset.ndmath
+
+.. autofunction:: ones_like

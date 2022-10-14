@@ -1,0 +1,71 @@
+spectrochempy.core.dataset.ndmath.NDMath
+========================================
+
+.. currentmodule:: spectrochempy.core.dataset.ndmath
+
+.. autoclass:: NDMath
+
+   
+     
+   .. rubric:: Methods
+
+   .. autosummary::
+       
+       NDMath.abs
+       NDMath.absolute
+       NDMath.all
+       NDMath.amax
+       NDMath.amin
+       NDMath.any
+       NDMath.arange
+       NDMath.argmax
+       NDMath.argmin
+       NDMath.around
+       NDMath.average
+       NDMath.clip
+       NDMath.conj
+       NDMath.conjugate
+       NDMath.coordmax
+       NDMath.coordmin
+       NDMath.cumsum
+       NDMath.diag
+       NDMath.diagonal
+       NDMath.empty
+       NDMath.empty_like
+       NDMath.eye
+       NDMath.fromfunction
+       NDMath.fromiter
+       NDMath.full
+       NDMath.full_like
+       NDMath.geomspace
+       NDMath.identity
+       NDMath.linspace
+       NDMath.logspace
+       NDMath.max
+       NDMath.mean
+       NDMath.min
+       NDMath.ones
+       NDMath.ones_like
+       NDMath.pipe
+       NDMath.ptp
+       NDMath.random
+       NDMath.round
+       NDMath.round_
+       NDMath.std
+       NDMath.sum
+       NDMath.var
+       NDMath.zeros
+       NDMath.zeros_like
+
+      
+   
+
+   
+     
+   
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.core.dataset.ndmath.NDMath.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

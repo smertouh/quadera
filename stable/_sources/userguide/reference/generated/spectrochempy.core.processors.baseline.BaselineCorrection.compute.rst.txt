@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.core.processors.baseline.BaselineCorrection.compute
+=================================================================
+
+
+.. currentmodule:: spectrochempy.core.processors.baseline
+
+.. automethod:: BaselineCorrection.compute
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.core.processors.baseline.BaselineCorrection.compute.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

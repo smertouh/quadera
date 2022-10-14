@@ -1,0 +1,6 @@
+spectrochempy.core.save\_dialog
+===============================
+
+.. currentmodule:: spectrochempy.core
+
+.. autofunction:: save_dialog

@@ -1,0 +1,6 @@
+spectrochempy.analysis.pca.PCA.LT
+=================================
+
+.. currentmodule:: spectrochempy.analysis.pca
+
+.. autoproperty:: PCA.LT

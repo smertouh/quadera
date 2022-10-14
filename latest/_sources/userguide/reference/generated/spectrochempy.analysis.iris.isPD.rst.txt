@@ -1,0 +1,6 @@
+spectrochempy.analysis.iris.isPD
+================================
+
+.. currentmodule:: spectrochempy.analysis.iris
+
+.. autofunction:: isPD

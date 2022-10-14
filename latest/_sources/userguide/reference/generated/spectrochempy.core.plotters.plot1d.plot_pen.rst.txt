@@ -1,0 +1,6 @@
+spectrochempy.core.plotters.plot1d.plot\_pen
+============================================
+
+.. currentmodule:: spectrochempy.core.plotters.plot1d
+
+.. autofunction:: plot_pen

@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.analysis.pca.PCA.reconstruct
+==========================================
+
+
+.. currentmodule:: spectrochempy.analysis.pca
+
+.. automethod:: PCA.reconstruct
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.analysis.pca.PCA.reconstruct.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

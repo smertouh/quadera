@@ -1,0 +1,29 @@
+spectrochempy.core.fitting.optimization
+=======================================
+
+.. automodule:: spectrochempy.core.fitting.optimization
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      optimize
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

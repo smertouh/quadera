@@ -1,0 +1,6 @@
+spectrochempy.core.dataset.ndplot.NDPlot.preferences
+====================================================
+
+.. currentmodule:: spectrochempy.core.dataset.ndplot
+
+.. autoproperty:: NDPlot.preferences

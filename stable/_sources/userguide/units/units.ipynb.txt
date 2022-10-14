@@ -1,0 +1,387 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0bf155a0",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import spectrochempy as scp\n",
+    "from spectrochempy import ur, Quantity  # to simplify further writing\n",
+    "import numpy as np"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "785d24dc",
+   "metadata": {},
+   "source": [
+    "# Units & Quantities"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "04359254",
+   "metadata": {},
+   "source": [
+    "SpectroChemPy can do calculations with units - it uses [pint](https://pint.readthedocs.io) to define and perform\n",
+    "operation on data with units.\n",
+    "\n",
+    "Two objects, `ur` and `Quantity`, allow the manipulation of data with units:\n",
+    "\n",
+    "* `ur`: stands for **unit registry**, is used to define and handle many type of units as well as making conversion\n",
+    " between them.\n",
+    "* `Quantity`: is a scalar or an array of scalars with some units."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "35db44ba",
+   "metadata": {
+    "lines_to_next_cell": 0
+   },
+   "source": [
+    "## Units\n",
+    "For instance, a unit of speed can be defined as:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "029d52ef",
+   "metadata": {
+    "lines_to_next_cell": 2
+   },
+   "outputs": [],
+   "source": [
+    "ur.cm / ur.s"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "3c77518c",
+   "metadata": {},
+   "source": [
+    "## Create quantities\n",
+    "\n",
+    "to create quantity, use for instance, one of the following expression:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "401cc7a2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Quantity(\"10.0 cm^-1\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "cfaefcc8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Quantity(1.0, \"cm^-1/hour\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "3deb2cfd",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Quantity(10.0, ur.cm / ur.km)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "87307e30",
+   "metadata": {},
+   "source": [
+    "or may be (?) simpler,"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c0a6bb04",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "10.0 * ur.cm / ur.km"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "26a99ba7",
+   "metadata": {},
+   "source": [
+    "## Do arithmetic with units"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b9f1aced",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a = 900 * ur.km\n",
+    "b = 4.5 * ur.hours\n",
+    "a / b"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "dd7bee6b",
+   "metadata": {},
+   "source": [
+    "Such calculations can also be done using the following syntax, using a string expression"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "75c2afb0",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Quantity(\"900 km / (4.5 hours)\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "1209a0b7",
+   "metadata": {},
+   "source": [
+    "## Conversion between units"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "caf69a07",
+   "metadata": {
+    "lines_to_next_cell": 2
+   },
+   "outputs": [],
+   "source": [
+    "c = a / b\n",
+    "d = c.to(\"cm/s\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "3052f701",
+   "metadata": {},
+   "source": [
+    "As shown below `to()` has generated a new variable and does not affect the initial one:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "3d2fdf19",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "print(f\"initial quantity: c = {c}\")\n",
+    "print(f\"converted quantity: d = {d}\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "88bd1b3c",
+   "metadata": {},
+   "source": [
+    "We can make the conversion *inplace* using `ito()` instead of `to()`:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b7f02050",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "c.ito(\"m/s\")\n",
+    "print(f\"converted quantity: c = {c}\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "4b607f8c",
+   "metadata": {},
+   "source": [
+    "## Do math operations with consistent units\n",
+    "The units are transformed consistently in maths operations:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "98958139",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x = 10 * ur.meters\n",
+    "np.sqrt(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a0a624ef",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x = 10 * ur.radians\n",
+    "np.sin(x)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "dd4e0885",
+   "metadata": {},
+   "source": [
+    "Consistency of the units are checked and errors are generated if quantities have not appropriate units\n",
+    "with the math operation..."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f552a262",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x = 10 * ur.meters\n",
+    "try:\n",
+    "    np.cos(x)\n",
+    "except scp.DimensionalityError as e:  # catch the error\n",
+    "    scp.error_(e)  # generate the error message (see API configuration)\n",
+    "\n",
+    "# Consistency of the units are checked and errors are generated if quantities have not appropriate units\n",
+    "# with the math operation..."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "69d5fa3a",
+   "metadata": {},
+   "source": [
+    "## Stripping the units\n",
+    "\n",
+    "If for any reason - including quick and dirty checks -\n",
+    "unitless numbers are needed, the `magnitude` field can be used:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "498d41a6",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x = 10 * ur.meters\n",
+    "np.cos(x.magnitude)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "db05ec33",
+   "metadata": {},
+   "source": [
+    "Units can be set for NDDataset data and/or Coordinates"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "053a17ce",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ds = scp.NDDataset([1.0, 2.0, 3.0], units=\"g/cm^3\", title=\"concentration\")\n",
+    "ds"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0a1144b6",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ds.to(\"kg/m^3\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "1d7b7698",
+   "metadata": {},
+   "source": [
+    "One can do transparent calculation using the units"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "298f342d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "volume = Quantity(\"2 m^3\")\n",
+    "ds1 = ds * volume\n",
+    "ds1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "02ef3312",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "ds1 / ds"
+   ]
+  }
+ ],
+ "metadata": {
+  "jupytext": {
+   "formats": "ipynb,py:percent",
+   "notebook_metadata_filter": "all"
+  },
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.9"
+  },
+  "widgets": {
+   "application/vnd.jupyter.widget-state+json": {
+    "state": {},
+    "version_major": 2,
+    "version_minor": 0
+   }
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

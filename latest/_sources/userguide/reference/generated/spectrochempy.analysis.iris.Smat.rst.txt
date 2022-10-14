@@ -1,0 +1,6 @@
+spectrochempy.analysis.iris.Smat
+================================
+
+.. currentmodule:: spectrochempy.analysis.iris
+
+.. autofunction:: Smat

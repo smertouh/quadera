@@ -1,0 +1,6 @@
+spectrochempy.core.dataset.ndmath.random
+========================================
+
+.. currentmodule:: spectrochempy.core.dataset.ndmath
+
+.. autofunction:: random

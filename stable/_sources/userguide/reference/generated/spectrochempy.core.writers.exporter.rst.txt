@@ -1,0 +1,29 @@
+spectrochempy.core.writers.exporter
+===================================
+
+.. automodule:: spectrochempy.core.writers.exporter
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      write
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

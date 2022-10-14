@@ -1,0 +1,6 @@
+spectrochempy.analysis.fitting.optimize
+=======================================
+
+.. currentmodule:: spectrochempy.analysis.fitting
+
+.. autofunction:: optimize

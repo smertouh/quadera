@@ -1,0 +1,6 @@
+spectrochempy.core.print\_
+==========================
+
+.. currentmodule:: spectrochempy.core
+
+.. autofunction:: print_

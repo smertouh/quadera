@@ -1,0 +1,6 @@
+spectrochempy.core.processors.fft.ifft
+======================================
+
+.. currentmodule:: spectrochempy.core.processors.fft
+
+.. autofunction:: ifft

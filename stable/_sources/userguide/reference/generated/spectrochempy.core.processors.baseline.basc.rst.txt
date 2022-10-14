@@ -1,0 +1,6 @@
+spectrochempy.core.processors.baseline.basc
+===========================================
+
+.. currentmodule:: spectrochempy.core.processors.baseline
+
+.. autofunction:: basc

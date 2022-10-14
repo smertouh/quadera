@@ -1,0 +1,29 @@
+spectrochempy.analysis.efa
+==========================
+
+.. automodule:: spectrochempy.analysis.efa
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      EFA
+   
+   
+
+   
+   
+   
+
+
+

@@ -1,0 +1,6 @@
+spectrochempy.analysis.models.voigtmodel.type
+=============================================
+
+.. currentmodule:: spectrochempy.analysis.models
+
+.. autoattribute:: voigtmodel.type

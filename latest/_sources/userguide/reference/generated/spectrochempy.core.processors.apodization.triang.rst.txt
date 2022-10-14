@@ -1,0 +1,6 @@
+spectrochempy.core.processors.apodization.triang
+================================================
+
+.. currentmodule:: spectrochempy.core.processors.apodization
+
+.. autofunction:: triang

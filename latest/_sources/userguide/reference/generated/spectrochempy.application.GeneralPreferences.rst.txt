@@ -1,0 +1,38 @@
+spectrochempy.application.GeneralPreferences
+============================================
+
+.. currentmodule:: spectrochempy.application
+
+.. autoclass:: GeneralPreferences
+
+   
+     
+   .. rubric:: Methods
+
+   .. autosummary::
+       
+       GeneralPreferences.to_dict
+
+      
+   
+
+   
+     
+   .. rubric:: Attributes
+
+   .. autosummary::
+       
+       GeneralPreferences.log_level
+
+
+       
+   .. autoattribute:: log_level
+
+     
+   
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.application.GeneralPreferences.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

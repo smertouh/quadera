@@ -1,0 +1,6 @@
+spectrochempy.core.processors.phasing.pk\_exp
+=============================================
+
+.. currentmodule:: spectrochempy.core.processors.phasing
+
+.. autofunction:: pk_exp

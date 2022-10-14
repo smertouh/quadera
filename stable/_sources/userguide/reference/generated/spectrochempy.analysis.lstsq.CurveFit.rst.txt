@@ -1,0 +1,30 @@
+spectrochempy.analysis.lstsq.CurveFit
+=====================================
+
+.. currentmodule:: spectrochempy.analysis.lstsq
+
+.. autoclass:: CurveFit
+
+   
+     
+   .. rubric:: Methods
+
+   .. autosummary::
+       
+       CurveFit.inverse_transform
+       CurveFit.itrans
+       CurveFit.trans
+       CurveFit.transform
+
+      
+   
+
+   
+     
+   
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.analysis.lstsq.CurveFit.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

@@ -1,0 +1,6 @@
+spectrochempy.analysis.models.make\_units\_compatibility
+========================================================
+
+.. currentmodule:: spectrochempy.analysis.models
+
+.. autofunction:: make_units_compatibility

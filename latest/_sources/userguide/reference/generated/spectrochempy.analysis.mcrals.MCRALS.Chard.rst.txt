@@ -1,0 +1,6 @@
+spectrochempy.analysis.mcrals.MCRALS.Chard
+==========================================
+
+.. currentmodule:: spectrochempy.analysis.mcrals
+
+.. autoproperty:: MCRALS.Chard

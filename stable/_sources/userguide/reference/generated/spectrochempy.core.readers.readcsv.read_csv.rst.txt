@@ -1,0 +1,6 @@
+spectrochempy.core.readers.readcsv.read\_csv
+============================================
+
+.. currentmodule:: spectrochempy.core.readers.readcsv
+
+.. autofunction:: read_csv

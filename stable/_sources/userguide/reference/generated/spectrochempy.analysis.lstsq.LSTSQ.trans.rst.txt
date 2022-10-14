@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.analysis.lstsq.LSTSQ.trans
+========================================
+
+
+.. currentmodule:: spectrochempy.analysis.lstsq
+
+.. automethod:: LSTSQ.trans
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.analysis.lstsq.LSTSQ.trans.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

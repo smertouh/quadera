@@ -1,0 +1,30 @@
+spectrochempy.core.writers.write\_matlab
+========================================
+
+.. automodule:: spectrochempy.core.writers.write_matlab
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      write_mat
+      write_matlab
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

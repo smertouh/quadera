@@ -1,0 +1,6 @@
+spectrochempy.core.processors.concatenate.concatenate
+=====================================================
+
+.. currentmodule:: spectrochempy.core.processors.concatenate
+
+.. autofunction:: concatenate

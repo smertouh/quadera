@@ -1,0 +1,6 @@
+spectrochempy.core.analysis.cantera\_utilities.coverages\_vs\_time
+==================================================================
+
+.. currentmodule:: spectrochempy.core.analysis.cantera_utilities
+
+.. autofunction:: coverages_vs_time

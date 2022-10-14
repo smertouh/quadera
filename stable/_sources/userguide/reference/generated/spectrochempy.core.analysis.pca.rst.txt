@@ -1,0 +1,29 @@
+spectrochempy.core.analysis.pca
+===============================
+
+.. automodule:: spectrochempy.core.analysis.pca
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      PCA
+   
+   
+
+   
+   
+   
+
+
+

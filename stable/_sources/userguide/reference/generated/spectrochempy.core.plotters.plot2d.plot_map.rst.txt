@@ -1,0 +1,6 @@
+spectrochempy.core.plotters.plot2d.plot\_map
+============================================
+
+.. currentmodule:: spectrochempy.core.plotters.plot2d
+
+.. autofunction:: plot_map

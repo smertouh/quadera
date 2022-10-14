@@ -1,0 +1,37 @@
+spectrochempy.core.analysis.svd.SVD
+===================================
+
+.. currentmodule:: spectrochempy.core.analysis.svd
+
+.. autoclass:: SVD
+
+   
+     
+   
+
+   
+     
+   .. rubric:: Attributes
+
+   .. autosummary::
+       
+       SVD.ev
+       SVD.ev_cum
+       SVD.ev_ratio
+       SVD.sv
+
+
+       
+   .. autoattribute:: ev
+   .. autoattribute:: ev_cum
+   .. autoattribute:: ev_ratio
+   .. autoattribute:: sv
+
+     
+   
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.core.analysis.svd.SVD.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

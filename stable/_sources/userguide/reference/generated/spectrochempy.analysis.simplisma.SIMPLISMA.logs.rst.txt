@@ -1,0 +1,6 @@
+spectrochempy.analysis.simplisma.SIMPLISMA.logs
+===============================================
+
+.. currentmodule:: spectrochempy.analysis.simplisma
+
+.. autoproperty:: SIMPLISMA.logs

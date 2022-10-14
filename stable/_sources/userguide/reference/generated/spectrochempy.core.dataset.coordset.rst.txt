@@ -1,0 +1,29 @@
+spectrochempy.core.dataset.coordset
+===================================
+
+.. automodule:: spectrochempy.core.dataset.coordset
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      CoordSet
+   
+   
+
+   
+   
+   
+
+
+

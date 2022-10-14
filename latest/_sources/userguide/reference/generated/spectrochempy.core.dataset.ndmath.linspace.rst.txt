@@ -1,0 +1,6 @@
+spectrochempy.core.dataset.ndmath.linspace
+==========================================
+
+.. currentmodule:: spectrochempy.core.dataset.ndmath
+
+.. autofunction:: linspace

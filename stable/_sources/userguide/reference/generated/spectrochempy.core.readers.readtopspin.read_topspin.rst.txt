@@ -1,0 +1,6 @@
+spectrochempy.core.readers.readtopspin.read\_topspin
+====================================================
+
+.. currentmodule:: spectrochempy.core.readers.readtopspin
+
+.. autofunction:: read_topspin

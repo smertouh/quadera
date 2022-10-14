@@ -1,0 +1,38 @@
+spectrochempy.analysis.fitting
+==============================
+
+.. automodule:: spectrochempy.analysis.fitting
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      getmodel
+      optimize
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      Fit
+      FitParameters
+      ParameterScript
+   
+   
+
+   
+   
+   
+
+
+

@@ -1,0 +1,32 @@
+spectrochempy.widgets
+=====================
+
+.. automodule:: spectrochempy.widgets
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+
+.. rubric:: Modules
+
+.. autosummary::
+   :toctree:
+   :recursive:
+
+   spectrochempy.widgets.api
+   spectrochempy.widgets.fileselector
+

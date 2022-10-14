@@ -1,0 +1,6 @@
+spectrochempy.application.SpectroChemPy.aliases
+===============================================
+
+.. currentmodule:: spectrochempy.application
+
+.. autoattribute:: SpectroChemPy.aliases

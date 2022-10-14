@@ -1,0 +1,23 @@
+spectrochempy.core.plotters.plotly
+==================================
+
+.. automodule:: spectrochempy.core.plotters.plotly
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

@@ -1,0 +1,6 @@
+spectrochempy.core.plotters.plot3d.plot\_3D
+===========================================
+
+.. currentmodule:: spectrochempy.core.plotters.plot3d
+
+.. autofunction:: plot_3D

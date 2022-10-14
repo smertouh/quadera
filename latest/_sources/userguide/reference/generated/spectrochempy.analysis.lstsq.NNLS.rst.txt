@@ -1,0 +1,30 @@
+spectrochempy.analysis.lstsq.NNLS
+=================================
+
+.. currentmodule:: spectrochempy.analysis.lstsq
+
+.. autoclass:: NNLS
+
+   
+     
+   .. rubric:: Methods
+
+   .. autosummary::
+       
+       NNLS.inverse_transform
+       NNLS.itrans
+       NNLS.trans
+       NNLS.transform
+
+      
+   
+
+   
+     
+   
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.analysis.lstsq.NNLS.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

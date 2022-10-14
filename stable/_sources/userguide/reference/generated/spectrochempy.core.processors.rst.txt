@@ -1,0 +1,45 @@
+spectrochempy.core.processors
+=============================
+
+.. automodule:: spectrochempy.core.processors
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+
+.. rubric:: Modules
+
+.. autosummary::
+   :toctree:
+   :recursive:
+
+   spectrochempy.core.processors.align
+   spectrochempy.core.processors.api
+   spectrochempy.core.processors.apodization
+   spectrochempy.core.processors.autosub
+   spectrochempy.core.processors.baseline
+   spectrochempy.core.processors.concatenate
+   spectrochempy.core.processors.fft
+   spectrochempy.core.processors.filter
+   spectrochempy.core.processors.integrate
+   spectrochempy.core.processors.interpolate
+   spectrochempy.core.processors.phasing
+   spectrochempy.core.processors.shift
+   spectrochempy.core.processors.smooth
+   spectrochempy.core.processors.utils
+   spectrochempy.core.processors.zero_filling
+

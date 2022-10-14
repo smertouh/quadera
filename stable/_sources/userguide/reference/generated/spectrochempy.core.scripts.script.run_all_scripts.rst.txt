@@ -1,0 +1,6 @@
+spectrochempy.core.scripts.script.run\_all\_scripts
+===================================================
+
+.. currentmodule:: spectrochempy.core.scripts.script
+
+.. autofunction:: run_all_scripts

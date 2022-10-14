@@ -1,0 +1,6 @@
+spectrochempy.analysis.efa.EFA.cutoff
+=====================================
+
+.. currentmodule:: spectrochempy.analysis.efa
+
+.. autoproperty:: EFA.cutoff

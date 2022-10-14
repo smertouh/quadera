@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.LinearCoord.implements
+====================================
+
+
+.. currentmodule:: spectrochempy
+
+.. automethod:: LinearCoord.implements
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.LinearCoord.implements.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

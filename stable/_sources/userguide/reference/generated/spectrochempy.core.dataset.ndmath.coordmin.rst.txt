@@ -1,0 +1,6 @@
+spectrochempy.core.dataset.ndmath.coordmin
+==========================================
+
+.. currentmodule:: spectrochempy.core.dataset.ndmath
+
+.. autofunction:: coordmin

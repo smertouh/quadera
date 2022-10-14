@@ -1,0 +1,6 @@
+spectrochempy.analysis.models.lorentzianmodel.script
+====================================================
+
+.. currentmodule:: spectrochempy.analysis.models
+
+.. autoattribute:: lorentzianmodel.script

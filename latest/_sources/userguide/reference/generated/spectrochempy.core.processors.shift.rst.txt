@@ -1,0 +1,34 @@
+spectrochempy.core.processors.shift
+===================================
+
+.. automodule:: spectrochempy.core.processors.shift
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      cs
+      fsh
+      fsh2
+      ls
+      roll
+      rs
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

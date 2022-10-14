@@ -1,0 +1,30 @@
+spectrochempy.core.analysis.iris.IRIS
+=====================================
+
+.. currentmodule:: spectrochempy.core.analysis.iris
+
+.. autoclass:: IRIS
+
+   
+     
+   .. rubric:: Methods
+
+   .. autosummary::
+       
+       IRIS.plotdistribution
+       IRIS.plotlcurve
+       IRIS.plotmerit
+       IRIS.reconstruct
+
+      
+   
+
+   
+     
+   
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.core.analysis.iris.IRIS.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

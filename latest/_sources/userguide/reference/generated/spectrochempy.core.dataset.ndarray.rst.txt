@@ -1,0 +1,35 @@
+spectrochempy.core.dataset.ndarray
+==================================
+
+.. automodule:: spectrochempy.core.dataset.ndarray
+
+   
+   
+   .. rubric:: Module Attributes
+
+   .. autosummary::
+   
+      DEFAULT_DIM_NAME
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      NDArray
+   
+   
+
+   
+   
+   
+
+
+

@@ -1,0 +1,6 @@
+spectrochempy.core.units.units.remove\_args\_units
+==================================================
+
+.. currentmodule:: spectrochempy.core.units.units
+
+.. autofunction:: remove_args_units

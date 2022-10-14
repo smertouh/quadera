@@ -1,0 +1,32 @@
+spectrochempy.core.readers.readomnic
+====================================
+
+.. automodule:: spectrochempy.core.readers.readomnic
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      read_omnic
+      read_spa
+      read_spg
+      read_srs
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

@@ -1,0 +1,29 @@
+spectrochempy.core.analysis.svd
+===============================
+
+.. automodule:: spectrochempy.core.analysis.svd
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      SVD
+   
+   
+
+   
+   
+   
+
+
+

@@ -1,0 +1,6 @@
+spectrochempy.analysis.models.gaussianmodel.script
+==================================================
+
+.. currentmodule:: spectrochempy.analysis.models
+
+.. autoattribute:: gaussianmodel.script

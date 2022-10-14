@@ -1,0 +1,6 @@
+spectrochempy.core.readers.readzip.read\_zip
+============================================
+
+.. currentmodule:: spectrochempy.core.readers.readzip
+
+.. autofunction:: read_zip

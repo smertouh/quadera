@@ -1,0 +1,6 @@
+spectrochempy.databases.isotopes.Isotopes.spin
+==============================================
+
+.. currentmodule:: spectrochempy.databases.isotopes
+
+.. autoproperty:: Isotopes.spin

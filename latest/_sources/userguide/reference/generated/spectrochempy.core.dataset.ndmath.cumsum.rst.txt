@@ -1,0 +1,6 @@
+spectrochempy.core.dataset.ndmath.cumsum
+========================================
+
+.. currentmodule:: spectrochempy.core.dataset.ndmath
+
+.. autofunction:: cumsum

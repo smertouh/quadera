@@ -1,0 +1,40 @@
+spectrochempy.core.processors.apodization
+=========================================
+
+.. automodule:: spectrochempy.core.processors.apodization
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      bartlett
+      blackmanharris
+      em
+      general_hamming
+      gm
+      hamming
+      hann
+      qsin
+      sine
+      sinm
+      sp
+      triang
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

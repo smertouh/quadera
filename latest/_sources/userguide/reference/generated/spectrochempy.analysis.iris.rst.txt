@@ -1,0 +1,38 @@
+spectrochempy.analysis.iris
+===========================
+
+.. automodule:: spectrochempy.analysis.iris
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      Smat
+      isPD
+      menger
+      nearestPD
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      IRIS
+   
+   
+
+   
+   
+   
+
+
+

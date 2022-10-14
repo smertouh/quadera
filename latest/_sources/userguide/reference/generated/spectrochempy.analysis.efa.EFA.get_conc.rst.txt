@@ -1,0 +1,16 @@
+
+:orphan:
+
+spectrochempy.analysis.efa.EFA.get\_conc
+========================================
+
+
+.. currentmodule:: spectrochempy.analysis.efa
+
+.. automethod:: EFA.get_conc
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.analysis.efa.EFA.get_conc.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

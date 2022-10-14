@@ -1,0 +1,6 @@
+spectrochempy.download\_IRIS
+============================
+
+.. currentmodule:: spectrochempy
+
+.. autofunction:: download_IRIS

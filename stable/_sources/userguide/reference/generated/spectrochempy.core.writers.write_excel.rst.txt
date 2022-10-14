@@ -1,0 +1,30 @@
+spectrochempy.core.writers.write\_excel
+=======================================
+
+.. automodule:: spectrochempy.core.writers.write_excel
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      write_excel
+      write_xls
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

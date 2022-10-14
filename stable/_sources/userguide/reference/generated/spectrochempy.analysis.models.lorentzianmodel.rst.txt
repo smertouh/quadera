@@ -1,0 +1,35 @@
+spectrochempy.analysis.models.lorentzianmodel
+=============================================
+
+.. currentmodule:: spectrochempy.analysis.models
+
+.. autoclass:: lorentzianmodel
+
+   
+     
+   
+
+   
+     
+   .. rubric:: Attributes
+
+   .. autosummary::
+       
+       lorentzianmodel.args
+       lorentzianmodel.script
+       lorentzianmodel.type
+
+
+       
+   .. autoattribute:: args
+   .. autoattribute:: script
+   .. autoattribute:: type
+
+     
+   
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.analysis.models.lorentzianmodel.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

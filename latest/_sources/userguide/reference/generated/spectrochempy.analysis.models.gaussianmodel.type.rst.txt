@@ -1,0 +1,6 @@
+spectrochempy.analysis.models.gaussianmodel.type
+================================================
+
+.. currentmodule:: spectrochempy.analysis.models
+
+.. autoattribute:: gaussianmodel.type

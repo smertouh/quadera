@@ -1,0 +1,6 @@
+spectrochempy.analysis.pca.PCA.ev
+=================================
+
+.. currentmodule:: spectrochempy.analysis.pca
+
+.. autoproperty:: PCA.ev

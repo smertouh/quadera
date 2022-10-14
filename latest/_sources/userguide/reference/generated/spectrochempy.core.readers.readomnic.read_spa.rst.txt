@@ -1,0 +1,6 @@
+spectrochempy.core.readers.readomnic.read\_spa
+==============================================
+
+.. currentmodule:: spectrochempy.core.readers.readomnic
+
+.. autofunction:: read_spa

@@ -1,0 +1,6 @@
+spectrochempy.core.processors.zero\_filling.zf\_double
+======================================================
+
+.. currentmodule:: spectrochempy.core.processors.zero_filling
+
+.. autofunction:: zf_double

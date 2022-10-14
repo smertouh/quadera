@@ -1,0 +1,6 @@
+spectrochempy.analysis.fitting.getmodel
+=======================================
+
+.. currentmodule:: spectrochempy.analysis.fitting
+
+.. autofunction:: getmodel

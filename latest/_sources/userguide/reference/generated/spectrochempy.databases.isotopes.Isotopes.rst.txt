@@ -1,0 +1,65 @@
+spectrochempy.databases.isotopes.Isotopes
+=========================================
+
+.. currentmodule:: spectrochempy.databases.isotopes
+
+.. autoclass:: Isotopes
+
+   
+     
+   .. rubric:: Methods
+
+   .. autosummary::
+       
+       Isotopes.copy
+       Isotopes.get
+       Isotopes.items
+       Isotopes.keys
+       Isotopes.permute
+       Isotopes.swap
+       Isotopes.to_dict
+       Isotopes.update
+
+      
+   
+
+   
+     
+   .. rubric:: Attributes
+
+   .. autosummary::
+       
+       Isotopes.A
+       Isotopes.Q
+       Isotopes.Z
+       Isotopes.abundance
+       Isotopes.gamma
+       Isotopes.isotope
+       Isotopes.name
+       Isotopes.readonly
+       Isotopes.spin
+       Isotopes.stability
+       Isotopes.symbol
+
+
+       
+   .. autoattribute:: A
+   .. autoattribute:: Q
+   .. autoattribute:: Z
+   .. autoattribute:: abundance
+   .. autoattribute:: gamma
+   .. autoattribute:: isotope
+   .. autoattribute:: name
+   .. autoattribute:: readonly
+   .. autoattribute:: spin
+   .. autoattribute:: stability
+   .. autoattribute:: symbol
+
+     
+   
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.databases.isotopes.Isotopes.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

@@ -1,0 +1,6 @@
+spectrochempy.core.readers.download.download\_IRIS
+==================================================
+
+.. currentmodule:: spectrochempy.core.readers.download
+
+.. autofunction:: download_IRIS

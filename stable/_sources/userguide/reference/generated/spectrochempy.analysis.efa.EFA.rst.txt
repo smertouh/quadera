@@ -1,0 +1,42 @@
+spectrochempy.analysis.efa.EFA
+==============================
+
+.. currentmodule:: spectrochempy.analysis.efa
+
+.. autoclass:: EFA
+
+   
+     
+   .. rubric:: Methods
+
+   .. autosummary::
+       
+       EFA.get_conc
+
+      
+   
+
+   
+     
+   .. rubric:: Attributes
+
+   .. autosummary::
+       
+       EFA.b_ev
+       EFA.cutoff
+       EFA.f_ev
+
+
+       
+   .. autoattribute:: b_ev
+   .. autoattribute:: cutoff
+   .. autoattribute:: f_ev
+
+     
+   
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.analysis.efa.EFA.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

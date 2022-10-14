@@ -1,0 +1,6 @@
+spectrochempy.core.readers.read\_labspec.read\_labspec
+======================================================
+
+.. currentmodule:: spectrochempy.core.readers.read_labspec
+
+.. autofunction:: read_labspec

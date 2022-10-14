@@ -1,0 +1,6 @@
+spectrochempy.core.readers.readdir.read\_dir
+============================================
+
+.. currentmodule:: spectrochempy.core.readers.readdir
+
+.. autofunction:: read_dir

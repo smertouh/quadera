@@ -1,0 +1,29 @@
+spectrochempy.core.processors.autosub
+=====================================
+
+.. automodule:: spectrochempy.core.processors.autosub
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      autosub
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

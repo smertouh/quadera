@@ -1,0 +1,29 @@
+spectrochempy.core.analysis.efa
+===============================
+
+.. automodule:: spectrochempy.core.analysis.efa
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      EFA
+   
+   
+
+   
+   
+   
+
+
+

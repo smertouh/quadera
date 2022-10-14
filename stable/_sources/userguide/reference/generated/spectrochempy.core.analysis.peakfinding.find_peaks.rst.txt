@@ -1,0 +1,6 @@
+spectrochempy.core.analysis.peakfinding.find\_peaks
+===================================================
+
+.. currentmodule:: spectrochempy.core.analysis.peakfinding
+
+.. autofunction:: find_peaks

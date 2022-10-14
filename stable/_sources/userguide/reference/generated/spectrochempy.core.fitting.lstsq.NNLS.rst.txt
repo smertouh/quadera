@@ -1,0 +1,30 @@
+spectrochempy.core.fitting.lstsq.NNLS
+=====================================
+
+.. currentmodule:: spectrochempy.core.fitting.lstsq
+
+.. autoclass:: NNLS
+
+   
+     
+   .. rubric:: Methods
+
+   .. autosummary::
+       
+       NNLS.inverse_transform
+       NNLS.itrans
+       NNLS.trans
+       NNLS.transform
+
+      
+   
+
+   
+     
+   
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.core.fitting.lstsq.NNLS.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>

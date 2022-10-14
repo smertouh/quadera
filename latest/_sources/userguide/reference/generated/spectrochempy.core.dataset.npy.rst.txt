@@ -1,0 +1,29 @@
+spectrochempy.core.dataset.npy
+==============================
+
+.. automodule:: spectrochempy.core.dataset.npy
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      dot
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

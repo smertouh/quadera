@@ -1,0 +1,6 @@
+spectrochempy.application.SpectroChemPy.flags
+=============================================
+
+.. currentmodule:: spectrochempy.application
+
+.. autoattribute:: SpectroChemPy.flags

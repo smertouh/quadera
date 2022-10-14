@@ -1,0 +1,6 @@
+spectrochempy.core.processors.apodization.blackmanharris
+========================================================
+
+.. currentmodule:: spectrochempy.core.processors.apodization
+
+.. autofunction:: blackmanharris

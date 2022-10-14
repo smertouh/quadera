@@ -1,0 +1,6 @@
+spectrochempy.core.processors.shift.fsh2
+========================================
+
+.. currentmodule:: spectrochempy.core.processors.shift
+
+.. autofunction:: fsh2

@@ -1,0 +1,6 @@
+spectrochempy.core.dataset.ndplot.NDPlot.fig
+============================================
+
+.. currentmodule:: spectrochempy.core.dataset.ndplot
+
+.. autoproperty:: NDPlot.fig

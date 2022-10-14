@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adding a Reader &mdash; SpectroChemPy v0.4.8.dev4 0.4.8.dev4 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/plot_directive.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/theme_override.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/sg_gallery.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/sg_gallery-binder.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/sg_gallery-dataframe.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/sg_gallery-rendered-html.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/scpy.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Contributing to the documentation" href="contributing_documentation.html" />
+    <link rel="prev" title="Contributing to specific parts of the code" href="contributing_codespecifics.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html">
+            <img src="../_static/scpy.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                0.4.8.dev4
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+
+    <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+      <span class="rst-current-version" data-toggle="rst-current-version">
+        <span class="fa fa-book"> SpectroChemPy </span>
+        version: latest
+        <span class="fa fa-caret-down"></span>
+      </span>
+        <div class="rst-other-versions">
+            <dl>
+                <dt>Other versions</dt>
+                
+                    
+                
+                    
+                        <dd><a href="https://www.spectrochempy.fr/stable/index.html">STABLE</a></dd>
+                    
+                
+            </dl>
+            <hr/>
+            <dl>
+                <dt>Sources on GitHub</dt>
+                <dd><a href="https://github.com/spectrochempy/spectrochempy/releases/latest">Stable</a></dd>
+                <dd><a href="https://github.com/spectrochempy/spectrochempy/tree/master/">Latest</a></dd>
+
+            </dl>
+
+        </div>
+    </div>
+
+    
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../gettingstarted/whyscpy.html">Why <strong>SpectroChemPy</strong>  ?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gettingstarted/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gettingstarted/gallery/auto_examples/index.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gettingstarted/install/index.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gettingstarted/papers.html">Papers citing <strong>SpectroChemPy</strong></a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">User's Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../userguide/introduction/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../userguide/objects.html">Data structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../userguide/importexport/importexport.html">Import &amp; Export</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../userguide/plotting/plotting.html">Plotting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../userguide/processing/processing.html">Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../userguide/analysis/analysis.html">Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../userguide/units/units.html">Units &amp; Quantities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../userguide/databases/databases.html">Databases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../userguide/api/api.html">API Configuration</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference &amp; Help</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../userguide/reference/changelog.html">What’s new</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../userguide/reference/index.html">Public API reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../userguide/reference/faq.html">Frequently asked questions (FAQ)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issues.html">Bug reports &amp; feature request</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Sharing examples &amp; tutorials</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Developer’s Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="contributing.html">Contributing to SpectroChemPy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contributing_codebase.html">Contributing to the code</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="contributing_codespecifics.html">Contributing to specific parts of the code</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Adding a Reader</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="contributing_documentation.html">Contributing to the documentation</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Credits</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../credits/credits.html">Acknowledgments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../credits/credits.html#third-party-licences">Third-party Licences</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../credits/citing.html">Citing  <strong>SpectroChemPy</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../credits/license.html">SpectroChempy License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../credits/license.html#other-licenses">Other Licenses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../credits/seealso.html">See also</a></li>
+</ul>
+
+
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">SpectroChemPy v0.4.8.dev4</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="index.html">Developer’s Guide</a> &raquo;</li>
+          <li><a href="contributing_codespecifics.html">Contributing to specific parts of the code</a> &raquo;</li>
+      <li>Adding a Reader</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/devguide/codespec_adding_reader.rst" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+    
+        <div class="admonition warning">
+            <p class="first admonition-title">Note</p>
+            <p class="last"> You are reading the documentation related to the development version.
+                <a href="https://www.spectrochempy.fr/stable/index.html">Go here</a> if you are looking for the documentation of the last
+                release.
+            </p>
+        </div>
+    
+    
+           <div itemprop="articleBody">
+             
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<section id="adding-a-reader">
+<span id="contributing-reader"></span><h1>Adding a Reader<a class="headerlink" href="#adding-a-reader" title="Permalink to this heading">¶</a></h1>
+<p>Import of spectroscopic data with their meta data from various file formats is a key feature of SpectroChemPy. Data
+import is made through the generic <code class="docutils literal notranslate"><span class="pre">read()</span></code> function (in <code class="docutils literal notranslate"><span class="pre">core.readers.importer</span></code>) which handles
+the determination of filetype, search locations,  etc…).</p>
+<p>In the following, we describe the steps to add a specific reader - with the example of Grams/Thermo .spc files.</p>
+<div class="contents local topic" id="table-of-contents">
+<p class="topic-title">Table of Contents:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#add-a-test-and-sample-files" id="id1">1. Add a test and sample files</a></p></li>
+<li><p><a class="reference internal" href="#complete-filetypes-and-alias" id="id2">2. Complete FILETYPES and ALIAS</a></p></li>
+<li><p><a class="reference internal" href="#create-the-reader-xxx-py-file" id="id3">3. Create the reader_xxx.py file</a></p></li>
+<li><p><a class="reference internal" href="#general-guidelines-for-data-and-metadata-format" id="id4">3. General Guidelines for data and metadata format</a></p></li>
+<li><p><a class="reference internal" href="#polish-your-code-and-make-the-pull-requests" id="id5">4. Polish your code and make the Pull Requests</a></p></li>
+</ul>
+</div>
+<section id="add-a-test-and-sample-files">
+<h2><a class="toc-backref" href="#id1">1. Add a test and sample files</a><a class="headerlink" href="#add-a-test-and-sample-files" title="Permalink to this heading">¶</a></h2>
+<p>Contributors are encouraged to embrace Test-Driven Development (TDD) (see <a class="reference internal" href="contributing_codebase.html#contributing-tdd"><span class="std std-ref">Test-driven development/code writing</span></a> )
+and reader implementation should start by writing an (initially failing) automated test case to read sample file(s) and
+then produce the <em>minimum</em> amount of code to successfully read this file, i.e., generate a NDDataset with a <code class="docutils literal notranslate"><span class="pre">data</span></code>
+attribute as expected from source file.</p>
+<p>The testing of the main readers functionalities has been made in the test_importer.py, and the test of
+specific readers such as <code class="docutils literal notranslate"><span class="pre">read_spc</span></code> should test only specifics to the reader. Add as many tests and sample files as
+the types of file format types you want the reader to handle.</p>
+<p>For consistency add your test in <code class="docutils literal notranslate"><span class="pre">tests/test_core/test_readers/test_xxx.py</span></code> where <code class="docutils literal notranslate"><span class="pre">xxx</span></code> is an alias for the
+file format or reader protocol.</p>
+<p>The sample file(s) should be grouped in a subdirectory (e.g., <code class="docutils literal notranslate"><span class="pre">galacticdata/</span></code>) of the <code class="docutils literal notranslate"><span class="pre">spectrochempy_data/testdata</span></code>
+folder forked from the <a class="reference external" href="https://github.com/spectrochempy/spectrochempy_data/">spectrochempy_data repository</a>.</p>
+<p>A minimum test could be, for instance</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">test_read_spc</span><span class="p">():</span>
+    <span class="n">A</span> <span class="o">=</span> <span class="n">scp</span><span class="o">.</span><span class="n">read_spc</span><span class="p">(</span><span class="s2">&quot;galacticdata/BENZENE.SPC&quot;</span><span class="p">)</span>
+    <span class="k">assert</span> <span class="n">A</span><span class="o">.</span><span class="n">shape</span> <span class="o">==</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1842</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This will ensure that a dataset with the expected shape has been returned.</p>
+<p>For local testing, ensure that the default <code class="docutils literal notranslate"><span class="pre">datadir</span></code> correctly points to your local git repo of <code class="docutils literal notranslate"><span class="pre">spectrochempy_data</span></code>, e.g.,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">prefs</span><span class="o">.</span><span class="n">datadir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">testdata</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="complete-filetypes-and-alias">
+<h2><a class="toc-backref" href="#id2">2. Complete FILETYPES and ALIAS</a><a class="headerlink" href="#complete-filetypes-and-alias" title="Permalink to this heading">¶</a></h2>
+<p>They are located at the top of <code class="docutils literal notranslate"><span class="pre">core/readers/importer.py</span></code> with the specifics of your reader. e.g.,
+for galactic files:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="s2">&quot;galactic&quot;</span><span class="p">,</span> <span class="s2">&quot;GRAMS/Thermo Galactic files (*.spc)&quot;</span><span class="p">)</span> <span class="c1">#  filetype description to add in FILETYPES</span>
+<span class="p">(</span><span class="s2">&quot;galactic&quot;</span><span class="p">,</span> <span class="s2">&quot;spc&quot;</span><span class="p">)</span> <span class="c1">#  alias to add in ALIAS</span>
+</pre></div>
+</div>
+<p>The alias (<code class="docutils literal notranslate"><span class="pre">spc</span></code>) will be used to design the specific protocol to read the files.
+It must be used to name the public and private reader functions, e.g. <code class="docutils literal notranslate"><span class="pre">scp.read_spc()</span></code> and <code class="docutils literal notranslate"><span class="pre">_read_spc()</span></code>).</p>
+</section>
+<section id="create-the-reader-xxx-py-file">
+<h2><a class="toc-backref" href="#id3">3. Create the reader_xxx.py file</a><a class="headerlink" href="#create-the-reader-xxx-py-file" title="Permalink to this heading">¶</a></h2>
+<p>As illustrated below for the .spc example, the minimal file should contain:</p>
+<ul class="simple">
+<li><p>an example - for simplicity, the same as in the test function</p></li>
+<li><p>the public function  <code class="docutils literal notranslate"><span class="pre">read_spc</span></code>,</p></li>
+<li><p>the private function <code class="docutils literal notranslate"><span class="pre">_read_spc</span></code> with the appropriate code</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;read_spc&quot;</span><span class="p">]</span>
+<span class="n">__dataset_methods__</span> <span class="o">=</span> <span class="n">__all__</span>
+
+<span class="c1"># minimum import section</span>
+<span class="kn">import</span> <span class="nn">io</span>
+<span class="kn">from</span> <span class="nn">spectrochempy.core.dataset.nddataset</span> <span class="kn">import</span> <span class="n">NDDataset</span>
+<span class="kn">from</span> <span class="nn">spectrochempy.core.readers.importer</span> <span class="kn">import</span> <span class="n">_importer_method</span><span class="p">,</span> <span class="n">Importer</span>
+
+<span class="c1"># ======================================================================================================================</span>
+<span class="c1"># Public function</span>
+<span class="c1"># ======================================================================================================================</span>
+<span class="k">def</span> <span class="nf">read_spc</span><span class="p">(</span><span class="o">*</span><span class="n">paths</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Open a spc file or a list of files with extension ``.spc``.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    -----------</span>
+<span class="sd">    *paths : str, pathlib.Path object, list of str, or list of pathlib.Path objects, optional</span>
+<span class="sd">        The data source(s) can be specified by the name or a list of name</span>
+<span class="sd">        for the file(s) to be loaded:</span>
+<span class="sd">    (....)</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    --------</span>
+<span class="sd">    read_xxx</span>
+<span class="sd">        The dataset or a list of dataset corresponding to a (set of) .xxx</span>
+<span class="sd">        file(s).</span>
+
+<span class="sd">    Example</span>
+<span class="sd">    ---------</span>
+<span class="sd">    &gt;&gt;&gt; scp.read_spc(&#39;galacticdata/BENZENE.SPC&#39;)</span>
+<span class="sd">    NNDDataset: [float64] unitless (shape: (y:1, x:1842))</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">kwargs</span><span class="p">[</span><span class="s2">&quot;filetypes&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;GRAMS/Thermo Galactic files (*.spc)&quot;</span><span class="p">]</span>  <span class="c1">#</span>
+    <span class="n">kwargs</span><span class="p">[</span><span class="s2">&quot;protocol&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;spc&quot;</span><span class="p">]</span>
+    <span class="n">importer</span> <span class="o">=</span> <span class="n">Importer</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">importer</span><span class="p">(</span><span class="o">*</span><span class="n">paths</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+
+<span class="c1"># ======================================================================================================================</span>
+<span class="c1"># Private functions</span>
+<span class="c1"># ======================================================================================================================</span>
+<span class="c1"># ..............................................................................</span>
+<span class="nd">@_importer_method</span>
+<span class="k">def</span> <span class="nf">_read_spc</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="n">dataset</span><span class="p">,</span> <span class="n">filename</span> <span class="o">=</span> <span class="n">args</span>
+    <span class="n">content</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;content&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">content</span><span class="p">:</span>
+        <span class="n">fid</span> <span class="o">=</span> <span class="n">io</span><span class="o">.</span><span class="n">BytesIO</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">fid</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">)</span>
+        <span class="n">content</span> <span class="o">=</span> <span class="n">fid</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+
+    <span class="c1"># Here comes the code to generate the NDDataset from the file</span>
+    <span class="n">dataset</span> <span class="o">=</span> <span class="n">NDDataset</span><span class="p">()</span>
+    <span class="p">(</span><span class="o">....</span><span class="p">)</span>
+
+<span class="n">fid</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="k">return</span> <span class="n">dataset</span>
+
+<span class="c1"># ------------------------------------------------------------------</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+<p>Once the minimal code is functional (i.e. returns the dataset with the appropriate <code class="docutils literal notranslate"><span class="pre">data</span></code> attribute), the metadata can
+be added.</p>
+</section>
+<section id="general-guidelines-for-data-and-metadata-format">
+<h2><a class="toc-backref" href="#id4">3. General Guidelines for data and metadata format</a><a class="headerlink" href="#general-guidelines-for-data-and-metadata-format" title="Permalink to this heading">¶</a></h2>
+<p>For consistency with existing readers, the following guidelines should be followed as closely as possible:</p>
+<ul class="simple">
+<li><p>The NDDataset should be at least bi-dimensional with a first dimension <code class="xref py py-obj docutils literal notranslate"><span class="pre">x</span></code> pertaining to the wavelength/frequency dimension
+and the second dimension <code class="xref py py-obj docutils literal notranslate"><span class="pre">y</span></code> pertaining to the acquisition time axis, even if the dataset consists of single 1D spectrum.
+For instance</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span> <span class="o">=</span> <span class="n">NDDataset</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">expand_dims</span><span class="p">(</span><span class="n">ndarray</span><span class="p">,</span>  <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">))</span>    <span class="c1"># a 2D dataset from a 1D ndarray</span>
+</pre></div>
+</div>
+<ul>
+<li><p>The acquisition time axis, when relevant, should preferably use a timestamp as coordinate. The labels should at least contain:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>the acquisition date(s), preferably as a datetime.datetime instances including the timezone (when such data are available in the source file)</p></li>
+<li><p>the initial filename(s) of individual spectra when appropriate</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">_y</span> <span class="o">=</span> <span class="n">Coord</span><span class="p">(</span>
+    <span class="p">[</span><span class="n">timestamp</span><span class="p">],</span>
+    <span class="n">title</span><span class="o">=</span><span class="s2">&quot;acquisition timestamp (GMT)&quot;</span><span class="p">,</span>
+    <span class="n">units</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">,</span>
+    <span class="n">labels</span><span class="o">=</span><span class="p">([</span><span class="n">acqdate</span><span class="p">],</span> <span class="p">[</span><span class="n">filename</span><span class="p">]),</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Use whenever possible appropriate units for the data and the coordinates (see userguide/units/units.html).</p></li>
+<li><p>The NDDataset <code class="docutils literal notranslate"><span class="pre">description</span></code> should at least mention the type of file from which the data have been imported, e.g.:</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="o">.</span><span class="n">description</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;description&quot;</span><span class="p">,</span> <span class="s2">&quot;Dataset from spc file.</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>and whenever possible the information related to the instrument, acquisition parameters, etc…</p>
+</section>
+<section id="polish-your-code-and-make-the-pull-requests">
+<h2><a class="toc-backref" href="#id5">4. Polish your code and make the Pull Requests</a><a class="headerlink" href="#polish-your-code-and-make-the-pull-requests" title="Permalink to this heading">¶</a></h2>
+<p>see: <a class="reference internal" href="contributing_codebase.html#contributing-codebase"><span class="std std-ref">Contributing to the code</span></a></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="contributing_codespecifics.html" class="btn btn-neutral float-left" title="Contributing to specific parts of the code" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="contributing_documentation.html" class="btn btn-neutral float-right" title="Contributing to the documentation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2014-2022 - A.Travert &amp; C.Fernandez @ LCS.
+      <span class="lastupdated">Last updated on Oct 14, 2022.
+      </span></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

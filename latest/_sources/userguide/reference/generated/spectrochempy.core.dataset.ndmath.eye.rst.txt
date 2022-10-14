@@ -1,0 +1,6 @@
+spectrochempy.core.dataset.ndmath.eye
+=====================================
+
+.. currentmodule:: spectrochempy.core.dataset.ndmath
+
+.. autofunction:: eye

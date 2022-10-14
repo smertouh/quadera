@@ -1,0 +1,29 @@
+spectrochempy.core.readers.readquadera
+======================================
+
+.. automodule:: spectrochempy.core.readers.readquadera
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      read_quadera
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

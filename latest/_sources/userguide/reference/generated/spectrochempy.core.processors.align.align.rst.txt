@@ -1,0 +1,6 @@
+spectrochempy.core.processors.align.align
+=========================================
+
+.. currentmodule:: spectrochempy.core.processors.align
+
+.. autofunction:: align

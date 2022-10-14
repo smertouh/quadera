@@ -1,0 +1,6 @@
+spectrochempy.databases.isotopes.Isotopes.A
+===========================================
+
+.. currentmodule:: spectrochempy.databases.isotopes
+
+.. autoproperty:: Isotopes.A

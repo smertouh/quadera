@@ -1,0 +1,45 @@
+spectrochempy.core.dataset.meta.Meta
+====================================
+
+.. currentmodule:: spectrochempy.core.dataset.meta
+
+.. autoclass:: Meta
+
+   
+     
+   .. rubric:: Methods
+
+   .. autosummary::
+       
+       Meta.copy
+       Meta.get
+       Meta.items
+       Meta.keys
+       Meta.permute
+       Meta.swap
+       Meta.to_dict
+       Meta.update
+
+      
+   
+
+   
+     
+   .. rubric:: Attributes
+
+   .. autosummary::
+       
+       Meta.readonly
+
+
+       
+   .. autoattribute:: readonly
+
+     
+   
+
+.. include:: /gettingstarted/gallery/backreferences/spectrochempy.core.dataset.meta.Meta.examples
+
+.. raw:: html
+
+   <div style='clear:both'></div>
